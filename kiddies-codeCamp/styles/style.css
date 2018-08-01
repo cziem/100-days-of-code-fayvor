@@ -70,3 +70,35 @@ body
   justify-content: center;
   height: 100vh;
 }
+
+.container__section p
+{
+  font-size: 2rem;
+  color: #fcfcfc;
+  padding-bottom: 1rem;
+}
+
+.kcc
+{
+  font-weight: bold;
+  font-family: cursive;
+  font-size: 2.5rem;
+  color: #e3f5fd;
+}
+
+#setName
+{
+  font-weight: bold;
+}
+
+.input
+{
+  border: none;
+  border-bottom: 3px solid #ddd;
+  background: transparent;
+  color: #fcfcfc;
+  margin-top: 1rem;
+  width: 30%;
+  padding: 1rem .4rem;
+  font-size: 1.3rem;
+}
