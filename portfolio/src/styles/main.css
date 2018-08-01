@@ -1,0 +1,26 @@
+/* RESET THE BODY */
+
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ROOT */
+:root
+{
+  --color: #f9f9f9;
+  --bngColor: #030c1f;
+}
+
+/* THE HEADER SECTION */
+.container__header
+{
+  background-color: var(--bngColor);
+  color: var(--color);
+  height: 35rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
