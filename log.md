@@ -16,4 +16,4 @@
 
 **Thoughts**: I really love teaching... tech, coding, and it's fun when you have to show the light to kids and help them learn coding
 
-**Link to work**: [Portfolio Site](https://github.com/phavor/100-days-of-code-fayvor/tree/master/portfolio), [Kiddies-CodeCamp](https://github.com/phavor/100-days-of-code/tree/master/kiddies-codecamp)
+**Link to work**: [Portfolio Site](https://github.com/phavor/100-days-of-code-fayvor/tree/master/portfolio), [Kiddies-CodeCamp](https://github.com/phavor/100-days-of-code-fayvor/tree/master/kiddies-codeCamp)
