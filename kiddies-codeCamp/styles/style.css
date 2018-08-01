@@ -16,16 +16,26 @@ body
 {
   display: flex;
   flex-direction: column;
+  background: url('../images/telluride-XL.jpg') no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .container__header
 {
-  background-color: #888;
+  position: fixed;
+  width: 100%;
   color: white;
   justify-content: space-between;
   display: flex;
   align-items: center;
   height: 5rem;
+  transition: background .3s ease-in-out;
+}
+
+.container__header:hover
+{
+  background: rgba(0, 0, 0, .5);
 }
 
 .logo {
@@ -43,10 +53,20 @@ body
   padding: 2rem;
   cursor: pointer;
   font-weight: 300;
-  transition: all .3s ease-in-out;
+  transition: border-bottom .3s ease-in-out;
 }
 
 .navigation ul li:hover
 {
   border-bottom: 2px solid #f8df01;
+}
+
+.container__section
+{
+  align-items: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
 }
