@@ -9,3 +9,12 @@
 **Thoughts**: Am really wondering why I had to take this challenge.
 
 **Link to work** [Portfolio Site](https://github.com/phavor/100-days-of-code-fayvor/tree/master/portfolio)
+
+### Day1 August 1, Wednessday
+
+**Today's Work**: Today seem to be quite a day. I made some additions to the portfolio project then I setup the Kiddies-CodeCamp
+
+**Thoughts**: I really love teaching... tech, coding, and it's fun when you have to show the light to kids and help them learn coding
+
+**Link to work** [Portfolio Site](https://github.com/phavor/100-days-of-code-fayvor/tree/master/portfolio), [Kiddies-CodeCamp](https://github.com/phavor/100-days-of-code/tree/master/kiddies-codecamp)
+
