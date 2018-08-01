@@ -8,7 +8,7 @@
 
 **Thoughts**: Am really wondering why I had to take this challenge.
 
-**Link to work** [Portfolio Site](https://github.com/phavor/100-days-of-code-fayvor/tree/master/portfolio)
+**Link to work**: [Portfolio Site](https://github.com/phavor/100-days-of-code-fayvor/tree/master/portfolio)
 
 ### Day1 August 1, Wednessday
 
