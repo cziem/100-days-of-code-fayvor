@@ -17,3 +17,11 @@
 **Thoughts**: I really love teaching... tech, coding, and it's fun when you have to show the light to kids and help them learn coding
 
 **Link to work**: [Portfolio Site](https://github.com/phavor/100-days-of-code-fayvor/tree/master/portfolio), [Kiddies-CodeCamp](https://github.com/phavor/100-days-of-code-fayvor/tree/master/kiddies-codeCamp)
+
+### Day2 August 2, Thursday
+
+**Today's Work**: Trying to fix `node_module`'s inclusion to git tracked files. Had quite a trouble with that.
+
+**Thoughts**: I don't have data, a collegue of mine said `data is life` now i totally agree.
+
+**Link to work**: [Portfolio Site](https://github.com/phavor/100-days-of-code-fayvor/tree/master/portfolio)
