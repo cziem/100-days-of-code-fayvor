@@ -25,3 +25,19 @@
 **Thoughts**: I don't have data, a collegue of mine said `data is life` now i totally agree.
 
 **Link to work**: [Portfolio Site](https://github.com/phavor/100-days-of-code-fayvor/tree/master/portfolio)
+
+### Day3 August 3, Friday
+
+**Today's Work**: Really spent sometime looking at some FCC challenges
+
+**Thoughts**: A lot has been running through my mind, propably because of tidious work
+
+**Link to work**: [FreeCodeCamp](https://freecodecamp.org)
+
+### Day4 August 4, Saturday
+
+**Today's Work**: Continued with FCC challenges
+
+**Thoughts**: Have been on transit and some public transport services are really whack. I think am going to use technology to bring some improvements
+
+**Link to work**: [FreeCodeCamp](https://freecodecamp.org)
