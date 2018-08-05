@@ -41,3 +41,11 @@
 **Thoughts**: Have been on transit and some public transport services are really whack. I think am going to use technology to bring some improvements
 
 **Link to work**: [FreeCodeCamp](https://freecodecamp.org)
+
+### Day5 August 5, Sunday
+
+**Today's Work**: Continued work on my portfolio project and had a little lesson session with FCC
+
+**Thoughts**: I encoutered a bug with FCC Visual aid class which demanded I put a <hr> tag in a portion of the code. I did all things possible but wouldn't pass the test. I wondered why, not untill I asked a question in the community room. 
+
+**Link to work**: [FreeCodeCamp](https://freecodecamp.org), [Portfolio Site](https://github.com/phavor/100-days-of-code-fayvor/tree/master/portfolio)
