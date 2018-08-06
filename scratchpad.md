@@ -4,7 +4,7 @@
 
 While learning **Applied Visual Design** at [FCC](https://freecodecamp.org) I learnt that background color can be set using background like this `background:
 
-### LINEAR-GRADIENTS:
+### LINEAR-GRADIENTS
 
 ```css
 body {
@@ -20,7 +20,7 @@ Using `linear-gradient` has always been a challenge.
 
 I also learnt about using `hsl()` specifically when children elements have to inherit and tweak their parent color.
 
-### HSL():
+### HSL()
 
 ```css
 header {
@@ -34,7 +34,7 @@ header {
   }
 ```
 
-### USING BACKGROUND TEXTURES:
+### USING BACKGROUND TEXTURES
 
 ```css
 body {
@@ -118,7 +118,7 @@ body {
 
 > live version here at [Codepen](https://codepen.io/phavor/pen/KBBLrr?editors=0100)
 
-### ANIMATION-FILL-MODE:
+### ANIMATION-FILL-MODE
 
 **animation-fill-mode:** is used to specify the style applied to a element when the animation has finished. You can set this to `forward`.
 
