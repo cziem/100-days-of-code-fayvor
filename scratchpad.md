@@ -127,3 +127,18 @@ To change the speed of an animation, we could:
 - **@keyframes:** Alter the positions for animations like `20% { some rules }` `50% { some rules }`.
 - **animation-timing-function:** Sets how they animate over the set duration. We could use values like `ease, ease-in, ease-out, ease-in-out, linear, cubic-bezier` etc
 - **animation-duration:** Sets the duration length for the animation. Longer duration would animate over a longer period of time.
+
+### Screen Readers Only
+
+When writting code for screen readers only, this is best achieved with:
+
+```css
+.sr-only {
+  position: absolute;
+  top: auto;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+```
