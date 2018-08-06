@@ -45,8 +45,10 @@ body {
 ### Making a Heart with HTML and CSS3
 
 ```css
+<!-- HTML Part -->
 <div class="heart"></div>
 
+<!-- CSS Part -->
 .heart {
   background: red;
   width: 100px;
