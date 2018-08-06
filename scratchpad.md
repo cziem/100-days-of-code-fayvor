@@ -47,8 +47,22 @@ body {
 ```css
 <!-- HTML Part -->
 <div class="heart"></div>
+<div class="beat"></div>
 
 <!-- CSS Part -->
+.beat {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  animation-name: backdiv;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
 .heart {
   background: red;
   width: 100px;
@@ -58,6 +72,9 @@ body {
   top: 40%;
   left: 50%;
   transform: rotate(-45deg);
+  animation-name: beat;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 
 .heart::before {
@@ -82,6 +99,31 @@ body {
   border-radius: 50%;
   background: red;
 }
+
+@keyframes backdiv {
+  50% {
+    background-color: #fce8e8;
+  }
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1) rotate(-45deg);
+  }
+  50% {
+    transform: scale(0.6) rotate(-45deg);
+  }
+}
 ```
 
 > live version here at [Codepen](https://codepen.io/phavor/pen/KBBLrr?editors=0100)
+
+### ANIMATION-FILL-MODE:
+
+**animation-fill-mode:** is used to specify the style applied to a element when the animation has finished. You can set this to `forward`.
+
+To change the speed of an animation, we could:
+
+- **@keyframes:** Alter the positions for animations like `20% { some rules }` `50% { some rules }`.
+- **animation-timing-function:** Sets how they animate over the set duration. We could use values like `ease, ease-in, ease-out, ease-in-out, linear, cubic-bezier` etc
+- **animation-duration:** Sets the duration length for the animation. Longer duration would animate over a longer period of time.
