@@ -1,6 +1,6 @@
 # Scratch Pad
 
-## Day5 August 6, Monday
+## Day6 August 6, Monday
 
 While learning **Applied Visual Design** at [FCC](https://freecodecamp.org) I learnt that background color can be set using background like this `background:
 

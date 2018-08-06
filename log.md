@@ -46,6 +46,14 @@
 
 **Today's Work**: Continued work on my portfolio project and had a little lesson session with FCC
 
-**Thoughts**: I encoutered a bug with FCC Visual aid class which demanded I put a <hr> tag in a portion of the code. I did all things possible but wouldn't pass the test. I wondered why, not untill I asked a question in the community room. 
+**Thoughts**: I encoutered a bug with FCC Visual aid class which demanded I put a `<hr>` tag in a portion of the code. I did all things possible but wouldn't pass the test. I wondered why, not untill I asked a question in the community room.
 
 **Link to work**: [FreeCodeCamp](https://freecodecamp.org), [Portfolio Site](https://github.com/phavor/100-days-of-code-fayvor/tree/master/portfolio)
+
+### Day6 August 6, Monday
+
+**Today's Work**: Made some progress with [FCC](https://freecodecamp.org) **Applied Visual Design**
+
+**Thoughts**: Today I saw a new interest with css animations. It's quite beautiful what could be achieved with `::after` and `::before` psuedo tags. Am thinking of redesigning my portfolio project. But that would come later
+
+**Link to work**: [Blinking Heart](https://codepen.io/phavor/pen/KBBLrr?editors=0100)
