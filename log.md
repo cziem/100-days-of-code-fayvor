@@ -57,3 +57,11 @@
 **Thoughts**: Today I saw a new interest with css animations. It's quite beautiful what could be achieved with `::after` and `::before` psuedo tags. Am thinking of redesigning my portfolio project. But that would come later
 
 **Link to work**: [Blinking Heart](https://codepen.io/phavor/pen/KBBLrr?editors=0100)
+
+### Day7 August 7, Tuesday
+
+**Today's Work**: Continued with [FCC](https://freecodecamp.org) **Applied Accessiblity**
+
+**Thoughts**: Think I should get some pictures to spice up the portfolio project
+
+**Link to work**: [FCC](https://freecodecamp.org)
