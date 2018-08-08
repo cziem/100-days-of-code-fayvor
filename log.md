@@ -65,3 +65,11 @@
 **Thoughts**: Think I should get some pictures to spice up the portfolio project
 
 **Link to work**: [FCC](https://freecodecamp.org)
+
+### Day8 August 8, Wednessday
+
+**Today's Work**: Finished FCC class with Flexbox and Responisve Desing. Then tackled the tribute page project.
+
+**Thoughts**: I fell in love with flexbox today while learning from FCC.
+
+**Link to work**: [Codepen - Tribute page](https://codepen.io/phavor/full/JBmVWr/)
