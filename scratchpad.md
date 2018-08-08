@@ -216,3 +216,15 @@ To use flexbox props, you first set the `display: flex` on the parent element.
 When using `justify-content` the items are aligned **wrt** the `main-axis`. In `row` the `main-axis` is `horizontal-line` oriented, while in `column` the `main-axis` is `vertical-line` oriented.
 
 When using `align-items` the items are aligned **wrt** the `cross-axis` which is the opposite of the `main-axis`. In `row` the `cross-axis` is `vertical-line` oriented, while in `column` the `cross-axis` is `horizontal-line` oriented.
+
+### Flex properties for the flex children
+
+All the properties discussed above apply to the parent container.
+
+> These will apply to the flex items (children)
+
+- `flex-shrink`: It allows an item to shrink if the flex container is too small. Items shrink when the width of the parent container is smaller than the combined widths of all the flex items within it. The flex-shrink property takes numbers as values. The higher the number, the more it will shrink compared to the other items in the container. `flex-shrink: 1`
+
+- `flex-grow`: It controls the size of the flex items when the parent container expands. `flex-grow: 2`
+
+- `flex-basis`: Is used to set the initial value of an item before CSS makes adjustments to it using `flex-shrink` or `flex-grow`. The value `auto` sizes items based on the content.
