@@ -228,3 +228,19 @@ All the properties discussed above apply to the parent container.
 - `flex-grow`: It controls the size of the flex items when the parent container expands. `flex-grow: 2`
 
 - `flex-basis`: Is used to set the initial value of an item before CSS makes adjustments to it using `flex-shrink` or `flex-grow`. The value `auto` sizes items based on the content.
+
+- `order`: This is used to order elements. By default it takes the normal HTML source code order. This property takes numbers as values.
+
+- `align-self`: This property allows you to adjust each item's alignment individually, instead of setting them all at once. `align-self` accepts the same values as `align-items` and will override any value set by the `align-items` property.
+
+### Flex Shorthand Property
+
+The `flex-grow`, `flex-shrink` and `flex-basis` properties can be set using a single `flex` rule.
+
+```css
+.box {
+  flex: 1 0 auto;
+}
+```
+
+The above rule sets the `flex-grow`,`flex-shrink` and `flex-basis` respectively and that is the default setting. We can alter the values to our needs. i.e. `flex: 1 3 6em`.
