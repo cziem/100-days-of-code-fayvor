@@ -142,3 +142,77 @@ When writting code for screen readers only, this is best achieved with:
   overflow: hidden;
 }
 ```
+
+## Day7 August 7, Tuesday
+
+### Responsive Web Design Principles
+
+To make images responsive you do this:
+
+```css
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+```
+
+## Day8 August 8, Wednessday
+
+### Responsive Web Design Principles Cont'd
+
+> #### Retina Display
+
+The simplest way to make your images appear "retina" (and optimize them for retina displays) is to define their `width` and `height` values as only half of what the original file is. Assuming the value of a given image is `400px` both `width` and `height` then the following would be the style rule
+
+```css
+img {
+  height: 200px;
+  width: 200px;
+}
+```
+
+> #### Responsive Typography
+
+We can make typo responsive by using `vh` and `vw` which means `viewport height` and `viewport width` respectively rather than using `em`'s and `px`.
+
+- `vw`: 10vw would be 10% of the viewport's width.
+- `vh`: 3vh would be 3% of the viewport's height.
+- `vmin`: 70vmin would be 70% of the viewport's smaller dimension (height vs. width).
+- `vmax`: 100vmax would be 100% of the viewport's bigger dimension (height vs. width).
+
+---
+
+### CSS Flexbox
+
+To use flexbox props, you first set the `display: flex` on the parent element.
+
+- `flex-direction`: can be set to `row` or `column` for vertical or horizontal alignment.
+> The default value of `flex-direction` is `row`. Other values incl: `row-reverse` and `column-reverse`.
+
+**NB**: `row-reverse` and `column-reverse` essentially switch the item display positions. i.e. it takes the second element and makes it the 1st.
+
+- `justify-content`: is used to distribute spaces to the flex children. It has different values.
+  - `justify-content: center` --> Aligns items to the center of the flex container.
+  - `justify-content: flex-start` --> Aligns the items to the start of the flex container. `row` : to the *left*. `column` :  to the *top*
+  - `justify-content: flex-end` --> This does the opposite of `flex-start`.
+  - `justify-content: space-between` --> aligns items to the center of the main axis, with extra space placed between the items. The first and last items are pushed to the very edge of the flex container.
+  - `justify-content: space-around` --> similar to `space-between` but the first and last items are not locked to the edges of the container, the space is distributed around all the items.
+
+- `align-items`: is used to align flex items along the `cross-axis`.
+  - `align-items: flex-start` --> Aligns items to the start of the flex container. For `row` - **top** and for `column` - **left**.
+  - `align-items: flex-end` --> Aligns items to the end of the flex container. For `row` - **bottom** and for `column` - **right**.
+  - `align-items: center` --> Centeralize the items left to right for `column` and top to bottom for `row`.
+  - `align-items: stretch` --> stretch the item to fill the flex container.
+  - `align-items: baseline` --> align items to their baseline. The line the item sits upon.
+
+- `flex-wrap`: is used to wrap flex items so that their is a breakpoint when items exceed teh width of the container, CSS would create new `row` or `column`.
+  - `flex-wrap: nowrap` --> default value which does not engage wrapping.
+  - `flex-wrap: wrap` --> wraps items from left to right if in `row` and from top to bottom if in `column`.
+  - `flex-wrap: wrap-reverse` --> wraps items from bottom-to-top if they are in a row, or left-to-right if they are in a column.
+
+### Main Axis Vs Cross Axis
+
+When using `justify-content` the items are aligned **wrt** the `main-axis`. In `row` the `main-axis` is `horizontal-line` oriented, while in `column` the `main-axis` is `vertical-line` oriented.
+
+When using `align-items` the items are aligned **wrt** the `cross-axis` which is the opposite of the `main-axis`. In `row` the `cross-axis` is `vertical-line` oriented, while in `column` the `cross-axis` is `horizontal-line` oriented.
