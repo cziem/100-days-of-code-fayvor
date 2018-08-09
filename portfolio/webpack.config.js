@@ -15,7 +15,7 @@ module.exports = {
           loader: "babel-loader",
           options: {
             presets: ["env"],
-            plugin: ['transform-object-rest-spread']
+            plugins: ['transform-object-rest-spread']
           }
         }
       }
