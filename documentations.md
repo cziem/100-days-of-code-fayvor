@@ -55,3 +55,5 @@ options: {
   plugins: ['transform-object-rest-spread']
 }
 ```
+
+_Thanks to `@Maarten` and `@sven` in the babeljs gitter room._
