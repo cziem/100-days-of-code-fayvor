@@ -44,7 +44,7 @@ Because of this file I ran into this error at my console:
 
 ![console error](./assets/images/babel-loader-error.png)
 
-==This is how I solved it==
+## __This is how I solved it__
 
 I changed the `plugin` to `plugins` and it worked.
 
