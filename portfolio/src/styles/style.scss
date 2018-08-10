@@ -1,8 +1,3 @@
-
-$lg-sz: 4rem;
-$bgn: #222;
-
-body {
-  background: $bgn;
-  font-size: $lg-sz;
-}
+@import './base/settings';
+@import './base/base';
+@import './partials/header';
