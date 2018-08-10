@@ -15,9 +15,13 @@ module.exports = {
           loader: "babel-loader",
           options: {
             presets: ["env"],
-            plugins: ['transform-object-rest-spread']
+            plugins: ["transform-object-rest-spread"]
           }
         }
+      },
+      {
+        test: /\.s?css$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
       }
     ]
   },
