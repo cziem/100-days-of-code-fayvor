@@ -73,3 +73,19 @@
 **Thoughts**: I fell in love with flexbox today while learning from FCC.
 
 **Link to work**: [Codepen - Tribute page](https://codepen.io/phavor/full/JBmVWr/)
+
+### Day9 August 9, Thursday
+
+**Today's Work**: Reading through documentations on github
+
+**Thoughts**: I really want to use sass for my styling of the portfolio page
+
+**Link to work**: [Portfolio Site](https://github.com/phavor/100-days-of-code-fayvor/tree/master/portfolio)
+
+### Day10 August 10, Friday
+
+**Today's Work**: Added the `sass` support to the portfolio project
+
+**Thoughts**: Am trying to use `sass` and not `scss`, can't figure out the __test__ `regex` rule for that. Am currently writting `/\.s?css&/`
+
+**Link to work**: [Portfolio Site](https://github.com/phavor/100-days-of-code-fayvor/tree/master/portfolio)
