@@ -1,5 +1,9 @@
-header {
-  background: $header-bng;
+.container__header {
+  background-color: $header-bng;
+  background: url('../../../public/images/header-bng/bng1.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: $color;
-  font-size: $xl-size;
+  height: $screen;
 }
