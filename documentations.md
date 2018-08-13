@@ -57,3 +57,33 @@ options: {
 ```
 
 _Thanks to `@Maarten` and `@sven` in the babeljs gitter room._
+
+### Day13 August 13, Monday
+
+For the past two days I've been having issues making my background image display. This was after I introduced `sass` into the mix.
+
+I went online to find help and it was really proving futile.
+
+> This is the error code:
+
+```css
+.container__header {
+  background-color: $header-bng;
+  background: url('../../../public/images/header-bng/bng1.jpg'); /* this line was the error */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $color;
+  height: $screen;
+}
+```
+
+> All I need to do was this:
+
+`background: url('/images/header-bng/bng1.jpg')`
+
+## Understanding the root
+
+Webpack after bundling all files serves one file from the root. The root is the `public` dir in most cases. In my case, I was trying to access some directories outside the root which webpack could not find and thus the images would not load.
+
+Thanks to `Nicolas Marcora` from [codingblocks](https://codingblocks.slack.com/) on slack for his insigthful help.
