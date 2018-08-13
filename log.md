@@ -89,3 +89,27 @@
 **Thoughts**: Am trying to use `sass` and not `scss`, can't figure out the __test__ `regex` rule for that. Am currently writting `/\.s?css&/`
 
 **Link to work**: [Portfolio Site](https://github.com/phavor/100-days-of-code-fayvor/tree/master/portfolio)
+
+### Day11 August 11, Saturday
+
+**Today's Work**: Reading maintainable javascript by **Zakas**
+
+**Thoughts**: Helpful book that has taught me about structuring my code and it's relevance to working in a big team.
+
+**Link to work**: You could google `maintainable javascript**
+
+### Day12 August 12, Sunday
+
+**Today's Work**: Made so tidying up on my portfolio site.
+
+**Thoughts**: Am not really getting the flow of webpack configurations, sass and using images with sass.
+
+**Link to work**: [Portfolio Site](https://github.com/phavor/100-days-of-code-fayvor/tree/master/portfolio)
+
+### Day13 August 13, Monday
+
+**Today's Work**: Working on Flexbox
+
+**Thougths**: Flexbox is a bae. Am so in love with it.
+
+**Link to work**: [Flexbox Froggy](www.flexboxfroggy.com)
