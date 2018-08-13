@@ -5,5 +5,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: $color;
-  height: $screen;
+  height: $big-screen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .welcome__text {
+    font-size: $xl-size;
+
+    .welcome__text-name {
+      color: rgba(0, 0, 0, .55);
+    }
+  }
 }
