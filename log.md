@@ -113,3 +113,11 @@
 **Thougths**: Flexbox is a bae. Am so in love with it.
 
 **Link to work**: [Flexbox Froggy](www.flexboxfroggy.com)
+
+### Day14 August 14, Tuesday
+
+**Today's Work**: Working on FCC Second Project
+
+**Thougths**: I should really stick with styling the whole page with flexbox, but is that really possible?
+
+**Link to work**: [Survery Form: Say your mind](https://codepen.io/phavor/full/JBmgNr/)
