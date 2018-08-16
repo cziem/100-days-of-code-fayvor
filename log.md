@@ -121,3 +121,20 @@
 **Thougths**: I should really stick with styling the whole page with flexbox, but is that really possible?
 
 **Link to work**: [Survery Form: Say your mind](https://codepen.io/phavor/full/JBmgNr/)
+
+
+### Day15 August 15, Wednessday
+
+**Today's Work**: Working of webpack bundling 
+
+**Thoughts**: Webpack bundles are quite an exicting thing.
+
+**Link to Work**: [webpack[(www.webpack.com)
+
+### Day16 August 16, Thursday
+
+**Today's Work**: Reading Development with Backbone.js
+
+**Thoughts**: MVC and MVP is quite a scary concept to me. But a no-scared version of me is going on with this adventure
+
+**Link to work**: You should try googling this book
