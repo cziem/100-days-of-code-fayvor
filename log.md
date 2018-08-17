@@ -96,7 +96,7 @@
 
 **Thoughts**: Helpful book that has taught me about structuring my code and it's relevance to working in a big team.
 
-**Link to work**: You could google `maintainable javascript**
+**Link to work**: You could google `maintainable javascript`
 
 ### Day12 August 12, Sunday
 
@@ -125,7 +125,7 @@
 
 ### Day15 August 15, Wednessday
 
-**Today's Work**: Working of webpack bundling 
+**Today's Work**: Working of webpack bundling
 
 **Thoughts**: Webpack bundles are quite an exicting thing.
 
@@ -138,3 +138,11 @@
 **Thoughts**: MVC and MVP is quite a scary concept to me. But a no-scared version of me is going on with this adventure
 
 **Link to work**: You should try googling this book
+
+### Day17 August 17, Friday
+
+**Today's Work**: Continued with Development with Backbone.js
+
+**Thoughts**: Am trying to interface with the concept of `model`, `views` and `controls`
+
+**Link to work**: Haven't you googled the book yet?
