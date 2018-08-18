@@ -146,3 +146,11 @@
 **Thoughts**: Am trying to interface with the concept of `model`, `views` and `controls`
 
 **Link to work**: Haven't you googled the book yet?
+
+### Day18 August 18, Saturday
+
+**Today's Work**: Did some FCC work Today
+
+**Thoughts**: I've so been away for a camping, have barely written much code this weekend. Can't wait to get back home and get coding...
+
+**Link to work**: [FCC](https://freecodecamp.org)
