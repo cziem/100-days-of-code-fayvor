@@ -129,7 +129,7 @@
 
 **Thoughts**: Webpack bundles are quite an exicting thing.
 
-**Link to Work**: [webpack[(www.webpack.com)
+**Link to Work**: [webpack](www.webpack.com)
 
 ### Day16 August 16, Thursday
 
