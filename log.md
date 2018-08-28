@@ -122,7 +122,6 @@
 
 **Link to work**: [Survery Form: Say your mind](https://codepen.io/phavor/full/JBmgNr/)
 
-
 ### Day15 August 15, Wednessday
 
 **Today's Work**: Working of webpack bundling
@@ -152,5 +151,27 @@
 **Today's Work**: Did some FCC work Today
 
 **Thoughts**: I've so been away for a camping, have barely written much code this weekend. Can't wait to get back home and get coding...
+
+**Link to work**: [FCC](https://freecodecamp.org)
+
+---
+
+THERE HAS BEEN A WEEK BREAK OWING TO MY ILL HEALTH THAT STARTED EARLY SUNDAY BEEN THE 19TH OF AUGUST. THIS ENDED BY THE TEH 26TH OF AUGUST BEEN THE DAY I HAD ENOUGH RELIEF TO GET BACK TO WORK.
+
+---
+
+### Day19 August 27, Monday
+
+**Today's Work**: Did some FCC work Today
+
+**Thoughts**: I have been so sick since the past week and so I could not even look into my laptop screens. Health is wealth has never been this clear to me.
+
+**Link to work**: [FCC](https://freecodecamp.org)
+
+### Day20 August 28, Tuesday
+
+**Today's Work**: Did some FCC work Today
+
+**Thoughts**: I have been so sick since the past week and so I could not even look into my laptop screens. Health is wealth has never been this clear to me.
 
 **Link to work**: [FCC](https://freecodecamp.org)
