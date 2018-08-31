@@ -196,6 +196,11 @@ THERE HAS BEEN A WEEK BREAK OWING TO MY ILL HEALTH THAT STARTED EARLY SUNDAY BEE
 
 **Today's Work**: Continuing my course with udacity's Intro to DOM manipulations.
 
+With concepts like:
+- `addEventListener()` method
+- `removeEventListener()` this takes exact `type`, `listener fn` and `phase`.
+- Event Delegation. That allows for managing multiple events with one listener.
+
 **Thoughts**: It feels cool knowing more about the `element node` and it's properties.
 
 **Link to work**: [Udacity](https://udacity.com)
