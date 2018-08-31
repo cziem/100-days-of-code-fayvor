@@ -175,3 +175,27 @@ THERE HAS BEEN A WEEK BREAK OWING TO MY ILL HEALTH THAT STARTED EARLY SUNDAY BEE
 **Thoughts**: I have been so sick since the past week and so I could not even look into my laptop screens. Health is wealth has never been this clear to me.
 
 **Link to work**: [FCC](https://freecodecamp.org)
+
+### Day21 August 29, Wednessday
+
+**Today's Work**: Took down some challenges at [Hackerrank](https://hackerrank.com)
+
+**Thoughts**: Feels like time is not enough. Office work is really firesome now with a lot of deadlines
+
+**Link to work**: [Hackerrank](https://hackerrank.com) my profile? Nah...
+
+### Day22 August 29, Thursday
+
+**Today's Work**: Went through some udacity courses. DOM manipulations
+
+**Thoughts**: Am taking sneek peeps into this course, my free time is no time at all right now.
+
+**Link to work**: [Udacity](https://udacity.com)
+
+### Day23 August 30, Friday
+
+**Today's Work**: Continuing my course with udacity's Intro to DOM manipulations.
+
+**Thoughts**: It feels cool knowing more about the `element node` and it's properties.
+
+**Link to work**: [Udacity](https://udacity.com)
