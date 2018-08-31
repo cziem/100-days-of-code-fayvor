@@ -184,7 +184,7 @@ THERE HAS BEEN A WEEK BREAK OWING TO MY ILL HEALTH THAT STARTED EARLY SUNDAY BEE
 
 **Link to work**: [Hackerrank](https://hackerrank.com) my profile? Nah...
 
-### Day22 August 29, Thursday
+### Day22 August 30, Thursday
 
 **Today's Work**: Went through some udacity courses. DOM manipulations
 
@@ -192,7 +192,7 @@ THERE HAS BEEN A WEEK BREAK OWING TO MY ILL HEALTH THAT STARTED EARLY SUNDAY BEE
 
 **Link to work**: [Udacity](https://udacity.com)
 
-### Day23 August 30, Friday
+### Day23 August 31, Friday
 
 **Today's Work**: Continuing my course with udacity's Intro to DOM manipulations.
 
