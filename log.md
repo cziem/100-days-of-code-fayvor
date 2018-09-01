@@ -214,6 +214,8 @@ Concepts like listening for
 
 Today I also started looking briefly at CSS Grids and I saw some video materials from WesBos's [CSS Griddy](https://cssgriddy.io)
 
-**Thoughts**: Now I know why I see some framework scripts being inserted in the head section of some sites that use them. I've been wondering what's so cool about this css grid moxilla always talks about, now I see why it's so sweet. You could totally layout a complete website with it. It though has close functionalities with the css Flexbox.
+**Thoughts**: Now I know why I see some framework scripts being inserted in the head section of some sites that use them. I've been wondering what's so cool about this css grid moxilla always talks about, now I see why it's so sweet. You could totally layout a complete website with it. It though has close functionalities with the css Flexbox
+
+So I think of laying out something really simple like this ![awesome layout](./assets/images/griddyLayout.png)
 
 **Link to work**: [Udacity](https://udacity.com)
