@@ -212,6 +212,8 @@ With concepts like:
 Concepts like listening for
 - `DOMContentsLoaded` allows you to put some scripts in the head section of the HTML file and it won't throw any error.
 
-**Thoughts**: Now I know why I see some framework scripts being inserted in the head section of some sites that use them.
+Today I also started looking briefly at CSS Grids and I saw some video materials from WesBos's [CSS Griddy](https://cssgriddy.io)
+
+**Thoughts**: Now I know why I see some framework scripts being inserted in the head section of some sites that use them. I've been wondering what's so cool about this css grid moxilla always talks about, now I see why it's so sweet. You could totally layout a complete website with it. It though has close functionalities with the css Flexbox.
 
 **Link to work**: [Udacity](https://udacity.com)
