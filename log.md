@@ -204,3 +204,14 @@ With concepts like:
 **Thoughts**: It feels cool knowing more about the `element node` and it's properties.
 
 **Link to work**: [Udacity](https://udacity.com)
+
+### Day24 September 1, Saturday
+
+**Today's Work**: Still on udacity's course. Learnt a few new concepts.
+
+Concepts like listening for
+- `DOMContentsLoaded` allows you to put some scripts in the head section of the HTML file and it won't throw any error.
+
+**Thoughts**: Now I know why I see some framework scripts being inserted in the head section of some sites that use them.
+
+**Link to work**: [Udacity](https://udacity.com)
