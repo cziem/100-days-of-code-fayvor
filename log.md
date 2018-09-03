@@ -10,7 +10,7 @@
 
 **Link to work**: [Portfolio Site](https://github.com/phavor/100-days-of-code-fayvor/tree/master/portfolio)
 
-### Day1 August 1, Wednessday
+### Day1 August 1, Wednesday
 
 **Today's Work**: Today seem to be quite a day. I made some additions to the portfolio project then I setup the Kiddies-CodeCamp
 
@@ -66,7 +66,7 @@
 
 **Link to work**: [FCC](https://freecodecamp.org)
 
-### Day8 August 8, Wednessday
+### Day8 August 8, Wednesday
 
 **Today's Work**: Finished FCC class with Flexbox and Responisve Desing. Then tackled the tribute page project.
 
@@ -122,7 +122,7 @@
 
 **Link to work**: [Survery Form: Say your mind](https://codepen.io/phavor/full/JBmgNr/)
 
-### Day15 August 15, Wednessday
+### Day15 August 15, Wednesday
 
 **Today's Work**: Working of webpack bundling
 
@@ -176,7 +176,7 @@ THERE HAS BEEN A WEEK BREAK OWING TO MY ILL HEALTH THAT STARTED EARLY SUNDAY BEE
 
 **Link to work**: [FCC](https://freecodecamp.org)
 
-### Day21 August 29, Wednessday
+### Day21 August 29, Wednesday
 
 **Today's Work**: Took down some challenges at [Hackerrank](https://hackerrank.com)
 
@@ -217,5 +217,21 @@ Today I also started looking briefly at CSS Grids and I saw some video materials
 **Thoughts**: Now I know why I see some framework scripts being inserted in the head section of some sites that use them. I've been wondering what's so cool about this css grid moxilla always talks about, now I see why it's so sweet. You could totally layout a complete website with it. It though has close functionalities with the css Flexbox
 
 So I think of laying out something really simple like this ![awesome layout](./assets/images/griddyLayout.png)
+
+**Link to work**: [Udacity](https://udacity.com)
+
+### Day25 September 2, Sunday
+
+**Today's Work**: Had some time working on CSS Grids from yesterday's lessons.
+
+**Thoughts**: For the sake of simplicity which is better? CSS Flexbox or Grids?
+
+**Link to work**: Could you find a way to get to my system locally?
+
+### Day26 September 3, Monday
+
+**Today's Work**: This is the day I finish my class with udacity and get done with this DOM stuff.
+
+**Thoughts**: There are a couple of things on my mind, well at this moment I can only think of finishing what I've started.
 
 **Link to work**: [Udacity](https://udacity.com)
