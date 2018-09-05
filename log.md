@@ -110,7 +110,7 @@
 
 **Today's Work**: Working on Flexbox
 
-**Thougths**: Flexbox is a bae. Am so in love with it.
+**Thoughts**: Flexbox is a bae. Am so in love with it.
 
 **Link to work**: [Flexbox Froggy](www.flexboxfroggy.com)
 
@@ -118,7 +118,7 @@
 
 **Today's Work**: Working on FCC Second Project
 
-**Thougths**: I should really stick with styling the whole page with flexbox, but is that really possible?
+**Thoughts**: I should really stick with styling the whole page with flexbox, but is that really possible?
 
 **Link to work**: [Survery Form: Say your mind](https://codepen.io/phavor/full/JBmgNr/)
 
@@ -156,7 +156,7 @@
 
 ---
 
-THERE HAS BEEN A WEEK BREAK OWING TO MY ILL HEALTH THAT STARTED EARLY SUNDAY BEEN THE 19TH OF AUGUST. THIS ENDED BY THE TEH 26TH OF AUGUST BEEN THE DAY I HAD ENOUGH RELIEF TO GET BACK TO WORK.
+THERE HAS BEEN A WEEK BREAK OWING TO MY ILL HEALTH THAT STARTED EARLY SUNDAY BEEN THE 19TH OF AUGUST. THIS ENDED BY THE THE 26TH OF AUGUST BEEN THE DAY I HAD ENOUGH RELIEF TO GET BACK TO WORK.
 
 ---
 
@@ -235,3 +235,19 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: There are a couple of things on my mind, well at this moment I can only think of finishing what I've started.
 
 **Link to work**: [Udacity](https://udacity.com)
+
+### Day27 September 4, Tuesday
+
+**Today's Work**: Still hanging out with udacity. Though not much was done today because of light
+
+**Thoughts**: Actually sad and angry with the power supply companies over here.
+
+**Link to work**: You should visit udacity's site and checkout their courses.
+
+### Day28 September 5, Wednesday
+
+**Today's Work**: Went through some medium articles on Algorithm and Data Structure.
+
+**Thoughts**: When you don't have power supply, you are restricted to very minimal things. I choose to be optimistic though.
+
+**Link to work**: Medium is a nice place to be.
