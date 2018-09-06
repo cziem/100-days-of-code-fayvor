@@ -251,3 +251,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: When you don't have power supply, you are restricted to very minimal things. I choose to be optimistic though.
 
 **Link to work**: Medium is a nice place to be.
+
+### Day29 September 6, Thursday
+
+**Today's Work**: Get on with form validation.
+
+**Thoughts**: React form validation has got me restless. I must have to get a hold on it.
+
+**Link to work**: [form-validation](https://github.com/phavor/100-days-of-code-fayvor/tree/master/form-validation)
