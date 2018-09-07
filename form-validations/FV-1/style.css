@@ -47,6 +47,7 @@ main form
   padding: .4rem;
   display: flex;
   align-items: baseline;
+  margin-bottom: .6rem;
 }
 
 label
@@ -57,19 +58,42 @@ label
   font-weight: 600;
   color: #1d2125;
   margin-right: .8rem;
-  transform: translateY(10px);
+  transform: translateY(2px);
 }
 
 .form-group input
 {
   width: 55%;
   border: none;
-  padding: .4rem;
+  padding: .012rem .2rem;
   background: none;
   border-bottom: 1px solid #148f99;
 }
 
 .footer
 {
-  margin-top: .4rem;
+  margin: .5rem auto;
+}
+
+.footer button
+{
+  border: none;
+  padding: .5rem 1rem;
+  background: #0d1b2a;
+  cursor: pointer;
+  color: #3aafb9;
+  font-size: 1.2rem;
+  transition: all .3s;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.footer button:hover
+{
+  opacity: .89;
+}
+
+.errors
+{
+   border-bottom: 1px solid #c84f4f;
 }
