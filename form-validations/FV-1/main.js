@@ -22,9 +22,20 @@ const validator = () => {
 }
 
 const stateUpdator = (e) => {
-  console.log(e.target.value)
+  console.log(e)
 }
 
+const inputData = [...document.querySelectorAll('input')];
 
+document.querySelector('form').addEventListener('input', (e) => {
+  if (e.target.nodeName === 'INPUT') {
+    let data = e.target.value
+    stateUpdator(data)
+  }
+})
+
+// inputData.forEach((input) => console.log(input))
 
 document.querySelector('form').addEventListener('submit', validator)
+
+document.querySelector('button').addEventListener('click', validator)
