@@ -19,23 +19,28 @@ const formDetails = {
 
 const validator = () => {
   console.log('validator called')
+  console.log(formDetails.user)
 }
 
-const stateUpdator = (e) => {
-  console.log(e)
+const stateUpdator = (data, element) => {
+  const { user } = formDetails
+
+  // identify which form element is sending in the data
+  user[element] = data
+
+  return user
 }
 
-const inputData = [...document.querySelectorAll('input')];
-
+// Get data from form elements
 document.querySelector('form').addEventListener('input', (e) => {
   if (e.target.nodeName === 'INPUT') {
     let data = e.target.value
-    stateUpdator(data)
+    const element = e.target.name
+
+    stateUpdator(data, element)
   }
 })
 
-// inputData.forEach((input) => console.log(input))
-
-document.querySelector('form').addEventListener('submit', validator)
-
-document.querySelector('button').addEventListener('click', validator)
+document.querySelector('form').addEventListener('submit', () => {
+  validator
+})
