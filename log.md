@@ -260,7 +260,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Thoughts**: React form validation has got me restless. I must have to get a hold on it.
 
-**Link to work**: [form-validation](https://github.com/phavor/100-days-of-code-fayvor/tree/master/form-validation)
+**Link to work**: [form-validation](https://github.com/phavor/100-days-of-code-fayvor/tree/master/form-validations/FV-1)
 
 ### Day30 September 7, Friday
 
@@ -268,4 +268,4 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Thoughts**: I could try doing reacts kind of validation with just HTML and JS
 
-**Link to work**: [form-validation](https://github.com/phavor/100-days-of-code-fayvor/tree/master/form-validation)
+**Link to work**: [form-validation](https://github.com/phavor/100-days-of-code-fayvor/tree/master/form-validations/FV-1)
