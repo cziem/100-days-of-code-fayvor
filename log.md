@@ -269,3 +269,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: I could try doing reacts kind of validation with just HTML and JS
 
 **Link to work**: [form-validation](https://github.com/phavor/100-days-of-code-fayvor/tree/master/form-validations/FV-1)
+
+### Day31 September 8, Saturday
+
+**Today's Work**: Get input from form elements and update the user object accordingly
+
+**Thoughts**: Tried validating forms like `react` does and boy it's quite fun.
+
+**Link to work**: [form-validation](https://github.com/phavor/100-days-of-code-fayvor/tree/master/form-validations/FV-1)
