@@ -197,6 +197,7 @@ THERE HAS BEEN A WEEK BREAK OWING TO MY ILL HEALTH THAT STARTED EARLY SUNDAY BEE
 **Today's Work**: Continuing my course with udacity's Intro to DOM manipulations.
 
 With concepts like:
+
 - `addEventListener()` method
 - `removeEventListener()` this takes exact `type`, `listener fn` and `phase`.
 - Event Delegation. That allows for managing multiple events with one listener.
@@ -210,6 +211,7 @@ With concepts like:
 **Today's Work**: Still on udacity's course. Learnt a few new concepts.
 
 Concepts like listening for
+
 - `DOMContentsLoaded` allows you to put some scripts in the head section of the HTML file and it won't throw any error.
 
 Today I also started looking briefly at CSS Grids and I saw some video materials from WesBos's [CSS Griddy](https://cssgriddy.io)
@@ -257,5 +259,13 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Today's Work**: Get on with form validation.
 
 **Thoughts**: React form validation has got me restless. I must have to get a hold on it.
+
+**Link to work**: [form-validation](https://github.com/phavor/100-days-of-code-fayvor/tree/master/form-validation)
+
+### Day30 September 7, Friday
+
+**Today's Work**: Styled the Form Page
+
+**Thoughts**: I could try doing reacts kind of validation with just HTML and JS
 
 **Link to work**: [form-validation](https://github.com/phavor/100-days-of-code-fayvor/tree/master/form-validation)
