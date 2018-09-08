@@ -1,3 +1,5 @@
+// Next is to show the user the errors if any...
+
 const formDetails = {
   user: {
     fullname: "",
@@ -28,63 +30,92 @@ const stateUpdator = (data, element) => {
 };
 
 const validator = () => {
-  const { user } = formDetails;
+  const { user, errors } = formDetails;
   let isValid = true;
   const emailRegex = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/g;
 
+  // empty errors
+  errors.fullnameEr = "";
+  errors.usernameEr = "";
+  errors.emailEr = "";
+  errors.passwordEr = "";
+  errors.rePasswordEr = "";
+  errors.occupationEr = "";
+
   if (!user.fullname) {
     isValid = false;
-    console.log("fullname is empty");
+    errors.fullnameEr = "fullname is empty";
   } else if (!user.fullname.match(/^[a-zA-Z_ ]+$/g)) {
     // name cannot start with a number nor contain a number at all
     isValid = false;
-    console.log("Name cannot contain numbers");
+    errors.fullnameEr = "Name cannot contain numbers";
   }
 
   if (!user.username) {
     isValid = false;
-    console.log("Username is empty");
+    errors.usernameEr = "Username is empty";
   } else if (!user.username.match(/^[\w_]{4,8}$/g)) {
     // username must be within 4 - 8 characters
     isValid = false;
-    console.log("Username must be within 4 - 8 characters");
+    errors.usernameEr = "Username must be within 4 - 8 characters";
   }
 
   if (!user.email) {
     isValid = false;
-    console.log("Email is empty");
+    errors.emailEr = "Email is empty";
   } else if (!user.email.match(emailRegex)) {
     isValid = false;
-    console.log("Invalid email format");
+    errors.emailEr = "Invalid email format";
   }
 
   if (!user.password) {
     isValid = false;
-    console.log("Password is empty");
+    errors.passwordEr = "Password is empty";
   } else if (!user.password.match(/^[\w_]{5,}$/g)) {
     isValid = false;
-    console.log(
-      "Password must not lower than 5 and cannot contain special characters"
-    );
+    errors.passwordEr =
+      "Password must not lower than 5 and cannot contain special characters";
   }
 
   if (!user.rePassword) {
     isValid = false;
-    console.log("Confirm password is empty");
-  } else if (!(user.rePassword === user.password)) {
+    errors.rePasswordEr = "Confirm password is empty";
+  } else if (user.rePassword !== user.password) {
     isValid = false;
-    console.log("Password does not match");
+    errors.rePasswordEr = "Password does not match";
   }
 
   if (!user.occupation) {
-    isValid = false
-    console.log('Occupation is empty')
+    isValid = false;
+    errors.occupationEr = "Occupation is empty";
   } else if (!user.occupation.match(/^[a-zA-Z_ ]+$/g)) {
-    isValid = false
-    console.log('Occupation cannot contain numbers')
+    isValid = false;
+    errors.occupationEr = "Occupation cannot contain numbers";
   }
 
-  // return isValid
+  handleSubmit(isValid);
+};
+
+// handleSubmit fn
+const handleSubmit = isValid => {
+  if (isValid) {
+    console.log("Validated form is being sent...");
+
+    // clear the fields
+    resetForm();
+  } else {
+    console.log("Invalid form");
+  }
+};
+
+const resetForm = () => {
+  const form = [...document.querySelector("form")]; // Convert htmlCollection to an array
+
+  form.forEach(el => {
+    if (el.nodeName.toLowerCase() === "input") {
+      el.value = "";
+    }
+  });
 };
 
 // Get data from form elements
