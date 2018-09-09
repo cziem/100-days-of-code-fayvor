@@ -277,3 +277,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: Tried validating forms like `react` does and boy it's quite fun.
 
 **Link to work**: [form-validation](https://github.com/phavor/100-days-of-code-fayvor/tree/master/form-validations/FV-1)
+
+### Day32 September 9, Sunday
+
+**Today's Work**: Getting the `Product page` project done at FCC
+
+**Thoughts**: It's gonna be a short night... I have to be as fast as the `javascript` engine
+
+**Link to work**: [Product Page](https://codepen.io/phavor/full/bjyNQY/)
