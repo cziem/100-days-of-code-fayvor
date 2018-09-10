@@ -285,3 +285,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: It's gonna be a short night... I have to be as fast as the `javascript` engine
 
 **Link to work**: [Product Page](https://codepen.io/phavor/full/bjyNQY/)
+
+### Day33 September 10, Monday
+
+**Today's Work**: Haven't really finished with the product app... office workload has trippled
+
+**Thoughts**: When working on something, passion has proved to be the sole `return` value for me.
+
+**Link to work**: [Product Page](https://codepen.io/phavor/full/bjyNQY/)
