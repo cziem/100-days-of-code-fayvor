@@ -293,3 +293,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: When working on something, passion has proved to be the sole `return` value for me.
 
 **Link to work**: [Product Page](https://codepen.io/phavor/full/bjyNQY/)
+
+### Day33 September 11, Tuesday
+
+**Today's Work**: Continuing with the product app project from FCC
+
+**Thoughts**: Bugs are annoying but and yet so interesting.
+
+**Link to work**: [Product Page](https://codepen.io/phavor/full/bjyNQY/)
