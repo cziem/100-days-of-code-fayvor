@@ -301,3 +301,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: Bugs are annoying but and yet so interesting.
 
 **Link to work**: [Product Page](https://codepen.io/phavor/full/bjyNQY/)
+
+### Day34 September 12, Wednesday
+
+**Today's Work**: Worked on UI designs of the product page from FCC
+
+**Thoughts**: It's pretty cool that I can write `@media (max-width: 640px)` within any selector of my choice.
+
+**Link to work**: [Product Page](https://codepen.io/phavor/full/bjyNQY/)
