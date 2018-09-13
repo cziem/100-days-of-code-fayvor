@@ -309,3 +309,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: It's pretty cool that I can write `@media (max-width: 640px)` within any selector of my choice.
 
 **Link to work**: [Product Page](https://codepen.io/phavor/full/bjyNQY/)
+
+### Day35 September 13, Thursday
+
+**Today's Work**: Finished up the UI and Mobile responsiveness on the product page FCC project
+
+**Thoughts**: It's quite fun working with `@media ()` queries.
+
+**Link to work**: [Product Page](https://codepen.io/phavor/full/bjyNQY/)
