@@ -317,3 +317,12 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: It's quite fun working with `@media ()` queries.
 
 **Link to work**: [Product Page](https://codepen.io/phavor/full/bjyNQY/)
+
+
+### Day36 September 14, Friday
+
+**Today's Work**: Today was spent with `Tania Rascia` learning the basics of TDD with `mocha` and we built a simple `command line interface` calculator.
+
+**Thoughts**: Tania has a very simple way of making scary topics simple and approachable.
+
+**Link to work**: [Cli-Calc](https://github.com/phavor/100-days-of-code-fayvor/tree/master/cli-calc)
