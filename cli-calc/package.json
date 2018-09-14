@@ -1,0 +1,26 @@
+{
+  "name": "cli-calc",
+  "version": "1.0.0",
+  "description": "A simple command-line-interface calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phavor/100-days-of-code-fayvor/tree/master/cli-calc"
+  },
+  "keywords": [
+    "cli",
+    "calculator",
+    "mocha",
+    "testing",
+    "unit-testing",
+    "tdd"
+  ],
+  "author": "Phavor George",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
