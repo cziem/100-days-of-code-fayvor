@@ -326,3 +326,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: Tania has a very simple way of making scary topics simple and approachable.
 
 **Link to work**: [Cli-Calc](https://github.com/phavor/100-days-of-code-fayvor/tree/master/cli-calc)
+
+### Day37 September 15, Saturday
+
+**Today's Work**: Finished with `Tania Rascia` lesson on CLI Node.js calculator.
+
+**Thoughts**: TDD and unit testing is quit fun.
+
+**Link to work**: [Cli-Calc](https://github.com/phavor/100-days-of-code-fayvor/tree/master/cli-calc)
