@@ -331,6 +331,14 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Today's Work**: Finished with `Tania Rascia` lesson on CLI Node.js calculator.
 
-**Thoughts**: TDD and unit testing is quit fun.
+**Thoughts**: TDD and unit testing is quite fun.
 
 **Link to work**: [Cli-Calc](https://github.com/phavor/100-days-of-code-fayvor/tree/master/cli-calc)
+
+### Day38 September 16, Sunday
+
+**Today's Work**: Finished with CSS-GRIDs at `freecode Camp`
+
+**Thoughts**: I see how easy it could be to build responsive layouts with `grids`. I gotta learn them.
+
+**Link to work**: [freecode Camp](https://freecodecamp.org)
