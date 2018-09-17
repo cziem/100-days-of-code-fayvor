@@ -90,4 +90,6 @@ Thanks to `Nicolas Marcora` from [codingblocks](https://codingblocks.slack.com/)
 
 ## Open-source contributions
 
-When you think of open source contribution, it's very exiciting and yet very intimidating. I kinda like the mix though.
+When you think of open source contribution, it's very exiciting and yet very intimidating. I kinda like the mix though. 
+
+So meteor is a kind of framework built on top of javascript, and there is fluxRouter, with very clean and nice syntax. Once you think of advancing your coding vocabularies, there are always a ton of choices to pick from.
