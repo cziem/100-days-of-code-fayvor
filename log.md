@@ -342,3 +342,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: I see how easy it could be to build responsive layouts with `grids`. I gotta learn them.
 
 **Link to work**: [freecode Camp](https://freecodecamp.org)
+
+### Day39 September 17, Monday
+
+**Today's Work**: Took a peek into MetoerJS
+
+**Thoughts**: Quite fascinating when you think of contributing to open source projects
+
+**Link to work**: [codebuddies](https://codebuddies.org)
