@@ -87,3 +87,7 @@ I went online to find help and it was really proving futile.
 Webpack after bundling all files serves one file from the root. The root is the `public` dir in most cases. In my case, I was trying to access some directories outside the root which webpack could not find and thus the images would not load.
 
 Thanks to `Nicolas Marcora` from [codingblocks](https://codingblocks.slack.com/) on slack for his insigthful help.
+
+## Open-source contributions
+
+When you think of open source contribution, it's very exiciting and yet very intimidating. I kinda like the mix though.
