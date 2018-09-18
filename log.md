@@ -350,3 +350,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: Quite fascinating when you think of contributing to open source projects
 
 **Link to work**: [codebuddies](https://codebuddies.org)
+
+### Day40 September 18, Tuesday
+
+**Today's Work**: Took a peek into Google Cloud Platform and APIs
+
+**Thoughts**: This has got my mind so buggled and troubled. I really don't understand a thing here yet.
+
+**Link to work**: [Google Cloud Platform](https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en_US#key-restrictions)
