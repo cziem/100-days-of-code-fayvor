@@ -358,3 +358,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: This has got my mind so buggled and troubled. I really don't understand a thing here yet.
 
 **Link to work**: [Google Cloud Platform](https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en_US#key-restrictions)
+
+### Day41 September 19, Wednesday
+
+**Today's Work**: Playing around with APIs.
+
+**Thoughts**: API is quite fun and troubling
+
+**Link to work**: [Google Cloud Platform](https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en_US#key-restrictions)
