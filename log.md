@@ -366,3 +366,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: API is quite fun and troubling
 
 **Link to work**: [Google Cloud Platform](https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en_US#key-restrictions)
+
+### Day42 September 20, Thursday
+
+**Today's Work**: Reading Docs
+
+**Thoughts**: Reading is becoming fun for me.
+
+**Link to work**: No links just reading.
