@@ -374,3 +374,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: Reading is becoming fun for me.
 
 **Link to work**: No links just reading.
+
+### Day43 September 21, Friday
+
+**Today's Work**: Implementing Authentication and Authorization
+
+**Thoughts**: node is quite a bit
+
+**Link to work**: [Quest](https://github.com/phavor/quest)
