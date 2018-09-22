@@ -382,3 +382,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: node is quite a bit
 
 **Link to work**: [Quest](https://github.com/phavor/quest)
+
+### Day44 September 22, Saturday
+
+**Today's Work**: Reading about the pitfalls of using the browser's `localStorage` to save sensitive data like `jwt token`
+
+**Thoughts**: I never like using `localStorage` to save `jwt` and thus I had to find an answer to this security risk
+
+**Link to work**: [Don't do this...](https://dev.to/rdegges/please-stop-using-local-storage-1i04)
