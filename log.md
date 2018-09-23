@@ -390,3 +390,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: I never like using `localStorage` to save `jwt` and thus I had to find an answer to this security risk
 
 **Link to work**: [Don't do this...](https://dev.to/rdegges/please-stop-using-local-storage-1i04)
+
+### Day45 September 23, Sunday
+
+**Today's Work**: There has not been light since I returned from church. I just have to read coding articles online with my phone.
+
+**Thoughts**: It's pretty damming that these power holding companies here are so callous and heartless. 
+
+**Lint to work**: There's actually none. Been reading a cross section of materials 
