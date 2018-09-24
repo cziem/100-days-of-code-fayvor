@@ -398,3 +398,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: It's pretty damming that these power holding companies here are so callous and heartless. 
 
 **Lint to work**: There's actually none. Been reading a cross section of materials 
+
+### Day46 September 24, Monday 
+
+**Today's Work**: Have been reading through the `redux` documentation. Quite simple and explanatory. 
+
+**Thoughts**: Am wondering which is better, Reacts context API or redux? 
+
+**Lint to work**: [Redux Docs](https://redux.js.org)
