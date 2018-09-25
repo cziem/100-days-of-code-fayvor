@@ -406,3 +406,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: Am wondering which is better, Reacts context API or redux? 
 
 **Lint to work**: [Redux Docs](https://redux.js.org)
+
+### Day47 September 25, Tuesday
+
+**Today's Work**: Installed redux and setup for the project.
+
+**Thoughts**: Redux happens to be a very interesting source of relief from state management nightmares.
+
+**Link to work**: [Redux Docs](https://redux.js.org)
