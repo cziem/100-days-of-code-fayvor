@@ -421,4 +421,4 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Thoughts**: It takes persistence and time to get to the destination you see.
 
-**Link to work**: [Code Sandbox](https://codesandbox.io/s/lrny6398rl)
+**Link to work**: [Code Sandbox](https://mq2z9nmq5p.codesandbox.io/)
