@@ -414,3 +414,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: Redux happens to be a very interesting source of relief from state management nightmares.
 
 **Link to work**: [Redux Docs](https://redux.js.org)
+
+### Day48 September 26, Wednesday
+
+**Today's Work**: Worked on context API today
+
+**Thoughts**: It takes persistence and time to get to the destination you see.
+
+**Link to work**: [Code Sandbox](https://codesandbox.io/s/lrny6398rl)
