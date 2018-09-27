@@ -422,3 +422,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: It takes persistence and time to get to the destination you see.
 
 **Link to work**: [Code Sandbox](https://mq2z9nmq5p.codesandbox.io/)
+
+### Day49 September 27, Thursday
+
+**Today's Work**: Continued work on context API today
+
+**Thoughts**: Cant set my mind on something right. Am just so borthered
+
+**Link to work**: [Code Sandbox](https://mq2z9nmq5p.codesandbox.io/)
