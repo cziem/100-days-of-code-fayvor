@@ -433,13 +433,19 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 ### Day50 September 28, Friday
 
-**Today's Work**: Setup my MEN App boilerplate with custom react config
+**Today's Work**: Setup my MERN App boilerplate with custom react config
 
 **Thoughts**: A happy mind creates happy results
 
 **Link to work**: we will do this later
 
+### Day51 September 29, Saturday 
 
+**Today's Work**: Finished with client side setup
+
+**Thoughts**: So annoying when you don't have light to work with. 
+
+**Link to work**: We will do this later
 
 
 
