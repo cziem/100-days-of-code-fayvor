@@ -430,3 +430,16 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: Cant set my mind on something right. Am just so borthered
 
 **Link to work**: [Code Sandbox](https://mq2z9nmq5p.codesandbox.io/)
+
+### Day50 September 28, Friday
+
+**Today's Work**: Setup my MEN App boilerplate with custom react config
+
+**Thoughts**: A happy mind creates happy results
+
+**Link to work**: we will do this later
+
+
+
+
+
