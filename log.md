@@ -318,7 +318,6 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Product Page](https://codepen.io/phavor/full/bjyNQY/)
 
-
 ### Day36 September 14, Friday
 
 **Today's Work**: Today was spent with `Tania Rascia` learning the basics of TDD with `mocha` and we built a simple `command line interface` calculator.
@@ -395,15 +394,15 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Today's Work**: There has not been light since I returned from church. I just have to read coding articles online with my phone.
 
-**Thoughts**: It's pretty damming that these power holding companies here are so callous and heartless. 
+**Thoughts**: It's pretty damming that these power holding companies here are so callous and heartless.
 
-**Lint to work**: There's actually none. Been reading a cross section of materials 
+**Lint to work**: There's actually none. Been reading a cross section of materials
 
-### Day46 September 24, Monday 
+### Day46 September 24, Monday
 
-**Today's Work**: Have been reading through the `redux` documentation. Quite simple and explanatory. 
+**Today's Work**: Have been reading through the `redux` documentation. Quite simple and explanatory.
 
-**Thoughts**: Am wondering which is better, Reacts context API or redux? 
+**Thoughts**: Am wondering which is better, Reacts context API or redux?
 
 **Lint to work**: [Redux Docs](https://redux.js.org)
 
@@ -437,15 +436,20 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Thoughts**: A happy mind creates happy results
 
-**Link to work**: we will do this later
+**Link to work**: [Mern Custom Config](https://github.com/phavor/minimal-mern-template)
 
-### Day51 September 29, Saturday 
+### Day51 September 29, Saturday
 
 **Today's Work**: Finished with client side setup
 
-**Thoughts**: So annoying when you don't have light to work with. 
+**Thoughts**: So annoying when you don't have light to work with.
 
-**Link to work**: We will do this later
+**Link to work**: [Mern Custom Config](https://github.com/phavor/minimal-mern-template)
 
+### Day52 September 30, Sunday
 
+**Today's Work**: Finished with setting up a custom boilerplate for a mern stack application.
 
+**Thoughts**: This was quite a challenge, especially with the eslint setup part. I had fun though learning a lot through the process. _I think am going to make an article on this._
+
+**Link to work**: [Mern Custom Config](https://github.com/phavor/minimal-mern-template)
