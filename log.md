@@ -450,6 +450,8 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Today's Work**: Finished with setting up a custom boilerplate for a mern stack application.
 
+![Mern Stack](./assets/images/mern_stack.png)
+
 **Thoughts**: This was quite a challenge, especially with the eslint setup part. I had fun though learning a lot through the process. _I think am going to make an article on this._
 
 **Link to work**: [Mern Custom Config](https://github.com/phavor/minimal-mern-template)
