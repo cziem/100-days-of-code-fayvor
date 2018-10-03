@@ -455,3 +455,27 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: This was quite a challenge, especially with the eslint setup part. I had fun though learning a lot through the process. _I think am going to make an article on this._
 
 **Link to work**: [Mern Custom Config](https://github.com/phavor/minimal-mern-template)
+
+### Day53 October 1, Monday
+
+**Today's Work**: Took a postgresql opensource project in the spirit of #hacktoberfest
+
+**Thoughts**: Evasive of the fact that I need a polo swag or something
+
+**Link to work**: [Cartale_api](https://github.com/tibetegya/Cartale_api)
+
+### Day54 October 2, Tuesday
+
+**Today's Work**: Setup a descriptive readme file
+
+**Thoughts**: Opensource is bae
+
+**Link to work**: [Cartale_api](https://github.com/tibetegya/Cartale_api)
+
+### Day53 October 1, Monday
+
+**Today's Work**: Setup server for the Api manipulations
+
+**Thoughts**: Postgresql is beating me around ooo
+
+**Link to work**: [Cartale_api](https://github.com/tibetegya/Cartale_api)
