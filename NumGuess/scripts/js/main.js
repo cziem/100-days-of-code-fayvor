@@ -11,7 +11,16 @@ let GAME = {
 }
 
 // Get DOM Elements
+// start button
 const startButton = document.querySelector('.start')
+const scoreElement = document.querySelector('.score')
+const displayNumber = document.querySelector('.number_display')
+const feedback = document.querySelector('.feedback')
+
+
+
+
+// Clear the page && Reset
 
 // Start Game
 const startGame = () => {
