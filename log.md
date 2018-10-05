@@ -472,10 +472,26 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Cartale_api](https://github.com/tibetegya/Cartale_api)
 
-### Day53 October 1, Monday
+### Day55 October 3, Wednesday
 
 **Today's Work**: Setup server for the Api manipulations
 
 **Thoughts**: Postgresql is beating me around ooo
 
 **Link to work**: [Cartale_api](https://github.com/tibetegya/Cartale_api)
+
+### Day56 October 4, Thursday
+
+**Today's Work**: Setup NumGuess game for Kids
+
+**Thoughts**: I would really love to animate this and help the kids get more engaged. Inspiration needed
+
+**Link to work**: [Number Guesser](https://github.com/phavor/100-days-of-code-fayvor/tree/master/NumGuess)
+
+### Day57 October 5, Friday
+
+**Today's Work**: Finish up with styling of the game.
+
+**Thoughts**: Still in need of inspiration.
+
+**Link to work**: [Number Guesser](https://github.com/phavor/100-days-of-code-fayvor/tree/master/NumGuess)
