@@ -495,3 +495,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: Still in need of inspiration.
 
 **Link to work**: [Number Guesser](https://github.com/phavor/100-days-of-code-fayvor/tree/master/NumGuess)
+
+### Day58 October 6, Saturday
+
+**Today's Work**: Start game logics for `Number Guess`
+
+**Thoughts**: In need of harmony. Letting go of so much worries at this point.
+
+**Link to work**: [Number Guesser](https://github.com/phavor/100-days-of-code-fayvor/tree/master/NumGuess)
