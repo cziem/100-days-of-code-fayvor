@@ -13,29 +13,33 @@ let GAME = {
 // Get DOM Elements
 // start button
 const startButton = document.querySelector('.start')
-const scoreElement = document.querySelector('.score')
+const scoreElement = document.querySelector('.score_box')
 const displayNumber = document.querySelector('.number_display')
 const feedback = document.querySelector('.feedback')
 
-
-
-
 // Clear the page && Reset
+
+// Show elements
+const showElements = () => {
+  scoreElement.style.display = 'flex'
+}
 
 // Start Game
 const startGame = () => {
-  GAME.isPlaying = true // Not doing anything yet
-  GAME.userNum = 0
+  showElements()
 
-  const number = GAME.generateNum()
-  const userNumber = GAME.getUserNumber()
-  console.log(number)
+  // GAME.isPlaying = true // Not doing anything yet
+  // GAME.userNum = 0
 
-  if (userNumber === number) {
-    console.log('correct')
-  } else {
-    console.log('Wrong')
-  }
+  // const number = GAME.generateNum()
+  // const userNumber = GAME.getUserNumber()
+  // console.log(number)
+
+  // if (userNumber === number) {
+  //   console.log('correct')
+  // } else {
+  //   console.log('Wrong')
+  // }
 }
 
 
