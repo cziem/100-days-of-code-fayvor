@@ -21,6 +21,7 @@ const feedback = document.querySelector('.feedback')
 // Start Game
 const startGame = () => {
   scoreBoxElement.style.display = 'flex'
+  scoreElement.textContent = GAME.score
 
   GAME.userNum = ''
   return GAME.generatedNumber = GAME.generateNum()
