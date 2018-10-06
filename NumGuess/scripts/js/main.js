@@ -12,20 +12,16 @@ let GAME = {
 }
 
 // Get DOM Elements
-// start button
 const startButton = document.querySelector('.start')
 const scoreBoxElement = document.querySelector('.score_box')
 const scoreElement = document.querySelector('.score')
 const displayNumber = document.querySelector('.number_display')
 const feedback = document.querySelector('.feedback')
 
-// Clear the page && Reset
-
 // Start Game
 const startGame = () => {
   scoreBoxElement.style.display = 'flex'
 
-  // GAME.isPlaying = true // Not doing anything yet
   GAME.userNum = ''
   return GAME.generatedNumber = GAME.generateNum()
 }
@@ -48,7 +44,7 @@ window.addEventListener('keyup', () => {
     score += 10
     scoreElement.textContent = score
   }
-  
+
   console.log('GenNum:'+ number, 'UserNum:' + userNumber)
 })
 
