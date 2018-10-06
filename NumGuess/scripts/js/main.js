@@ -43,7 +43,7 @@ window.addEventListener('keyup', () => {
     console.log('failed')
   } else {
     score += 10
-    scoreElement.textContent = score
+    scoreElement.textContent = GAME.score
   }
 
   console.log('GenNum:'+ number, 'UserNum:' + userNumber)
