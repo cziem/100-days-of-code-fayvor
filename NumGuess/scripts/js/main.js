@@ -46,7 +46,7 @@ window.addEventListener('keyup', () => {
     scoreElement.textContent = GAME.score
   }
 
-  console.log('GenNum:'+ number, 'UserNum:' + userNumber)
+  console.log('GenNum:' + number, 'UserNum:' + userNumber)
 })
 
 // Event listners
