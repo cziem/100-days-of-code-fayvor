@@ -7,7 +7,8 @@ let GAME = {
     return Math.floor(Math.random() * 10 + 1)
   },
   getUserNumber() {
-    return +this.userNum
+    // Return a number not a string.
+    return +this.userNum 
   }
 }
 
@@ -27,10 +28,22 @@ const startGame = () => {
   return GAME.generatedNumber = GAME.generateNum()
 }
 
+// Show User number
+const showNumber = number => {
+  displayNumber.textContent = number
+  displayNumber.classList.add('animate_number')
+
+  // Reset the zoom effect for every keypress
+  setTimeout(() => {
+    displayNumber.classList.remove('animate_number')  
+  }, 500);
+}
+
 // Get user number
 window.addEventListener('keypress', (e) => {
   if (e.key.match(/\d$/)) {
-    return GAME.userNum = e.key
+    GAME.userNum = e.key
+    showNumber(e.key)
   }
 })
 
