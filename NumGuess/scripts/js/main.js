@@ -7,7 +7,7 @@ let GAME = {
     return Math.floor(Math.random() * 10 + 1)
   },
   getUserNumber() {
-    return this.userNum
+    return +this.userNum
   }
 }
 
@@ -42,7 +42,7 @@ window.addEventListener('keyup', () => {
   if (number !== userNumber) {
     console.log('failed')
   } else {
-    score += 10
+    GAME.score += 10
     scoreElement.textContent = GAME.score
   }
 
