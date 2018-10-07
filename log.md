@@ -503,3 +503,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: In need of harmony. Letting go of so much worries at this point.
 
 **Link to work**: [Number Guesser](https://github.com/phavor/100-days-of-code-fayvor/tree/master/NumGuess)
+
+### Day59 October 7, Sunday
+
+**Today's Work**: Add asthetics to the game and continue building the logic
+
+**Thoughts**: There is no victory in shame.
+
+**Link to work**: [Number Guesser](https://github.com/phavor/100-days-of-code-fayvor/tree/master/NumGuess)
