@@ -1,10 +1,11 @@
 let GAME = {
   score: 0,
+  trial: 3,
   userNum: undefined,
-  isPlaying: false,
+  isPlaying: true,
   generatedNumber: null,
   generateNum() {
-    return Math.floor(Math.random() * 10 + 1)
+    return Math.floor(Math.random() * 10)
   },
   getUserNumber() {
     // Return a number not a string.
@@ -52,14 +53,30 @@ window.addEventListener('keyup', () => {
   const userNumber = GAME.getUserNumber()
   const number = GAME.generatedNumber
 
-  if (number !== userNumber) {
-    console.log('failed')
+  if (GAME.trial > 0 && GAME.isPlaying) {
+    if (number !== userNumber) {
+      GAME.trial--;
+      
+      setTimeout(() => {
+        feedback.classList.add('animate_feedback')
+        feedback.textContent = `${userNumber} is wrong! Trail: ${GAME.trial}`
+      }, 500);
+    } else {
+      GAME.score += 10
+      scoreElement.textContent = GAME.score
+      
+      setTimeout(() => {
+        feedback.classList.add('animate_feedback')
+        feedback.textContent = "Smart Chap. \u{1F6C4} ";
+      }, 400);
+    }
   } else {
-    GAME.score += 10
-    scoreElement.textContent = GAME.score
+    feedback.classList.add('animate_feedback')
+    feedback.textContent = 'Game over! The number was ' + number
+    GAME.isPlaying = false
   }
-
-  console.log('GenNum:' + number, 'UserNum:' + userNumber)
+  
+  // console.log('GenNum:' + number, 'UserNum:' + userNumber)
 })
 
 // Event listners
