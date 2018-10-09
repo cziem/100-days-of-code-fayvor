@@ -511,3 +511,19 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: There is no victory in shame.
 
 **Link to work**: [Number Guesser](https://github.com/phavor/100-days-of-code-fayvor/tree/master/NumGuess)
+
+### Day60 October 8, Monday
+
+**Today's Work**: Finished with Number guess MVP-0
+
+**Thoughts**: Quite a lot to do and you literally have no time.
+
+**Link to work**: [Number Guesser](https://github.com/phavor/100-days-of-code-fayvor/tree/master/NumGuess)
+
+### Day61 October 9, Tuesday
+
+**Today's Work**: Kickoff with Questionify
+
+**Thoughts**: Let's get handy with node and CRUD
+
+**Link to work**: [Questionify](https://github.com/phavor/questionify)
