@@ -527,3 +527,19 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: Let's get handy with node and CRUD
 
 **Link to work**: [Questionify](https://github.com/phavor/questionify)
+
+### Day62 October 10, Wednesday
+
+**Today's Work**: Add Question routes 
+
+**Thoughts**: A day of raging thoughts... can you really code efficiently with anger boiling within your mind?
+
+**Link to work**: [Questionify](https://github.com/phavor/questionify)
+
+### Day63 October 11, Thursday
+
+**Today's Work**: Technical Documentation on FCC
+
+**Thoughts**: Been a long while coming, I thought I should get closer to my first FCC certification.
+
+**Link to work**: [Codepen](https://codepen.io/phavor/pen/pOOVwK?editors=1000)
