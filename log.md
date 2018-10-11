@@ -542,4 +542,4 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Thoughts**: Been a long while coming, I thought I should get closer to my first FCC certification.
 
-**Link to work**: [Codepen](https://codepen.io/phavor/pen/pOOVwK?editors=1000)
+**Link to work**: [Codepen](https://codepen.io/phavor/full/pOOVwK/)
