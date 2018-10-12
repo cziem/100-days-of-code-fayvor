@@ -543,3 +543,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: Been a long while coming, I thought I should get closer to my first FCC certification.
 
 **Link to work**: [Codepen](https://codepen.io/phavor/full/pOOVwK/)
+
+### Day64 October 12, Friday
+
+**Today's Work**: Continue to develope the QnA endpoints
+
+**Thoughts**: Cracked the most annoying bug I've ever had while working with servers. 
+
+**Link to work**: [Questionify](https://github.com/phavor/questionify)
