@@ -551,3 +551,13 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: Cracked the most annoying bug I've ever had while working with servers. 
 
 **Link to work**: [Questionify](https://github.com/phavor/questionify)
+
+### Day65 October 13, Saturday
+
+**Today's Work**: Build a portfolio page
+
+**Thoughts**: Got my first FCC certication today. It's so exciting
+
+**Link to work**: [Codepen](https://codepen.io/phavor/full/mzBVWp/)
+
+![Web Responsiveness Certification](./assets/images/responsive_web_design_fcc.png)
