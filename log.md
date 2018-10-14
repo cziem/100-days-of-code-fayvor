@@ -530,7 +530,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 ### Day62 October 10, Wednesday
 
-**Today's Work**: Add Question routes 
+**Today's Work**: Add Question routes
 
 **Thoughts**: A day of raging thoughts... can you really code efficiently with anger boiling within your mind?
 
@@ -548,7 +548,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Today's Work**: Continue to develope the QnA endpoints
 
-**Thoughts**: Cracked the most annoying bug I've ever had while working with servers. 
+**Thoughts**: Cracked the most annoying bug I've ever had while working with servers.
 
 **Link to work**: [Questionify](https://github.com/phavor/questionify)
 
@@ -561,3 +561,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Link to work**: [Codepen](https://codepen.io/phavor/full/mzBVWp/)
 
 ![Web Responsiveness Certification](./assets/images/responsive_web_design_fcc.png)
+
+### Day66 October 14, Sunday
+
+**Today's Work**: Learning AJAX from Udacity
+
+**Thoughts**: Nothing good comes easy. You dont quit because there's a goal, but because you are thte goal.
+
+**Link to work**: [Udacity](https://udacity.com)
