@@ -569,3 +569,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: Nothing good comes easy. You dont quit because there's a goal, but because you are thte goal.
 
 **Link to work**: [Udacity](https://udacity.com)
+
+### Day67 October 15, Monday
+
+**Today's Work**: Finished with FCC's Basic Javascript and did a bit of node_jwt_auth.
+
+**Thoughts**: The best is in the test
+
+**Link to work**: FCC all the way.
