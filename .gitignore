@@ -2,3 +2,4 @@
 /portfolio/node_modules/
 /cli-calc/node_modules/
 /jwt_node_auth/node_modules/
+.env
