@@ -577,3 +577,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: The best is in the test
 
 **Link to work**: FCC all the way.
+
+### Day68 October 16, Tuesday
+
+**Today's Work**: Teaching kids to code
+
+**Thoughts**: It's so much fun seeing kids so exicted learning to code the web
+
+**Link to work**: Chill shaa... I will show you pictures
