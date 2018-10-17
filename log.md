@@ -585,3 +585,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: It's so much fun seeing kids so exicted learning to code the web
 
 **Link to work**: Chill shaa... I will show you pictures
+
+### Day69 October 17, Wednesday
+
+**Today's Work**: Contributing to OS at [Hacktoberfestinaba](https://github.com/hacktoberfestinaba)
+
+**Thoughts**: I actually love the act of code review, though I wonder how it's possible to picture contributes code in the browser... uploading a screenshot comes to mind.
+
+**Link to work**: [Hacktoberfestinaba](https://github.com/HacktoberfestinAba/HacktoberfestinAba.github.io)
