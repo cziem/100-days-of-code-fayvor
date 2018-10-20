@@ -593,3 +593,27 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: I actually love the act of code review, though I wonder how it's possible to picture contributes code in the browser... uploading a screenshot comes to mind.
 
 **Link to work**: [Hacktoberfestinaba](https://github.com/HacktoberfestinAba/HacktoberfestinAba.github.io)
+
+### Day70 October 18, Thursday
+
+**Today's Work**: Continued Contributions to OS at [Hacktoberfestinaba](https://github.com/hacktoberfestinaba)
+
+**Thoughts**: Building a community is like building friendship, you have to be ready to communicate
+
+**Link to work**: [Hacktoberfestinaba](https://github.com/HacktoberfestinAba/HacktoberfestinAba.github.io)
+
+### Day71 October 19, Friday
+
+**Today's Work**: Started work on naijaHacks2018 project with my teammates
+
+**Thoughts**: What could we build to win 1 million naira. I seriously wondered if we could pull this off. But faith is what I have, we must try even if we fail.
+
+**Link to work**: [naijaHacks-TeamSpread](https://github.com/naijahacks-TeamSpread)
+
+### Day72 October 20, Saturday
+
+**Today's Work**: Started course schema for our naijaHacks project
+
+**Thoughts**: You must believe in the impossible to be successful. 
+
+**Link to work**: [naijaHacks-TeamSpread](https://github.com/naijahacks-TeamSpread)
