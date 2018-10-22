@@ -617,3 +617,19 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: You must believe in the impossible to be successful. 
 
 **Link to work**: [naijaHacks-TeamSpread](https://github.com/naijahacks-TeamSpread)
+
+### Day73 October 21, Sunday
+
+**Today's Work**: Tried logging in new users, but it's been failing.
+
+**Thoughts**: This laptop has no respect for feelings. The way it's hanging can just kill a man.
+
+**Link to work**: [naijaHacks-TeamSpread](https://github.com/naijahacks-TeamSpread)
+
+### Day74 October 22, Monday
+
+**Today's Work**: Finished an Image upload project using multer
+
+**Thoughts**: It's amazing how helpful documentations are. I wonder why new / intermediate devs dont find it interesting.
+
+**Link to work**: [Image-Upload-Manager](https://github.com/phavor/Image-Upload-Manager)
