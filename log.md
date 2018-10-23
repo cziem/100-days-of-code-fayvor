@@ -86,7 +86,7 @@
 
 **Today's Work**: Added the `sass` support to the portfolio project
 
-**Thoughts**: Am trying to use `sass` and not `scss`, can't figure out the __test__ `regex` rule for that. Am currently writting `/\.s?css&/`
+**Thoughts**: Am trying to use `sass` and not `scss`, can't figure out the **test** `regex` rule for that. Am currently writting `/\.s?css&/`
 
 **Link to work**: [Portfolio Site](https://github.com/phavor/100-days-of-code-fayvor/tree/master/portfolio)
 
@@ -638,7 +638,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Today's Work**: Continued working on the naijahacks project.
 
-**Thoughts**: I should be in lagos for this event though.
+**Thoughts**: I should be in lagos for this event though. I did not make it, for all the reason in the world.
 
 **Link to work**: [naijaHacks-TeamSpread](https://github.com/naijahacks-TeamSpread)
 
@@ -675,12 +675,13 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Link to work**: [Crea8lab](https://crea8lab.github.io/) goto the repo [here](https://github.com/crea8lab/crea8lab.github.io)
 
 ### Day81 October 28, Sunday
+
 1
 **Today's Work**: Continued work on Crea8lab
 
 **Thoughts**: I have to start my blogpost where I write this articles in my head.
 
-**Link to work**: [Crea8lab](https://crea8lab.github.io/) -  goto the repo [here](https://github.com/crea8lab/crea8lab.github.io)
+**Link to work**: [Crea8lab](https://crea8lab.github.io/) - goto the repo [here](https://github.com/crea8lab/crea8lab.github.io)
 
 ### Day82 October 29, Monday
 
@@ -688,15 +689,15 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Thoughts**: After this hacktoberfest I really have to get deeper into open sourcing and community things
 
-**Link to work**: [Crea8lab](https://crea8lab.github.io/) -  goto the repo [here](https://github.com/crea8lab/crea8lab.github.io)
+**Link to work**: [Crea8lab](https://crea8lab.github.io/) - goto the repo [here](https://github.com/crea8lab/crea8lab.github.io)
 
 ### Day83 October 30, Tuesday
 
-**Today's Work**: Merged the projects page worked on by __Mac Anthony__
+**Today's Work**: Merged the projects page worked on by **Mac Anthony**
 
 **Thoughts**: It's fulfilling when progress is the order of the day.
 
-**Link to work**: [Crea8lab](https://crea8lab.github.io/) -  goto the repo [here](https://github.com/crea8lab/crea8lab.github.io)
+**Link to work**: [Crea8lab](https://crea8lab.github.io/) - goto the repo [here](https://github.com/crea8lab/crea8lab.github.io)
 
 ### Day84 October 31, Wednesday
 
