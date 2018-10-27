@@ -633,3 +633,45 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: It's amazing how helpful documentations are. I wonder why new / intermediate devs dont find it interesting.
 
 **Link to work**: [Image-Upload-Manager](https://github.com/phavor/Image-Upload-Manager)
+
+### Day75 October 23, Tuesday
+
+**Today's Work**: Continued working on the naijahacks project.
+
+**Thoughts**: I should be in lagos for this event though.
+
+**Link to work**: [naijaHacks-TeamSpread](https://github.com/naijahacks-TeamSpread)
+
+### Day76 October 24, Wednesday
+
+**Today's Work**: Started styling crea8lab project
+
+**Thoughts**: Am thinking I should OS this project.
+
+**Link to work**: [Crea8lab](https://crea8lab.github.io/)
+
+### Day77 October 25, Thursday
+
+**Today's Work**: Ensured mobile responsiveness of the header
+
+**Thoughts**: Am thinking I should OS this project.
+
+**Link to work**: [Crea8lab](https://crea8lab.github.io/)
+
+### Day78 October 25, Friday
+
+**Today's Work**: Finally OS'd this project and it's working out fine
+
+**Thoughts**: I have exceed requirements for getting my Hacktoberfest T-shirt, I should help my mates get theirs
+
+**Link to work**: [Crea8lab](https://crea8lab.github.io/) goto the repo [here](https://github.com/crea8lab/crea8lab.github.io)
+
+### Day79 October 26, Saturday
+
+**Today's Work**: Working on code review for the crea8lab project
+
+**Thoughts**: Reviewing code and ensuring that standards are followed takes time, patience and a lot of community work on the reviewers part.
+
+**Link to work**: [Crea8lab](https://crea8lab.github.io/) goto the repo [here](https://github.com/crea8lab/crea8lab.github.io)
+
+
