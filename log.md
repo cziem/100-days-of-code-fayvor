@@ -614,7 +614,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Today's Work**: Started course schema for our naijaHacks project
 
-**Thoughts**: You must believe in the impossible to be successful. 
+**Thoughts**: You must believe in the impossible to be successful.
 
 **Link to work**: [naijaHacks-TeamSpread](https://github.com/naijahacks-TeamSpread)
 
@@ -674,4 +674,10 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Crea8lab](https://crea8lab.github.io/) goto the repo [here](https://github.com/crea8lab/crea8lab.github.io)
 
+### Day80 October 27, Sunday
 
+**Today's Work**: Continued work on Crea8lab
+
+**Thoughts**: I have to start my blogpost where I write this articles in my head.
+
+**Link to work**: [Crea8lab](https://crea8lab.github.io/) -  goto the repo [here](https://github.com/crea8lab/crea8lab.github.io)
