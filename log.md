@@ -658,7 +658,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Crea8lab](https://crea8lab.github.io/)
 
-### Day78 October 25, Friday
+### Day78 October 26, Friday
 
 **Today's Work**: Finally OS'd this project and it's working out fine
 
@@ -666,7 +666,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Crea8lab](https://crea8lab.github.io/) goto the repo [here](https://github.com/crea8lab/crea8lab.github.io)
 
-### Day79 October 26, Saturday
+### Day79 October 27, Saturday
 
 **Today's Work**: Working on code review for the crea8lab project
 
@@ -674,10 +674,26 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Crea8lab](https://crea8lab.github.io/) goto the repo [here](https://github.com/crea8lab/crea8lab.github.io)
 
-### Day80 October 27, Sunday
+### Day80 October 28, Sunday
 
 **Today's Work**: Continued work on Crea8lab
 
 **Thoughts**: I have to start my blogpost where I write this articles in my head.
+
+**Link to work**: [Crea8lab](https://crea8lab.github.io/) -  goto the repo [here](https://github.com/crea8lab/crea8lab.github.io)
+
+### Day81 October 29, Monday
+
+**Today's Work**: Continued work on Crea8lab
+
+**Thoughts**: After this hacktoberfest I really have to get deeper into open sourcing and community things
+
+**Link to work**: [Crea8lab](https://crea8lab.github.io/) -  goto the repo [here](https://github.com/crea8lab/crea8lab.github.io)
+
+### Day82 October 30, Tuesday
+
+**Today's Work**: Merged the projects page worked on by __Mac Anthony__
+
+**Thoughts**: It's fulfilling when progress is the order of the day.
 
 **Link to work**: [Crea8lab](https://crea8lab.github.io/) -  goto the repo [here](https://github.com/crea8lab/crea8lab.github.io)
