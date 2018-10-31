@@ -697,3 +697,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: It's fulfilling when progress is the order of the day.
 
 **Link to work**: [Crea8lab](https://crea8lab.github.io/) -  goto the repo [here](https://github.com/crea8lab/crea8lab.github.io)
+
+### Day83 October 31, Wednesday 
+
+**Today's Work**: Spent some time with my IT report and logbook
+
+**Thoughts**: I accepted a work today
+
+**Link to work**: :like:
