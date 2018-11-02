@@ -698,10 +698,26 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Crea8lab](https://crea8lab.github.io/) -  goto the repo [here](https://github.com/crea8lab/crea8lab.github.io)
 
-### Day83 October 31, Wednesday 
+### Day83 October 31, Wednesday
 
 **Today's Work**: Spent some time with my IT report and logbook
 
 **Thoughts**: I accepted a work today
 
-**Link to work**: :like:
+**Link to work**: 👍
+
+### Day84 November 1, Thursday
+
+**Today's Work**: Bought a new system, and setting up linux. Meanwhile I did some code review today.
+
+**Thoughts**: Nothing is better than a free mind.
+
+**Link to work**: 👍
+
+### Day85 November 2, Friday
+
+**Today's Work**: Finished installing ubuntu and manjaro on my new system.
+
+**Thoughts**: Set to do some real work.
+
+**Link to work**: 👍
