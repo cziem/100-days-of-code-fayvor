@@ -721,3 +721,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: Set to do some real work.
 
 **Link to work**: 👍
+
+### Day86 November 3, Saturday
+
+**Today's Work**: Read professional bash scripting from [goalkicker.com](https://goalkicker.com)
+
+**Thoughts**: Understanding the basics of linux is paramount to programming success
+
+**Link to work**: [goalkicker.com](https://goalkicker.com)
