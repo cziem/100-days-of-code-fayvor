@@ -729,3 +729,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: Understanding the basics of linux is paramount to programming success
 
 **Link to work**: [goalkicker.com](https://goalkicker.com)
+
+### Day87 November 4, Saturday
+
+**Today's Work**: Read more on professional bash scripting from [goalkicker.com](https://goalkicker.com)
+
+**Thoughts**: What would it take to be a hacker?
+
+**Link to work**: [goalkicker.com](https://goalkicker.com)
