@@ -326,3 +326,9 @@ We can use the `hyphen` to indicate a range of characters
 ```js
 let bgRegex = /[a-e]at/;
 ```
+
+### Negated character set
+
+To negate a character set  we use the caret symbol `^`
+for example `/[^aeiou]/gi`
+
