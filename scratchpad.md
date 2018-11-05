@@ -332,3 +332,5 @@ let bgRegex = /[a-e]at/;
 To negate a character set  we use the caret symbol `^`
 for example `/[^aeiou]/gi`
 
+To match 1 or more times use `+`
+To match 0 or more times use `*`
