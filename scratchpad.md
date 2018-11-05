@@ -342,3 +342,17 @@ A `lazy` match finds the smallest possible part of the string that satisfies the
 
 Regular expressions by default are `greedy`. For example  `/t[a-z]*i/` would return `titani`
 To change it to a `lazy` search we use `?`; `/t[a-z]*?i/` returns `ti`
+
+#### Greedy
+```js
+let text = "<h1>Winter is coming</h1>";
+let myRegex = /<.*>/; // Change this line
+let result = text.match(myRegex);
+```
+
+#### Lazy
+```js
+let text = "<h1>Winter is coming</h1>";
+let myRegex = /<.*?>/; // Change this line
+let result = text.match(myRegex);
+```
