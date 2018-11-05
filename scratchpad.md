@@ -296,3 +296,27 @@ To search or extract a pattern more than once we use the `g` flag.
 let testString = /goglobal go/g
 ```
 
+### Wildcards
+
+Wildcards help us match every character before or after.
+
+```js
+let string = ["match", "patch", "catch", "batch"]
+let testString = /.tch/ig  // this will match every letter before the tch.
+```
+
+### Character classes
+
+character classes allow you to define a group of characters you wish to match by placing them within a square bracket `[ ]`.
+
+```js
+let bigStr = "big";
+let bagStr = "bag";
+let bugStr = "bug";
+let bogStr = "bog";
+let bgRegex = /b[aiu]g/;
+bigStr.match(bgRegex); // Returns ["big"]
+bagStr.match(bgRegex); // Returns ["bag"]
+bugStr.match(bgRegex); // Returns ["bug"]
+bogStr.match(bgRegex); // Returns null
+```
