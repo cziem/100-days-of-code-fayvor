@@ -737,3 +737,19 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: What would it take to be a hacker?
 
 **Link to work**: [goalkicker.com](https://goalkicker.com)
+
+### Day88 November 5, Sunday
+
+**Today's work**: Go live with MERN article
+
+**Thoughts**: I have to take my writting skills to the next level.
+
+**Link to work**: [Creating MERN boilerplate](https://medium.com/ignyte/create-a-mern-app-boilerplate-a2487d336e87)
+
+### Day89 November 6, Monday
+
+**Today's Work**: Take up some challenges on fCC
+
+**Thoughts**: I need to finish up my 100DaysOfCode with atleast 2 certifications
+
+**Link to work**: [FCC](https://freecodecamp.org)
