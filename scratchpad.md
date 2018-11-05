@@ -258,3 +258,41 @@ Consider the following example. Imagine that math_array_functions has about 20 f
 ```js
 import { countItem } from 'math_array_functions'
 ```
+
+### REGEX
+
+Regex is a pattern match finder, it helps to search for specifics params
+
+Using the `OR` for a more inclusive search
+
+```js
+let testString = /yes|no|maybe/
+```
+
+To ignore casing we use `i` flag. Like so:
+
+```js
+let testString = /inGnoreMe/i
+```
+
+### Methods
+
+* __test()__: This allows you to test if a string is part of or is included in a string
+
+* __match()__: This allows you to extract the actual matches you find from testing against a regex.
+
+```js
+"Hello, World!".match(/Hello/);
+// Returns ["Hello"]
+let ourStr = "Regular expressions";
+let ourRegex = /expressions/;
+ourStr.match(ourRegex);
+// Returns ["expressions"]
+```
+
+To search or extract a pattern more than once we use the `g` flag.
+
+```js
+let testString = /goglobal go/g
+```
+
