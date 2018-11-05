@@ -334,3 +334,11 @@ for example `/[^aeiou]/gi`
 
 To match 1 or more times use `+`
 To match 0 or more times use `*`
+
+### Greedy vs Lazy match
+
+A `greedy` match finds the longest possible part of a string that fits the regex pattern and returns it as a match.
+A `lazy` match finds the smallest possible part of the string that satisfies the regex pattern.
+
+Regular expressions by default are `greedy`. For example  `/t[a-z]*i/` would return `titani`
+To change it to a `lazy` search we use `?`; `/t[a-z]*?i/` returns `ti`
