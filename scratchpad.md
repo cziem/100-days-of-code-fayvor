@@ -320,3 +320,9 @@ bagStr.match(bgRegex); // Returns ["bag"]
 bugStr.match(bgRegex); // Returns ["bug"]
 bogStr.match(bgRegex); // Returns null
 ```
+
+We can use the `hyphen` to indicate a range of characters
+
+```js
+let bgRegex = /[a-e]at/;
+```
