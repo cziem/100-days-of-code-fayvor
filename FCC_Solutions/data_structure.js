@@ -22,3 +22,30 @@ function getTempOfTmrw(avgTemperatures) {
 }
 
 console.log(getTempOfTmrw(AVG_TEMPERATURES)); // should be 79
+
+// Nested Destructring
+const LOCAL_FORECAST = {
+  today: { min: 72, max: 83 },
+  tomorrow: { min: 73.3, max: 84.6 }
+};
+
+function getMaxOfTmrw(forecast) {
+  "use strict";
+  // change code below this line
+  const { tomorrow : { max: maxOfTomorrow }  } = forecast; // change this line
+  // change code above this line
+  return maxOfTomorrow;
+}
+
+console.log(getMaxOfTmrw(LOCAL_FORECAST)); // should be 84.6
+
+// Variable Swapping
+let a = 8, b = 6;
+(() => {
+  "use strict";
+  // change code below this line
+  [b, a] = [a, b] // I didnt need a const or let on the left side
+  // change code above this line
+})();
+console.log(a); // should be 6
+console.log(b); // should be 8
