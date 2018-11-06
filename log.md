@@ -753,3 +753,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: I need to finish up my 100DaysOfCode with atleast 2 certifications
 
 **Link to work**: [FCC](https://freecodecamp.org)
+
+### Day90 November 7, Tuesday
+
+**Today's Work**: Finised Regex course on FCC
+
+**Thoughts**: I love the way FCC teaches the almighty scary regex.
+
+**Link to work**: [FCC](https://freecodecamp.org)
