@@ -432,3 +432,28 @@ let sampleWord = "astronaut";
 let pwRegex = /(?=\w{5,})(?=\D*\d{2})/; // Change this line
 let result = pwRegex.test(sampleWord);
 ```
+
+### Capture Groups
+
+Capture groups are used to search for repeat substrings. Put the search param into a `(` `)` paranthesis.
+You put the regex of the pattern that will repeat in between the parentheses.
+
+To specify where that repeat string will appear, you use a backslash `(\)` and then a number. This number starts at 1 and increases with each additional capture group you use. An example would be `\1` to match the first group.
+
+```js
+let repeatNum = "42 42 42";
+let reRegex = /^(\d+)\s\1\s\1$/; // Change this line
+let result = reRegex.test(repeatNum);
+```
+
+### Replace
+
+The replace method is used to find some patterns and replace it with the second argument
+
+`replace(regex, replaceString)`
+
+```js
+let hello = "   Hello, World!  ";
+let wsRegex = /(^\s+)|(\s+$)/g; // Change this line
+let result = hello.replace(wsRegex, ''); // Change this line
+```
