@@ -394,3 +394,14 @@ let username = "JackOfAllTrades";
 let userCheck = /^[a-z]{2,}\d*$/i; // Change this line
 let result = userCheck.test(username);
 ```
+
+### Quantity Specifiers
+
+Quantity specifiers are used with curly brackets (`{` and `}`). You put two numbers between the curly brackets - for the lower and upper number of patterns.
+
+```js
+let multipleA = /a{3,5}h/;
+```
+
+Specify only `lower number` provide the lower field like this `{3,}`
+Specify exact number === `{3}`
