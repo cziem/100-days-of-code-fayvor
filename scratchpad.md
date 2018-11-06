@@ -356,3 +356,15 @@ let text = "<h1>Winter is coming</h1>";
 let myRegex = /<.*?>/; // Change this line
 let result = text.match(myRegex);
 ```
+
+Outside of a `character set` the `caret` is used to search for patterns at the beginning of strings.
+
+```js
+let firstRegex = /^Ricky/;
+```
+
+To search for patterns at the end of strings we use the `$` sign.
+
+```js
+let storyRegex = /story$/;
+```
