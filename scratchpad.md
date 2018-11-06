@@ -375,3 +375,20 @@ let storyRegex = /story$/;
 * __/\W/__ - opposite of `/\w\` to match all non-alphanum characters === `/[^A-Za-z0-9]/`
 * __/\d/__ - match all numbers === `/[0-9]/`
 * __/\D/__ - match all non-numbers === `/[^0-9]/`
+
+
+### Username Test
+
+Restrictions:
+
+1. The only numbers in the username have to be at the end. There can be zero or more of them at the end.
+
+2. Username letters can be lowercase and uppercase.
+
+3. Usernames have to be at least two characters long. A two-letter username can only use alphabet letter characters.
+
+```js
+let username = "JackOfAllTrades";
+let userCheck = /^[a-z]{2,}\d*$/i; // Change this line
+let result = userCheck.test(username);
+```
