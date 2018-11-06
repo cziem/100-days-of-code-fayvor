@@ -405,3 +405,12 @@ let multipleA = /a{3,5}h/;
 
 Specify only `lower number` provide the lower field like this `{3,}`
 Specify exact number === `{3}`
+
+
+### Test All or None
+
+You can specify the possible existence of an element with a question mark, `?`. This checks for zero or one of the preceding element. You can think of this symbol as saying the previous element is optional.
+
+```js
+let rainbowRegex= /colou?r/; // here the letter u is optional
+```
