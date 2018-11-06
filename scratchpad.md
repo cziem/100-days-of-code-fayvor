@@ -368,3 +368,10 @@ To search for patterns at the end of strings we use the `$` sign.
 ```js
 let storyRegex = /story$/;
 ```
+
+### Shortcuts
+
+* __/\w/__ - match all alphanumeric characters === `/[A-Za-z0-9_/`
+* __/\W/__ - opposite of `/\w\` to match all non-alphanum characters === `/[^A-Za-z0-9]/`
+* __/\d/__ - match all numbers === `/[0-9]/`
+* __/\D/__ - match all non-numbers === `/[^0-9]/`
