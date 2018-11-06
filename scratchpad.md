@@ -375,6 +375,8 @@ let storyRegex = /story$/;
 * __/\W/__ - opposite of `/\w\` to match all non-alphanum characters === `/[^A-Za-z0-9]/`
 * __/\d/__ - match all numbers === `/[0-9]/`
 * __/\D/__ - match all non-numbers === `/[^0-9]/`
+* __/\s/__ - match all whitespace, carriage return, newline, form feed and tab === `/[ \r\t\n\v\f]/`
+* __/\S/__ - match all non-whitespace, and other that `/\s/` matches === `/[^ \r\t\n\v\f]/`
 
 
 ### Username Test
