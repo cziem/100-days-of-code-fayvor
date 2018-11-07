@@ -277,9 +277,9 @@ let testString = /inGnoreMe/i
 
 ### Methods
 
-* __test()__: This allows you to test if a string is part of or is included in a string
+- __test()__: This allows you to test if a string is part of or is included in a string
 
-* __match()__: This allows you to extract the actual matches you find from testing against a regex.
+- __match()__: This allows you to extract the actual matches you find from testing against a regex.
 
 ```js
 "Hello, World!".match(/Hello/);
@@ -344,6 +344,7 @@ Regular expressions by default are `greedy`. For example  `/t[a-z]*i/` would ret
 To change it to a `lazy` search we use `?`; `/t[a-z]*?i/` returns `ti`
 
 #### Greedy
+
 ```js
 let text = "<h1>Winter is coming</h1>";
 let myRegex = /<.*>/; // Change this line
@@ -351,6 +352,7 @@ let result = text.match(myRegex);
 ```
 
 #### Lazy
+
 ```js
 let text = "<h1>Winter is coming</h1>";
 let myRegex = /<.*?>/; // Change this line
@@ -371,13 +373,12 @@ let storyRegex = /story$/;
 
 ### Shortcuts
 
-* __/\w/__ - match all alphanumeric characters === `/[A-Za-z0-9_/`
-* __/\W/__ - opposite of `/\w\` to match all non-alphanum characters === `/[^A-Za-z0-9]/`
-* __/\d/__ - match all numbers === `/[0-9]/`
-* __/\D/__ - match all non-numbers === `/[^0-9]/`
-* __/\s/__ - match all whitespace, carriage return, newline, form feed and tab === `/[ \r\t\n\v\f]/`
-* __/\S/__ - match all non-whitespace, and other that `/\s/` matches === `/[^ \r\t\n\v\f]/`
-
+- __/\w/__ - match all alphanumeric characters === `/[A-Za-z0-9_/`
+- __/\W/__ - opposite of `/\w\` to match all non-alphanum characters === `/[^A-Za-z0-9]/`
+- __/\d/__ - match all numbers === `/[0-9]/`
+- __/\D/__ - match all non-numbers === `/[^0-9]/`
+- __/\s/__ - match all whitespace, carriage return, newline, form feed and tab === `/[ \r\t\n\v\f]/`
+- __/\S/__ - match all non-whitespace, and other that `/\s/` matches === `/[^ \r\t\n\v\f]/`
 
 ### Username Test
 
@@ -405,7 +406,6 @@ let multipleA = /a{3,5}h/;
 
 Specify only `lower number` provide the lower field like this `{3,}`
 Specify exact number === `{3}`
-
 
 ### Test All or None
 

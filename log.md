@@ -761,3 +761,19 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: I love the way FCC teaches the almighty scary regex.
 
 **Link to work**: [FCC](https://freecodecamp.org)
+
+### Day91 November 8, Wednesday
+
+**Today's Work**: Worked on Debugging project from FCC
+
+**Thoughts**: Now things are looking up
+
+**Link to work**: [FCC](https://freecodecamp.org)
+
+### Day92 November 9, Thursday
+
+**Today's Work**: Went to Genesis to have some fun with the team
+
+**Thoughts**: Not ready for some jokes now.
+
+**Link to work**: Just chill for a sec.
