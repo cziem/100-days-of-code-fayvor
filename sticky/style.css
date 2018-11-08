@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero {
+  background: url('../assets/images/ext.jpeg');
+  background-size: cover;
+  background-position: center center;
+  height: 20rem;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7)
+}
+
+.overlay h2 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 3rem;
+}
