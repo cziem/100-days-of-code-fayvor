@@ -730,7 +730,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [goalkicker.com](https://goalkicker.com)
 
-### Day87 November 4, Saturday
+### Day87 November 4, Sunday
 
 **Today's Work**: Read more on professional bash scripting from [goalkicker.com](https://goalkicker.com)
 
@@ -738,7 +738,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [goalkicker.com](https://goalkicker.com)
 
-### Day88 November 5, Sunday
+### Day88 November 5, Monday
 
 **Today's work**: Go live with MERN article
 
@@ -746,7 +746,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Creating MERN boilerplate](https://medium.com/ignyte/create-a-mern-app-boilerplate-a2487d336e87)
 
-### Day89 November 6, Monday
+### Day89 November 6, Tuesday
 
 **Today's Work**: Take up some challenges on fCC
 
@@ -754,7 +754,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [FCC](https://freecodecamp.org)
 
-### Day90 November 7, Tuesday
+### Day90 November 7, Wednesday
 
 **Today's Work**: Finised Regex course on FCC
 
@@ -762,7 +762,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [FCC](https://freecodecamp.org)
 
-### Day91 November 8, Wednesday
+### Day91 November 8, Tursday
 
 **Today's Work**: Worked on Debugging project from FCC
 
@@ -770,7 +770,15 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [FCC](https://freecodecamp.org)
 
-### Day92 November 9, Thursday
+### Day92 November 9, Friday
+
+**Today's Work**: Went to Genesis to have some fun with the team
+
+**Thoughts**: Not ready for some jokes now.
+
+**Link to work**: Just chill for a sec.
+
+### Day93 November 10, Saturday
 
 **Today's Work**: Went to Genesis to have some fun with the team
 
