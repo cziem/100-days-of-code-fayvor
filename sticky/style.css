@@ -28,3 +28,9 @@ body {
   text-transform: capitalize;
   font-size: 3rem;
 }
+
+nav {
+  display: flex;
+  background: #0e496b;
+}
+
