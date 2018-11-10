@@ -202,3 +202,23 @@ bouncer([7, "ate", "", false, 9]);
 function bouncer(arr) {
   return arr.filter(Boolean);
 }
+
+// where do i belong
+function getIndexToIns(arr, num) {
+  arr.push(num);
+  arr.sort(function (a, b) { return a - b });
+  return arr.indexOf(num);
+}
+
+// method 2
+function getIndexToIns(arr, num) {
+  // Find my place in this sorted array.
+  var times = arr.length; // runs the for loop once for each thing in the array
+  var count = 0;
+  for (var i = 0; i < times; i++) {
+    if (num > arr[i]) { count++; }
+  } // counts how many array numbers are smaller than num
+  return count; // the above equals num's position in a sorted array
+}
+
+getIndexToIns([40, 60], 50);
