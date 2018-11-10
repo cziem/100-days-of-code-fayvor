@@ -184,3 +184,16 @@ function frankenSplice(arr1, arr2, n) {
   }
   return localArray;
 }
+
+// falsey bouncer
+function bouncer(arr) {
+  // Don't show a false ID to this bouncer.
+  let falseyArr = arr.filter(falsey => {
+    if (falsey) {
+      return falsey;
+    }
+  });
+  return falseyArr;
+}
+
+bouncer([7, "ate", "", false, 9]);
