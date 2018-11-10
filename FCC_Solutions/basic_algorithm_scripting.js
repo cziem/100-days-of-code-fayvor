@@ -71,3 +71,105 @@ function largestOfFour(arr) {
 
   return largeArr;
 }
+
+// Confirm ending
+function confirmEnding(str, target) {
+  // "Never give up and good luck will find you."
+  // -- Falcor
+  let last = str.split('').length - 1;
+
+  return str[last] === target ? true : false;
+}
+
+confirmEnding("Bastian", "n");
+
+// method 2
+function confirmEnding(str, target) {
+  // "Never give up and good luck will find you."
+  // -- Falcor
+
+  return str.slice(str.length - target.length) === target;
+}
+
+confirmEnding("He has to give me a new name", "name");
+
+// reeat str
+function repeatStringNumTimes(str, num) {
+  var accumulatedStr = '';
+
+  while (num > 0) {
+    accumulatedStr += str;
+    num--;
+  }
+
+  return accumulatedStr;
+}
+
+// method 2
+function repeatStringNumTimes(str, num) {
+  if (num < 0)
+    return "";
+  if (num === 1)
+    return str;
+  else
+    return str + repeatStringNumTimes(str, num - 1);
+}
+
+// method 3
+function repeatStringNumTimes(str, num) {
+  return num > 0 ? str.repeat(num) : '';
+}
+
+repeatStringNumTimes("abc", 3);
+
+// Truncate a String
+function truncateString(str, num) {
+  // Clear out that junk in your trunk
+  if (str.length > num && num > 3) {
+    return str.slice(0, (num - 3)) + '...';
+  } else if (str.length > num && num <= 3) {
+    return str.slice(0, num) + '...';
+  } else {
+    return str;
+  }
+
+}
+
+// method 2
+function truncateString(str, num) {
+  if (str.length <= num) {
+    return str;
+  } else {
+    return str.slice(0, num > 3 ? num - 3 : num) + '...';
+  }
+}
+
+// fineder keepers
+function findElement(arr, func) {
+  let num = 0;
+  for (let i = 0; i < arr.length; i++) {
+    num = arr[i];
+    if (func(num)) {
+      return num;
+    }
+  }
+  return undefined;
+}
+
+findElement([1, 2, 3, 4], num => num % 2 === 0);
+
+// Title capitalize
+function titleCase(str) {
+  var convertToArray = str.toLowerCase().split(" ");
+  var result = convertToArray.map(function (val) {
+    return val.replace(val.charAt(0), val.charAt(0).toUpperCase());
+  });
+  return result.join(" ");
+}
+
+titleCase("I'm a little tea pot");
+
+// method 2
+function titleCase(str) {
+  return str.toLowerCase().replace(/(^|\s)\S/g, (L) => L.toUpperCase());
+}
