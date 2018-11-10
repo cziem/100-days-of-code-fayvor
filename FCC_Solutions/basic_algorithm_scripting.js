@@ -197,3 +197,8 @@ function bouncer(arr) {
 }
 
 bouncer([7, "ate", "", false, 9]);
+
+// method 2
+function bouncer(arr) {
+  return arr.filter(Boolean);
+}
