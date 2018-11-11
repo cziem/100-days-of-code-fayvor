@@ -101,3 +101,28 @@ section p {
   line-height: 1.8;
   text-align: justify;
 }
+
+footer {
+  background: #032d46;
+  color: #010b11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 8rem;
+  border-top: 2px solid #041a27;
+}
+
+.logo_footer {
+  padding-bottom: .5rem;
+}
+
+.logo_footer span {
+  color: #f3f3f3;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: #cccecf;
+}
