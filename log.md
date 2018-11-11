@@ -785,3 +785,11 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: Not ready for some jokes now.
 
 **Link to work**: Just chill for a sec.
+
+### Day94 November 11, Sunday
+
+**Today's Work**: Continued with Basic algorithm at FCC
+
+**Thoughts**: Building a community is bugging me like this.
+
+**Link to work**: [FCC](https://freecodecamp.org) 
