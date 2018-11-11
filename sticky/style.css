@@ -87,3 +87,17 @@ body.fixed_nav nav {
   box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
 }
 
+section {
+  padding: .5rem 2rem;
+  margin: 1rem auto;
+  color: #272727;
+}
+
+section h3 {
+  padding: 2rem 0 0.5rem;
+}
+
+section p {
+  line-height: 1.8;
+  text-align: justify;
+}
