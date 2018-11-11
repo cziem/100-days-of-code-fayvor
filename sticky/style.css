@@ -5,6 +5,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background: #f3f3f3;
 }
 
 .hero {
@@ -32,6 +33,57 @@ body {
 nav {
   display: flex;
   background: #0e496b;
+  width: 100%;
+  position: relative;
 }
 
-5DRL8N1
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 5vw;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+
+li:hover {
+  color: aliceblue;
+  background: #032d46;
+}
+
+li.logo {
+  max-width: 0;
+  overflow: hidden;
+  background: #faf3f3;
+  transition: all 0.5s;
+  font-size: 1.3rem;
+}
+
+li.logo span {
+  font-weight: 600;
+  color: #02121b;
+  text-transform: capitalize;
+}
+
+li.logo:hover {
+  background: #032d46;
+}
+
+
+/* FIXED NAV */
+.fixed_nav li.logo {
+  max-width: 500px;
+}
+
+body.fixed_nav nav {
+  position: fixed;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
