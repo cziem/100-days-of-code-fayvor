@@ -788,8 +788,8 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 ### Day94 November 11, Sunday
 
-**Today's Work**: Continued with Basic algorithm at FCC
+**Today's Work**: Continued with Basic algorithm at FCC and finished the sticky navbar project.
 
 **Thoughts**: Building a community is bugging me like this.
 
-**Link to work**: [FCC](https://freecodecamp.org) 
+**Link to work**: [FCC](https://freecodecamp.org), [Sticky Navbar](https://github.com/phavor/100-days-of-code-fayvor/tree/master/sticky)
