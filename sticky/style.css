@@ -64,6 +64,8 @@ li.logo {
   background: #faf3f3;
   transition: all 0.5s;
   font-size: 1.3rem;
+  transition: all .3s ease-in-out;
+  transform: translateX(-80px)
 }
 
 li.logo span {
@@ -76,15 +78,17 @@ li.logo:hover {
   background: #032d46;
 }
 
-
 /* FIXED NAV */
 .fixed_nav li.logo {
   max-width: 500px;
+  display: inline-flex;
+  transform: translateX(0)
 }
 
 body.fixed_nav nav {
   position: fixed;
   box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
+  top: 0; /* Very important line */
 }
 
 section {
@@ -102,6 +106,7 @@ section p {
   text-align: justify;
 }
 
+/* Styling the footer */
 footer {
   background: #032d46;
   color: #010b11;
