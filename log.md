@@ -793,3 +793,35 @@ So I think of laying out something really simple like this ![awesome layout](./a
 **Thoughts**: Building a community is bugging me like this.
 
 **Link to work**: [FCC](https://freecodecamp.org), [Sticky Navbar](https://github.com/phavor/100-days-of-code-fayvor/tree/master/sticky)
+
+### Day95 November 12, Monday
+
+**Today's Work**: Finished the FCC Basic algorithm
+
+**Thoughts**: Wishing I could get this certification before I finish this 100days round 1
+
+**Link to work**: [FCC](https://freecodecamp.org)
+
+### Day96 November 13, Tuesday
+
+**Today's Work**: Started Object Oriented Programming
+
+**Thoughts**: OOP is quite a geek.
+
+**Link to work**: [FCC](https://freecodecamp.org)
+
+### Day97 November 14, Wednesday
+
+**Today's Work**: Started Functional Programming
+
+**Thoughts**: Pure functions don't have side effects.
+
+**Link to work**: [FCC](https://freecodecamp.org)
+
+### Day98 November 14, Thursday
+
+**Today's Work**: Did some work on the crea8lab project
+
+**Thoughts**: Worked with window scroll events.
+
+**Link to work**: [Crea8lab](https://crea8lab.github.io/contact_us.html)
