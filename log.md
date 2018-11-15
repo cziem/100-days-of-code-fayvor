@@ -294,7 +294,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Product Page](https://codepen.io/phavor/full/bjyNQY/)
 
-### Day33 September 11, Tuesday
+### Day34 September 11, Tuesday
 
 **Today's Work**: Continuing with the product app project from FCC
 
@@ -302,7 +302,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Product Page](https://codepen.io/phavor/full/bjyNQY/)
 
-### Day34 September 12, Wednesday
+### Day35 September 12, Wednesday
 
 **Today's Work**: Worked on UI designs of the product page from FCC
 
@@ -310,7 +310,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Product Page](https://codepen.io/phavor/full/bjyNQY/)
 
-### Day35 September 13, Thursday
+### Day36 September 13, Thursday
 
 **Today's Work**: Finished up the UI and Mobile responsiveness on the product page FCC project
 
@@ -318,7 +318,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Product Page](https://codepen.io/phavor/full/bjyNQY/)
 
-### Day36 September 14, Friday
+### Day37 September 14, Friday
 
 **Today's Work**: Today was spent with `Tania Rascia` learning the basics of TDD with `mocha` and we built a simple `command line interface` calculator.
 
@@ -326,7 +326,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Cli-Calc](https://github.com/phavor/100-days-of-code-fayvor/tree/master/cli-calc)
 
-### Day37 September 15, Saturday
+### Day38 September 15, Saturday
 
 **Today's Work**: Finished with `Tania Rascia` lesson on CLI Node.js calculator.
 
@@ -334,7 +334,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Cli-Calc](https://github.com/phavor/100-days-of-code-fayvor/tree/master/cli-calc)
 
-### Day38 September 16, Sunday
+### Day39 September 16, Sunday
 
 **Today's Work**: Finished with CSS-GRIDs at `freecode Camp`
 
@@ -342,7 +342,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [freecode Camp](https://freecodecamp.org)
 
-### Day39 September 17, Monday
+### Day40 September 17, Monday
 
 **Today's Work**: Took a peek into MetoerJS
 
@@ -350,7 +350,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [codebuddies](https://codebuddies.org)
 
-### Day40 September 18, Tuesday
+### Day41 September 18, Tuesday
 
 **Today's Work**: Took a peek into Google Cloud Platform and APIs
 
@@ -358,7 +358,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Google Cloud Platform](https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en_US#key-restrictions)
 
-### Day41 September 19, Wednesday
+### Day42 September 19, Wednesday
 
 **Today's Work**: Playing around with APIs.
 
@@ -366,7 +366,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Google Cloud Platform](https://developers.google.com/maps/documentation/javascript/get-api-key?hl=en_US#key-restrictions)
 
-### Day42 September 20, Thursday
+### Day43 September 20, Thursday
 
 **Today's Work**: Reading Docs
 
@@ -374,7 +374,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: No links just reading.
 
-### Day43 September 21, Friday
+### Day44 September 21, Friday
 
 **Today's Work**: Implementing Authentication and Authorization
 
@@ -382,7 +382,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Quest](https://github.com/phavor/quest)
 
-### Day44 September 22, Saturday
+### Day45 September 22, Saturday
 
 **Today's Work**: Reading about the pitfalls of using the browser's `localStorage` to save sensitive data like `jwt token`
 
@@ -390,7 +390,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Don't do this...](https://dev.to/rdegges/please-stop-using-local-storage-1i04)
 
-### Day45 September 23, Sunday
+### Day46 September 23, Sunday
 
 **Today's Work**: There has not been light since I returned from church. I just have to read coding articles online with my phone.
 
@@ -398,7 +398,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Lint to work**: There's actually none. Been reading a cross section of materials
 
-### Day46 September 24, Monday
+### Day47 September 24, Monday
 
 **Today's Work**: Have been reading through the `redux` documentation. Quite simple and explanatory.
 
@@ -406,7 +406,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Lint to work**: [Redux Docs](https://redux.js.org)
 
-### Day47 September 25, Tuesday
+### Day48 September 25, Tuesday
 
 **Today's Work**: Installed redux and setup for the project.
 
@@ -414,7 +414,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Redux Docs](https://redux.js.org)
 
-### Day48 September 26, Wednesday
+### Day49 September 26, Wednesday
 
 **Today's Work**: Worked on context API today
 
@@ -422,7 +422,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Code Sandbox](https://mq2z9nmq5p.codesandbox.io/)
 
-### Day49 September 27, Thursday
+### Day50 September 27, Thursday
 
 **Today's Work**: Continued work on context API today
 
@@ -430,7 +430,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Code Sandbox](https://mq2z9nmq5p.codesandbox.io/)
 
-### Day50 September 28, Friday
+### Day51 September 28, Friday
 
 **Today's Work**: Setup my MERN App boilerplate with custom react config
 
@@ -438,7 +438,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Mern Custom Config](https://github.com/phavor/minimal-mern-template)
 
-### Day51 September 29, Saturday
+### Day52 September 29, Saturday
 
 **Today's Work**: Finished with client side setup
 
@@ -446,7 +446,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Mern Custom Config](https://github.com/phavor/minimal-mern-template)
 
-### Day52 September 30, Sunday
+### Day53 September 30, Sunday
 
 **Today's Work**: Finished with setting up a custom boilerplate for a mern stack application.
 
@@ -456,7 +456,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Mern Custom Config](https://github.com/phavor/minimal-mern-template)
 
-### Day53 October 1, Monday
+### Day54 October 1, Monday
 
 **Today's Work**: Took a postgresql opensource project in the spirit of #hacktoberfest
 
@@ -464,7 +464,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Cartale_api](https://github.com/tibetegya/Cartale_api)
 
-### Day54 October 2, Tuesday
+### Day55 October 2, Tuesday
 
 **Today's Work**: Setup a descriptive readme file
 
@@ -472,7 +472,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Cartale_api](https://github.com/tibetegya/Cartale_api)
 
-### Day55 October 3, Wednesday
+### Day56 October 3, Wednesday
 
 **Today's Work**: Setup server for the Api manipulations
 
@@ -480,7 +480,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Cartale_api](https://github.com/tibetegya/Cartale_api)
 
-### Day56 October 4, Thursday
+### Day57 October 4, Thursday
 
 **Today's Work**: Setup NumGuess game for Kids
 
@@ -488,7 +488,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Number Guesser](https://github.com/phavor/100-days-of-code-fayvor/tree/master/NumGuess)
 
-### Day57 October 5, Friday
+### Day58 October 5, Friday
 
 **Today's Work**: Finish up with styling of the game.
 
@@ -496,7 +496,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Number Guesser](https://github.com/phavor/100-days-of-code-fayvor/tree/master/NumGuess)
 
-### Day58 October 6, Saturday
+### Day59 October 6, Saturday
 
 **Today's Work**: Start game logics for `Number Guess`
 
@@ -504,7 +504,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Number Guesser](https://github.com/phavor/100-days-of-code-fayvor/tree/master/NumGuess)
 
-### Day59 October 7, Sunday
+### Day60 October 7, Sunday
 
 **Today's Work**: Add asthetics to the game and continue building the logic
 
@@ -512,7 +512,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Number Guesser](https://github.com/phavor/100-days-of-code-fayvor/tree/master/NumGuess)
 
-### Day60 October 8, Monday
+### Day61 October 8, Monday
 
 **Today's Work**: Finished with Number guess MVP-0
 
@@ -520,7 +520,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Number Guesser](https://github.com/phavor/100-days-of-code-fayvor/tree/master/NumGuess)
 
-### Day61 October 9, Tuesday
+### Day62 October 9, Tuesday
 
 **Today's Work**: Kickoff with Questionify
 
@@ -528,7 +528,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Questionify](https://github.com/phavor/questionify)
 
-### Day62 October 10, Wednesday
+### Day63 October 10, Wednesday
 
 **Today's Work**: Add Question routes
 
@@ -536,7 +536,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Questionify](https://github.com/phavor/questionify)
 
-### Day63 October 11, Thursday
+### Day64 October 11, Thursday
 
 **Today's Work**: Technical Documentation on FCC
 
@@ -544,7 +544,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Codepen](https://codepen.io/phavor/full/pOOVwK/)
 
-### Day64 October 12, Friday
+### Day65 October 12, Friday
 
 **Today's Work**: Continue to develope the QnA endpoints
 
@@ -552,7 +552,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Questionify](https://github.com/phavor/questionify)
 
-### Day65 October 13, Saturday
+### Day66 October 13, Saturday
 
 **Today's Work**: Build a portfolio page
 
@@ -562,7 +562,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 ![Web Responsiveness Certification](./assets/images/responsive_web_design_fcc.png)
 
-### Day66 October 14, Sunday
+### Day67 October 14, Sunday
 
 **Today's Work**: Learning AJAX from Udacity
 
@@ -570,7 +570,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Udacity](https://udacity.com)
 
-### Day67 October 15, Monday
+### Day68 October 15, Monday
 
 **Today's Work**: Finished with FCC's Basic Javascript and did a bit of node_jwt_auth.
 
@@ -578,7 +578,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: FCC all the way.
 
-### Day68 October 16, Tuesday
+### Day69 October 16, Tuesday
 
 **Today's Work**: Teaching kids to code
 
@@ -586,7 +586,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: Chill shaa... I will show you pictures
 
-### Day69 October 17, Wednesday
+### Day70 October 17, Wednesday
 
 **Today's Work**: Contributing to OS at [Hacktoberfestinaba](https://github.com/hacktoberfestinaba)
 
@@ -594,7 +594,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Hacktoberfestinaba](https://github.com/HacktoberfestinAba/HacktoberfestinAba.github.io)
 
-### Day70 October 18, Thursday
+### Day71 October 18, Thursday
 
 **Today's Work**: Continued Contributions to OS at [Hacktoberfestinaba](https://github.com/hacktoberfestinaba)
 
@@ -602,7 +602,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Hacktoberfestinaba](https://github.com/HacktoberfestinAba/HacktoberfestinAba.github.io)
 
-### Day71 October 19, Friday
+### Day72 October 19, Friday
 
 **Today's Work**: Started work on naijaHacks2018 project with my teammates
 
@@ -610,7 +610,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [naijaHacks-TeamSpread](https://github.com/naijahacks-TeamSpread)
 
-### Day72 October 20, Saturday
+### Day73 October 20, Saturday
 
 **Today's Work**: Started course schema for our naijaHacks project
 
@@ -618,7 +618,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [naijaHacks-TeamSpread](https://github.com/naijahacks-TeamSpread)
 
-### Day73 October 21, Sunday
+### Day74 October 21, Sunday
 
 **Today's Work**: Tried logging in new users, but it's been failing.
 
@@ -626,7 +626,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [naijaHacks-TeamSpread](https://github.com/naijahacks-TeamSpread)
 
-### Day74 October 22, Monday
+### Day75 October 22, Monday
 
 **Today's Work**: Finished an Image upload project using multer
 
@@ -634,7 +634,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Image-Upload-Manager](https://github.com/phavor/Image-Upload-Manager)
 
-### Day75 October 23, Tuesday
+### Day76 October 23, Tuesday
 
 **Today's Work**: Continued working on the naijahacks project.
 
@@ -642,7 +642,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [naijaHacks-TeamSpread](https://github.com/naijahacks-TeamSpread)
 
-### Day76 October 24, Wednesday
+### Day77 October 24, Wednesday
 
 **Today's Work**: Started styling crea8lab project
 
@@ -650,7 +650,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Crea8lab](https://crea8lab.github.io/)
 
-### Day77 October 25, Thursday
+### Day78 October 25, Thursday
 
 **Today's Work**: Ensured mobile responsiveness of the header
 
@@ -658,7 +658,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Crea8lab](https://crea8lab.github.io/)
 
-### Day78 October 26, Friday
+### Day79 October 26, Friday
 
 **Today's Work**: Finally OS'd this project and it's working out fine
 
@@ -666,7 +666,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Crea8lab](https://crea8lab.github.io/) goto the repo [here](https://github.com/crea8lab/crea8lab.github.io)
 
-### Day79 October 27, Saturday
+### Day80 October 27, Saturday
 
 **Today's Work**: Working on code review for the crea8lab project
 
@@ -674,15 +674,15 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Crea8lab](https://crea8lab.github.io/) goto the repo [here](https://github.com/crea8lab/crea8lab.github.io)
 
-### Day80 October 28, Sunday
-
+### Day81 October 28, Sunday
+1
 **Today's Work**: Continued work on Crea8lab
 
 **Thoughts**: I have to start my blogpost where I write this articles in my head.
 
 **Link to work**: [Crea8lab](https://crea8lab.github.io/) -  goto the repo [here](https://github.com/crea8lab/crea8lab.github.io)
 
-### Day81 October 29, Monday
+### Day82 October 29, Monday
 
 **Today's Work**: Continued work on Crea8lab
 
@@ -690,7 +690,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Crea8lab](https://crea8lab.github.io/) -  goto the repo [here](https://github.com/crea8lab/crea8lab.github.io)
 
-### Day82 October 30, Tuesday
+### Day83 October 30, Tuesday
 
 **Today's Work**: Merged the projects page worked on by __Mac Anthony__
 
@@ -698,7 +698,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Crea8lab](https://crea8lab.github.io/) -  goto the repo [here](https://github.com/crea8lab/crea8lab.github.io)
 
-### Day83 October 31, Wednesday
+### Day84 October 31, Wednesday
 
 **Today's Work**: Spent some time with my IT report and logbook
 
@@ -706,7 +706,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: 👍
 
-### Day84 November 1, Thursday
+### Day85 November 1, Thursday
 
 **Today's Work**: Bought a new system, and setting up linux. Meanwhile I did some code review today.
 
@@ -714,7 +714,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: 👍
 
-### Day85 November 2, Friday
+### Day86 November 2, Friday
 
 **Today's Work**: Finished installing ubuntu and manjaro on my new system.
 
@@ -722,7 +722,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: 👍
 
-### Day86 November 3, Saturday
+### Day87 November 3, Saturday
 
 **Today's Work**: Read professional bash scripting from [goalkicker.com](https://goalkicker.com)
 
@@ -730,7 +730,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [goalkicker.com](https://goalkicker.com)
 
-### Day87 November 4, Sunday
+### Day88 November 4, Sunday
 
 **Today's Work**: Read more on professional bash scripting from [goalkicker.com](https://goalkicker.com)
 
@@ -738,7 +738,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [goalkicker.com](https://goalkicker.com)
 
-### Day88 November 5, Monday
+### Day89 November 5, Monday
 
 **Today's work**: Go live with MERN article
 
@@ -746,7 +746,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [Creating MERN boilerplate](https://medium.com/ignyte/create-a-mern-app-boilerplate-a2487d336e87)
 
-### Day89 November 6, Tuesday
+### Day90 November 6, Tuesday
 
 **Today's Work**: Take up some challenges on fCC
 
@@ -754,7 +754,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [FCC](https://freecodecamp.org)
 
-### Day90 November 7, Wednesday
+### Day91 November 7, Wednesday
 
 **Today's Work**: Finised Regex course on FCC
 
@@ -762,7 +762,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [FCC](https://freecodecamp.org)
 
-### Day91 November 8, Tursday
+### Day92 November 8, Tursday
 
 **Today's Work**: Worked on Debugging project from FCC
 
@@ -770,7 +770,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [FCC](https://freecodecamp.org)
 
-### Day92 November 9, Friday
+### Day93 November 9, Friday
 
 **Today's Work**: Went to Genesis to have some fun with the team
 
@@ -778,7 +778,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: Just chill for a sec.
 
-### Day93 November 10, Saturday
+### Day94 November 10, Saturday
 
 **Today's Work**: Went to Genesis to have some fun with the team
 
@@ -786,7 +786,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: Just chill for a sec.
 
-### Day94 November 11, Sunday
+### Day95 November 11, Sunday
 
 **Today's Work**: Continued with Basic algorithm at FCC and finished the sticky navbar project.
 
@@ -794,7 +794,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [FCC](https://freecodecamp.org), [Sticky Navbar](https://github.com/phavor/100-days-of-code-fayvor/tree/master/sticky)
 
-### Day95 November 12, Monday
+### Day96 November 12, Monday
 
 **Today's Work**: Finished the FCC Basic algorithm
 
@@ -802,7 +802,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [FCC](https://freecodecamp.org)
 
-### Day96 November 13, Tuesday
+### Day97 November 13, Tuesday
 
 **Today's Work**: Started Object Oriented Programming
 
@@ -810,7 +810,7 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [FCC](https://freecodecamp.org)
 
-### Day97 November 14, Wednesday
+### Day98 November 14, Wednesday
 
 **Today's Work**: Started Functional Programming
 
@@ -818,10 +818,18 @@ So I think of laying out something really simple like this ![awesome layout](./a
 
 **Link to work**: [FCC](https://freecodecamp.org)
 
-### Day98 November 14, Thursday
+### Day99 November 14, Thursday
 
 **Today's Work**: Did some work on the crea8lab project
 
 **Thoughts**: Worked with window scroll events.
 
 **Link to work**: [Crea8lab](https://crea8lab.github.io/contact_us.html)
+
+### Day100 November 15, Friday
+
+**Today's Work**: Building a weather app Cli, Serverify and deploying them to heroku
+
+**Thoughts**: Commitment is the greatest asset to greatness. I am super glad of what I've achieved these 100 days.
+
+**Link to work**: [serverify](https://serverify.herokuapp.com). You can also check out the repo for [weatherify](https://github.com/weatherify)
