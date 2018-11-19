@@ -27,3 +27,25 @@ Higher order functions are functions that recieve other functions as arguments o
 ### Lambdas
 
 A function that is passed as arguments into a `HOC` or gets returned from another function is known as a `lambda`
+
+## Hazards of using imperative code
+
+An imperative style in programming is one that gives the computer a set of statements to perform a task.
+
+Functional programming is a form of declarative programming. You tell the computer what you want done by calling a method or function.
+
+Functional programming helps to avoid mutations and side-effects.
+
+### Principle #1
+
+One of the core principle of functional programming is to not change things. Changes lead to bugs. It's easier to prevent bugs knowing that your functions don't change anything, including the function arguments or any global variable.
+
+In functional programming, changing or altering things is called `mutation`, and the outcome is called a `side effect`. A function, ideally, should be a `pure function`, meaning that it does not cause any side effects.
+
+### Principles #2
+
+Another principle of functional programming is to always declare your dependencies explicitly. This means if a function depends on a variable or object being present, then pass that variable or object directly into the function as an argument.
+
+There are several good consequences from this principle. The function is easier to test, you know exactly what input it takes, and it won't depend on anything else in your program.
+
+The function would always produce the same output for the same set of inputs, no matter what part of the code executes it.
