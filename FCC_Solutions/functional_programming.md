@@ -50,4 +50,35 @@ The function would always produce the same output for the same set of inputs, no
 
 1. Don't alter a variable or object - create new variables and objects and return them if need be from a function.
 
-2. Declare function arguments - any computation inside a function depends only on the arguments, and not on any global object or variable.
+2. Declare function arguments - any computation inside a function depends only on the arguments, and not on any global object or variable
+
+#### Examples
+
+```js
+function add (arr, bookName) {
+  let newArr = [...arr];  // Copy the bookList array to a new array.
+  newArr.push(bookName);  // Add bookName parameter to the end of the new array.
+  return newArr; // Return the new array.
+}
+
+function remove (arr, bookName) {
+  let newArr = [...arr];  // Copy the bookList array to a new array.
+  if (newArr.indexOf(bookName) >= 0) {   // Check whether the bookName parameter is in new array.
+    /.
+    newArr.splice(newArr.indexOf(bookName), 1); // Remove the given paramater from the new array.
+    return newArr; // Return the new array.
+    }
+}
+```
+
+```js
+function add (list,bookName) {
+  return [...list, bookName];
+}
+
+function remove (list,bookName) {
+  if (list.indexOf(bookName) >= 0) {
+    return list.filter((item) => item !== bookName);
+    }
+}
+```
