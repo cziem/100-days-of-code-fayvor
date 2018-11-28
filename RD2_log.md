@@ -17,3 +17,11 @@
 **Thoughts**: If you think you have arrived, just travel out a bit and see people who are already living in your future.
 
 **Link to work**: Stay hungry, stay foolish.
+
+### Day2 November 28, Wednesday 
+
+**Today's work**: haven't done a code related work today
+
+**Thoughts**: Seriously I have this strange feeling within me
+
+**Link to  work**: stay calm and hopeful
