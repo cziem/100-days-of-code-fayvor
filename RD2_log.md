@@ -25,3 +25,11 @@
 **Thoughts**: Seriously I have this strange feeling within me
 
 **Link to  work**: stay calm and hopeful
+
+### Day3 November, Thursday 
+
+**Today's work**: Today's gonna be a wonderful day 
+
+**Thoughts**: Just see me the way I see you right now
+
+**Link to  work**: stay ready and alert
