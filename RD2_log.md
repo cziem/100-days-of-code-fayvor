@@ -26,7 +26,7 @@
 
 **Link to  work**: stay calm and hopeful
 
-### Day3 November, Thursday 
+### Day3 November 29, Thursday 
 
 **Today's work**: Today's gonna be a wonderful day 
 
