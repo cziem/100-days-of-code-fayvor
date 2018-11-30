@@ -33,3 +33,11 @@
 **Thoughts**: Just see me the way I see you right now
 
 **Link to  work**: stay ready and alert
+
+### Day4 November 30, Friday 
+
+**Today's Work**: Read about clusters in node 
+
+**Thoughts**: Different people have different approaches 
+
+**Link to work**: Relax and code 
