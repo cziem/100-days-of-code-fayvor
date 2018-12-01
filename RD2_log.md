@@ -41,3 +41,14 @@
 **Thoughts**: Different people have different approaches 
 
 **Link to work**: Relax and code 
+
+### Day5 December 1, Saturday 
+
+**Today's Work**: Read more about clusters
+
+**Thoughts**: Different people different views
+
+**Link to work**: Relax and code 
+
+
+
