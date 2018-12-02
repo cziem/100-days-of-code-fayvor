@@ -50,5 +50,11 @@
 
 **Link to work**: Relax and code 
 
+### Day6 December 2, Sunday 
 
+**Today's Work**: Today we read more about nodejs processes 
+
+**Thoughts**: Staying alive for others is a sign of fulfilled life.
+
+**Link to work**: Live and smile
 
