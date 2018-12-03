@@ -58,3 +58,10 @@
 
 **Link to work**: Live and smile
 
+### Day7 December 3, Monday  
+
+**Today's Work**: Read a bunch of medium articles on tech 
+
+**Thoughts**: Survival is for the hungry
+
+**Link to work**: Live and smile
