@@ -65,3 +65,14 @@
 **Thoughts**: Survival is for the hungry
 
 **Link to work**: Live and smile
+
+### Day8 December 4, Tuesday   
+
+**Today's Work**: The best gift is determination in self
+
+**Thoughts**: Survival is for the hungry
+
+**Link to work**: Live and smile
+
+
+
