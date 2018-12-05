@@ -74,5 +74,10 @@
 
 **Link to work**: Live and smile
 
+### Day9 December 5, Wednesday   
 
+**Today's Work**: Learnt PHP basics today
 
+**Thoughts**: Attitude is the basics of success
+
+**Link to work**: Live and smile
