@@ -81,3 +81,11 @@
 **Thoughts**: Attitude is the basics of success
 
 **Link to work**: Live and smile
+
+### Day10 December 6, Thursday    
+
+**Today's Work**: Still on PHP basics
+
+**Thoughts**: Attitude is the basics of success
+
+**Link to work**: Live and smile
