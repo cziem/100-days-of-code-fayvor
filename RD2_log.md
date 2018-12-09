@@ -35,7 +35,7 @@
 **Link to  work**: stay ready and alert
 
 ### Day4 November 30, Friday 
-shut
+
 **Today's Work**: Read about clusters in node 
 
 **Thoughts**: Different people have different approaches 
@@ -83,6 +83,30 @@ shut
 **Link to work**: Live and smile
 
 ### Day10 December 6, Thursday    
+
+**Today's Work**: Still on PHP basics
+
+**Thoughts**: Attitude is the basics of success
+
+**Link to work**: Live and smile
+
+### Day11 December 7, Friday     
+
+**Today's Work**: Still on PHP basics
+
+**Thoughts**: Attitude is the basics of success
+
+**Link to work**: Live and smile
+
+### Day12 December 8, Saturday    
+
+**Today's Work**: Still on PHP basics
+
+**Thoughts**: Attitude is the basics of success
+
+**Link to work**: Live and smile
+
+### Day13 December 9, Sunday    
 
 **Today's Work**: Still on PHP basics
 
