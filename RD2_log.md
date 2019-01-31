@@ -113,3 +113,5 @@
 **Thoughts**: Attitude is the basics of success
 
 **Link to work**: Live and smile
+
+## We have to start all over again... Break in transmission...
