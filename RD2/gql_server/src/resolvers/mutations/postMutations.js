@@ -1,8 +1,7 @@
-const Post = require("../../schema/post.schema");
+const Post = require("../../models/post.schema");
 
 const postResolverMutations = {
   addPost: async (_, { data }, { user }) => {
-    console.log(data);
     const newPost = await Post.create({
       title: data.title,
       body: data.body

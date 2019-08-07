@@ -1,4 +1,4 @@
-const Post = require("../../schema/post.schema");
+const Post = require("../../models/post.schema");
 
 const postResolverQueries = {
   getAllPosts: async (parent, fields, context, info) => {

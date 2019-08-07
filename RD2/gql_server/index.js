@@ -2,18 +2,22 @@ const { ApolloServer } = require("apollo-server");
 const mongoose = require("mongoose");
 
 const typeDefs = require("./src/types");
-const postResolver = require("./src/resolvers/queries/postQueries");
+const resolvers = require("./src/resolvers");
 
 const URI = "mongodb://localhost:27017/gql-server";
 
 mongoose
   .connect(URI, { useNewUrlParser: true })
   .then(() => console.log("App connected to DB..."))
-  .catch(err => console.error(`Error: ${err}`));
+  .catch(err => {
+    console.error(`Error: ${err}`)
+    process.exit(1)
+  });
 
 const server = new ApolloServer({
   typeDefs,
-  resolvers: postResolver
+  resolvers,
+  dataSources,
 
   // For authentication
   // context: async ({ req }) => {
