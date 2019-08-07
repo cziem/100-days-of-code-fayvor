@@ -1,27 +1,23 @@
-const Post = require("../../models/post.schema");
+// const Post = require("../../models/post.schema");
 
 const postResolverMutations = {
-  addPost: async (_, { data }, { user }) => {
-    const newPost = await Post.create({
-      title: data.title,
-      body: data.body
-    });
+  addPost: async (_, { data }, { dataSources }) => {
 
-    console.log(newPost);
-
-    return newPost;
+    const { post } = dataSources
+    console.log(dataSources)
+    return await new post().addPost(data)
   },
 
-  updatePost: async (_, { data }, { user }) => {
-    const updatedPost = await Post.updateOne(
-      { _id: data.id },
-      {
-        body: data.body
-      }
-    );
+  // updatePost: async (_, { data }, { user }) => {
+  //   const updatedPost = await Post.updateOne(
+  //     { _id: data.id },
+  //     {
+  //       body: data.body
+  //     }
+  //   );
 
-    return updatedPost;
-  }
+  //   return updatedPost;
+  // }
 }
 
 module.exports = postResolverMutations

@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 
 const typeDefs = require("./src/types");
 const resolvers = require("./src/resolvers");
+const dataSources = require('./src/datasource/datasources')
 
 const URI = "mongodb://localhost:27017/gql-server";
 
@@ -17,7 +18,12 @@ mongoose
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  dataSources,
+  context: () => ({
+    // auth here
+  }),
+  dataSources: () => (
+    dataSources
+  )
 
   // For authentication
   // context: async ({ req }) => {
