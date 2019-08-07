@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 
 const typeDefs = require("./src/types");
 const resolvers = require("./src/resolvers");
-const dataSources = require('./src/datasource/datasources')
+const dataSources = require('./src/datasources')
 
 const URI = "mongodb://localhost:27017/gql-server";
 
