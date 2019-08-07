@@ -14,5 +14,8 @@
     "graphql": "^14.4.2",
     "graphql-type-json": "^0.3.0",
     "mongoose": "^5.6.8"
+  },
+  "devDependencies": {
+    "nodemon": "1.19.1"
   }
 }
