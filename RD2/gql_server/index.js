@@ -1,10 +1,9 @@
 const { ApolloServer } = require("apollo-server");
 const mongoose = require("mongoose");
 
-const postDefs = require("./src/types/postDefs");
-const postResolver = require("./src/resolvers/postResolver");
+const typeDefs = require("./src/types");
+const postResolver = require("./src/resolvers/queries/postQueries");
 
-const PORT = 4000;
 const URI = "mongodb://localhost:27017/gql-server";
 
 mongoose
@@ -13,7 +12,7 @@ mongoose
   .catch(err => console.error(`Error: ${err}`));
 
 const server = new ApolloServer({
-  typeDefs: postDefs,
+  typeDefs,
   resolvers: postResolver
 
   // For authentication

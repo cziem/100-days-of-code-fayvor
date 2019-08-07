@@ -3,3 +3,4 @@
 /cli-calc/node_modules/
 /jwt_node_auth/node_modules/
 .env
+RD2/gql_server/node_modules
