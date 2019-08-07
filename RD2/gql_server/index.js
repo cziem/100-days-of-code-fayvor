@@ -24,22 +24,6 @@ const server = new ApolloServer({
   dataSources: () => (
     dataSources
   )
-
-  // For authentication
-  // context: async ({ req }) => {
-  //   const header = req.header["Authorization"];
-
-  //   const token = header.split(" ")[1];
-
-  //   const user = await getAuthUser(token);
-
-  //   if (user) {
-  //     // pass the token to the children
-  //     return { user };
-  //   } else {
-  //     throw new Error("You are not authorized for this request");
-  //   }
-  // }
 });
 
 server.listen().then(({ url }) => console.log(`Server is running at ${url}`));
