@@ -2,9 +2,7 @@
 
 const postResolverMutations = {
   addPost: async (_, { data }, { dataSources }) => {
-
     const { post } = dataSources
-    console.log(dataSources)
     return await new post().addPost(data)
   },
 
@@ -17,7 +15,13 @@ const postResolverMutations = {
   //   );
 
   //   return updatedPost;
-  // }
+  // },
+
+  // Delete Post by ID
+  deletePost: async (_, { id }, { dataSources }) => {
+    const { post } = dataSources
+    return await new post().deletePost(id)
+  }
 }
 
 module.exports = postResolverMutations

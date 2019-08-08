@@ -2,6 +2,7 @@ const { gql } = require("apollo-server");
 
 const postDefs = gql`
   type Post {
+    id: ID
     title: String!
     body: String
     createdAt: String
@@ -10,12 +11,13 @@ const postDefs = gql`
 
   extend type Query {
     getAllPosts: [Post]
-    getPost(_id: ID): Post
+    getPost(id: ID): Post
   }
 
   extend type Mutation {
     addPost(data: postInput): Post
     updatePost(data: updatePostInput): Post
+    deletePost(id: ID!): String
   }
 
   input postInput {

@@ -1,13 +1,12 @@
 const Post = require("../../models/post.schema");
 
 const postResolverQueries = {
-  getAllPosts: async (parent, fields, context, info) => {
-    // if (context.user) return Post.find({})
-    return await Post.find({});
+  getAllPosts: async (parent, fields, { dataSources: { post } }, info) => {
+    return await new post().getAllPosts();
   },
 
-  getPost: async (_, { _id }, context) => {
-    return await Post.findById(_id);
+  getPost: async (_, { id }, { dataSources: { post } }) => {
+    return await new post().getPost(id);
   }
 };
 
