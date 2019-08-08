@@ -8,7 +8,10 @@ const dataSources = require('./src/datasources')
 const URI = "mongodb://localhost:27017/gql-server";
 
 mongoose
-  .connect(URI, { useNewUrlParser: true })
+  .connect(URI, {
+    useNewUrlParser: true,
+    useCreateIndex: true
+   })
   .then(() => console.log("App connected to DB..."))
   .catch(err => {
     console.error(`Error: ${err}`)
