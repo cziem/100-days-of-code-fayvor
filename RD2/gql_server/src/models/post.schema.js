@@ -14,7 +14,8 @@ const postSchema = new Schema(
       trim: true
     },
     // author: Author,
-    image: String
+    image: String,
+    category: [String]
   },
   {
     timestamps: true

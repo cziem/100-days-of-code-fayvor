@@ -25,17 +25,18 @@ class post extends Base {
   * @params: data
   * returns: updated post
   */
-  async updatePost({ id, title,  body }) {
+  async updatePost({ id, title,  body, category }) {
     try {
       const updatedPost = await Post.updateOne(
         { _id: id },
         { $set: { title, body } },
+        { $push: { category } },
         { new: true }
       );
 
       if (updatedPost.ok === 1) return 'update successful'
     } catch (e) {
-      throw new Error('Invalid post Id')
+      throw new Error(e)
     }
   }
 

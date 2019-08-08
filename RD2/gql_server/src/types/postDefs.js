@@ -7,6 +7,7 @@ const postDefs = gql`
     body: String
     createdAt: String
     updatedAt: String
+    category: [String]
   }
 
   extend type Query {
@@ -23,12 +24,14 @@ const postDefs = gql`
   input postInput {
     title: String!
     body: String
+    category: String
   }
 
   input updatePostInput {
     id: ID!
     title: String
     body: String
+    category: String
   }
 `;
 
