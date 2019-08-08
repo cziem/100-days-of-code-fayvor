@@ -14,12 +14,29 @@ class post extends Base {
   * returns: new post
   */
   async addPost(data) {
-    const newPost = await Post.create({
+    return await Post.create({
       title: data.title,
       body: data.body
     })
+  }
 
-    return newPost
+  /*
+  * updatePost in DB
+  * @params: data
+  * returns: updated post
+  */
+  async updatePost({ id, title,  body }) {
+    try {
+      const updatedPost = await Post.updateOne(
+        { _id: id },
+        { $set: { title, body } },
+        { new: true }
+      );
+
+      if (updatedPost.ok === 1) return 'update successful'
+    } catch (e) {
+      throw new Error('Invalid post Id')
+    }
   }
 
   /*

@@ -16,7 +16,7 @@ const postDefs = gql`
 
   extend type Mutation {
     addPost(data: postInput): Post
-    updatePost(data: updatePostInput): Post
+    updatePost(data: updatePostInput): String
     deletePost(id: ID!): String
   }
 
@@ -27,6 +27,7 @@ const postDefs = gql`
 
   input updatePostInput {
     id: ID!
+    title: String
     body: String
   }
 `;

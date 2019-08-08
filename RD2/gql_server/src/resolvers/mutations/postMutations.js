@@ -1,21 +1,16 @@
 // const Post = require("../../models/post.schema");
 
 const postResolverMutations = {
+  // Add new post
   addPost: async (_, { data }, { dataSources }) => {
     const { post } = dataSources
     return await new post().addPost(data)
   },
 
-  // updatePost: async (_, { data }, { user }) => {
-  //   const updatedPost = await Post.updateOne(
-  //     { _id: data.id },
-  //     {
-  //       body: data.body
-  //     }
-  //   );
-
-  //   return updatedPost;
-  // },
+  // Update post
+  updatePost: async (_, { data }, { dataSources: { post } }) => {
+    return await new post().updatePost(data)
+  },
 
   // Delete Post by ID
   deletePost: async (_, { id }, { dataSources }) => {
