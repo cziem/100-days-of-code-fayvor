@@ -3,8 +3,16 @@ const Schema = mongoose.Schema;
 
 const postSchema = new Schema(
   {
-    title: String,
-    body: String,
+    title: {
+      type: String,
+      required: true,
+      unique: true,
+      trim: true
+    },
+    body: {
+      type: String,
+      trim: true
+    },
     // author: Author,
     image: String
   },
