@@ -1,5 +1,3 @@
-// const Post = require("../../models/post.schema");
-
 const postResolverMutations = {
   // Add new post
   addPost: async (_, { data }, { dataSources }) => {
