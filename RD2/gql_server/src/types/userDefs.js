@@ -1,18 +1,93 @@
 const { gql } = require("apollo-server");
 
 const userDefs = gql`
-  type User {
+  interface UserBase {
     name: String
-    role: [String]
-    posts: [Posts]
+    roles: String
+    posts: [Post]
+    username: String!
+    email: String!
+    isActive: Boolean
   }
 
-  enums Roles {
+  interface MutationResponse {
+    code: String
+    success: Boolean
+    message: String
+  }
+
+  type User implements UserBase {
+    name: String
+    roles: String
+    id: ID
+    posts: [Post]
+    username: String!
+    email: String!
+    isActive: Boolean
+  }
+
+  type UserResponse implements UserBase {
+    name: String
+    id: ID
+    roles: String
+    posts: [Post]
+    username: String!
+    email: String!
+    isActive: Boolean
+  }
+
+  type LoggedInUser implements MutationResponse {
+    code: String
+    success: Boolean
+    message: String
+    user: UserResponse
+  }
+
+  enum Roles {
     AMDIN,
     EDITOR,
     MARKETER,
     MEMBER,
     VISIOR
+  }
+
+  extend type Query {
+    getAllUsers: [User]
+    getUser(data: findUserBy): User
+  }
+
+  extend type Mutation {
+    addUser(data: createUser): User
+    loginUser(data: loginUser): LoggedInUser
+    updateUser(data: updateUser): String
+    deleteUser(id: ID!): String
+  }
+
+  input findUserBy {
+    id: ID
+    username: String
+  }
+
+  input createUser {
+    name: String
+    username: String!
+    password: String!
+    email: String!
+    roles: String
+  }
+
+  input loginUser {
+    email: String!
+    password: String!
+  }
+
+  input updateUser {
+    name: String
+    username: String
+    password: String
+    email: String
+    roles: String
+    isActive: Boolean
   }
 `;
 

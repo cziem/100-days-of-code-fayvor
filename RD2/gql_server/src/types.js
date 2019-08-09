@@ -3,6 +3,7 @@ const { gql } = require('apollo-server')
 
 // Get all defined types
 const postDefs = require('./types/postDefs')
+const userDefs = require('./types/userDefs')
 
 const linkSchema = gql`
   # scalar JSON
@@ -18,5 +19,6 @@ const linkSchema = gql`
 
 module.exports = [
   linkSchema,
-  postDefs
+  postDefs,
+  userDefs
 ]
