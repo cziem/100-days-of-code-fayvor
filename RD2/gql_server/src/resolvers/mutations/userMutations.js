@@ -1,28 +1,21 @@
 const User = require("../../models/user.schema");
 
 const userResolverMutations = {
-  addUser: async (_, { data }, { user }) => {
-    return 'add user'
-    // const newPost = await Post.create({
-    //   title: data.title,
-    //   body: data.body
-    // });
-
-    // console.log(newPost);
-
-    // return newPost;
+  addUser: async (_, { data }, { dataSources: { user } }) => {
+    return await new user().addUser(data)
   },
 
-  // updatePost: async (_, { data }, { user }) => {
-  //   const updatedPost = await Post.updateOne(
-  //     { _id: data.id },
-  //     {
-  //       body: data.body
-  //     }
-  //   );
+  loginUser: async (_, { data }, { dataSources: { user } }) => {
+    return await new user().loginUser(data)
+  },
 
-  //   return updatedPost;
-  // }
+  updateUser: async (_, { data }, { dataSources: { user } }) => {
+    return await new user().updateUser(data)
+  },
+
+  deleteUser: async (_, { data }, { dataSources: { user } }) => {
+    return await new user().deleteUser(data)
+  }
 }
 
 module.exports = userResolverMutations

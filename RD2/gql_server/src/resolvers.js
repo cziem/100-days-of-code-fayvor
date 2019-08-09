@@ -9,11 +9,11 @@ const userQueries = require('./resolvers/queries/userQueries')
 module.exports = {
   Query: {
     ...postQueries,
-    // ...userQueries
+    ...userQueries
   },
 
   Mutation: {
     ...postMutations,
-    // ...userMutations
+    ...userMutations
   }
 }
