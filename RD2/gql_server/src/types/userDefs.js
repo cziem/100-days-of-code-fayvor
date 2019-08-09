@@ -53,7 +53,7 @@ const userDefs = gql`
 
   extend type Query {
     getAllUsers: [User]
-    getUser(data: findUserBy): User
+    getUser(id: ID): User
   }
 
   extend type Mutation {
@@ -61,11 +61,6 @@ const userDefs = gql`
     loginUser(data: loginUser): LoggedInUser
     updateUser(data: updateUser): String
     deleteUser(id: ID!): String
-  }
-
-  input findUserBy {
-    id: ID
-    username: String
   }
 
   input createUser {

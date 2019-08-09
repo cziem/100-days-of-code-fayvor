@@ -6,8 +6,8 @@ const userResolverQueries = {
     return await new user().getAllUsers()
   },
 
-  getUser: async (_, { data }, { dataSources: { user } }) => {
-    return await new user().getUser(data)
+  getUser: async (_, { id }, { dataSources: { user } }) => {
+    return await new user().getUser(id)
   }
 };
 
