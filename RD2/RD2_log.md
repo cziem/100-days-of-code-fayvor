@@ -17,3 +17,19 @@
 **Thoughts**: I get this mongoose error while trying to update an array... how do I solve this?
 
 **Link to work**: Apollo Docs, mongoose docs
+
+### Day3 August 9, Friday
+
+**Today's Work**: Added users datasource
+
+**Thoughts**: we move on...
+
+**Link to work**: Apollo Docs, mongoose docs
+
+### Day4 August 10, Saturday
+
+**Today's Work**: Login user and delete user
+
+**Thoughts**: we have to implement auth next
+
+**Link to work**: Apollo Docs, mongoose docs

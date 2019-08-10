@@ -34,13 +34,12 @@ const userDefs = gql`
     username: String!
     email: String!
     isActive: Boolean
+    token: String
   }
 
-  type LoggedInUser implements MutationResponse {
+  type LoggedInUser {
     code: String
-    success: Boolean
-    message: String
-    user: UserResponse
+    token: String
   }
 
   enum Roles {

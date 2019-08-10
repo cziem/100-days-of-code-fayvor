@@ -13,8 +13,8 @@ const userResolverMutations = {
     return await new user().updateUser(data)
   },
 
-  deleteUser: async (_, { data }, { dataSources: { user } }) => {
-    return await new user().deleteUser(data)
+  deleteUser: async (_, { id }, { dataSources: { user } }) => {
+    return await new user().deleteUser(id)
   }
 }
 
