@@ -33,3 +33,11 @@
 **Thoughts**: we have to implement auth next
 
 **Link to work**: Apollo Docs, mongoose docs
+
+### Day5 August 11, Sunday
+
+**Today's Work**: Fix Authentication issues
+
+**Thoughts**: The inital concept stopped every authenticated call, even when trying to login... how the kcuf would you get the token then?
+
+**Link to work**: So much debugging and console logging, with long hours of thinking and reading blog posts. Just take a sneak peak at the authentication branch
