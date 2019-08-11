@@ -24,18 +24,18 @@ mongoose
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  context: ({ req }) => {
+  context: async ({ req }) => {
     const token = req.headers.authorization || ''
 
-    const AuthUser = getUser(token)
+    const AuthUser = await getUser(token)
 
-    // console.log(AuthUser)
+    return { AuthUser }
 
-    if (!AuthUser) {
-      throw new Error('Not Authenticated')
-    } else {
-      return { AuthUser }
-    }
+    // if (!AuthUser) {
+    //   throw new Error('Not Authenticated')
+    // } else {
+    //   return { AuthUser }
+    // }
   },
   dataSources: () => (
     dataSources
