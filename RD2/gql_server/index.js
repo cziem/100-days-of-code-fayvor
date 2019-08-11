@@ -5,6 +5,8 @@ const typeDefs = require("./src/types");
 const resolvers = require("./src/resolvers");
 const dataSources = require('./src/datasources')
 
+const { getUser } = require('./src/utils/auth')
+
 const URI = "mongodb://localhost:27017/gql-server";
 
 mongoose
@@ -21,9 +23,19 @@ mongoose
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  context: () => ({
-    // auth here
-  }),
+  context: ({ req }) => {
+    const token = req.headers.authorization || ''
+
+    const AuthUser = getUser(token)
+
+    // console.log(AuthUser)
+
+    if (!AuthUser) {
+      throw new Error('Not Authenticated')
+    } else {
+      return { AuthUser }
+    }
+  },
   dataSources: () => (
     dataSources
   )

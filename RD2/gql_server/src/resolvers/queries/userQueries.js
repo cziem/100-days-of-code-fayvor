@@ -1,6 +1,6 @@
 const userResolverQueries = {
-  getAllUsers: async (parent, fields, { dataSources: { user } }, info) => {
-    // if (context.user) return Post.find({})
+  getAllUsers: async (_, { AuthUser }, { dataSources: { user } }) => {
+    if (!AuthUser) throw new Error('You are not Authenticated...')
     return await new user().getAllUsers()
   },
 
