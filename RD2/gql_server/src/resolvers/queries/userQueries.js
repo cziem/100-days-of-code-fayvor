@@ -1,5 +1,3 @@
-const User = require("../../models/user.schema");
-
 const userResolverQueries = {
   getAllUsers: async (parent, fields, { dataSources: { user } }, info) => {
     // if (context.user) return Post.find({})

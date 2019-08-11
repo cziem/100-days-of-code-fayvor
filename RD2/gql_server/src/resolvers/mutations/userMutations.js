@@ -1,5 +1,3 @@
-const User = require("../../models/user.schema");
-
 const userResolverMutations = {
   addUser: async (_, { data }, { dataSources: { user } }) => {
     return await new user().addUser(data)
