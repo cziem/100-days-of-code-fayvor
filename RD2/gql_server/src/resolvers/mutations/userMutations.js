@@ -7,11 +7,13 @@ const userResolverMutations = {
     return await new user().loginUser(data)
   },
 
-  updateUser: async (_, { data }, { dataSources: { user } }) => {
+  updateUser: async (_, { data }, { AuthUser, dataSources: { user } }) => {
+    if (!AuthUser) throw new Error('You are not Authenticated...')
     return await new user().updateUser(data)
   },
 
-  deleteUser: async (_, { id }, { dataSources: { user } }) => {
+  deleteUser: async (_, { id }, { AuthUser, dataSources: { user } }) => {
+    if (!AuthUser) throw new Error('You are not Authenticated...')
     return await new user().deleteUser(id)
   }
 }
