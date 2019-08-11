@@ -1,14 +1,13 @@
 const SECRET = process.env.APP_SECRET
+console.log(SECRET)
 const jwt = require("jsonwebtoken")
 
 module.exports = {
   getUser: async (token) => {
-    console.log('got called');
-
     try {
       if (token) {
-        const AuthUser = await jwt.verify(token, SECRET)
-        console.log(AuthUser);
+        const user = await jwt.verify(token, SECRET)
+        console.log(user);
         return AuthUser
       }
       return null
