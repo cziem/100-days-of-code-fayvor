@@ -11,7 +11,7 @@ mongoose
   .connect(URI, {
     useNewUrlParser: true,
     useCreateIndex: true
-   })
+  })
   .then(() => console.log("App connected to DB..."))
   .catch(err => {
     console.error(`Error: ${err}`)
