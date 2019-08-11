@@ -31,11 +31,13 @@ const server = new ApolloServer({
 
     return { AuthUser }
 
-    // if (!AuthUser) {
-    //   throw new Error('Not Authenticated')
-    // } else {
-    //   return { AuthUser }
-    // }
+    // We don't wanna do this because it stops evey other call to the datasources. This means once there is no token, users cannot do anything. You can't even login to get the token. So we use the above method and check the AuthUser at teh endpoint we want to consume...
+
+    /* if (!AuthUser) {
+      throw new Error('Not Authenticated')
+    } else {
+      return { AuthUser }
+    } */
   },
   dataSources: () => (
     dataSources
