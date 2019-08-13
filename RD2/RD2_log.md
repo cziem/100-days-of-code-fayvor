@@ -41,3 +41,19 @@
 **Thoughts**: The inital concept stopped every authenticated call, even when trying to login... how the kcuf would you get the token then?
 
 **Link to work**: So much debugging and console logging, with long hours of thinking and reading blog posts. Just take a sneak peak at the authentication branch
+
+### Day6 August 12, Monday
+
+**Today's Work**: Minor resturcturing and reading
+
+**Thoughts**: Read a bit off apollo implementations
+
+**Link to work**: https://dev.to/jacobherrington/5-programming-languages-to-stretch-your-brain-mmg
+
+### Day7 August 13, Tuesday
+
+**Today's Work**: Reading about role implementations
+
+**Thoughts**: How do we really manage roles?
+
+**Link to work**: https://github.com/jedireza/drywall/wiki/Users,-Roles-&-Groups
