@@ -21,7 +21,12 @@ const postSchema = new Schema(
       type: String,
       default: "Uncategorized"
     },
-    tags: [String]
+    tags: [
+      {
+        type: String,
+        trim: true
+      }
+    ]
   },
   {
     timestamps: true
