@@ -57,3 +57,11 @@
 **Thoughts**: How do we really manage roles?
 
 **Link to work**: https://github.com/jedireza/drywall/wiki/Users,-Roles-&-Groups
+
+### Day8 August 14, Wednesday
+
+**Today's Work**:
+
+**Thoughts**:
+
+**Link to work**: 
