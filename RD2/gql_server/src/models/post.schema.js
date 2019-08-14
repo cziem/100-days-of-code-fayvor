@@ -13,7 +13,12 @@ const postSchema = new Schema(
       type: String,
       trim: true
     },
-    // author: Author,
+    author: {
+      id: {
+        type: Schema.Types.ObjectId,
+        ref: 'User'
+      }
+    },
     image: String,
     category: [String]
   },
