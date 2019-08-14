@@ -10,13 +10,18 @@ class post extends Base {
 
   /*
   * addPost to DB
-  * @params: data
+  * @params: data, current user
   * returns: new post
   */
-  async addPost(data) {
+  async addPost(data, user) {
+    const author = {
+      id: user._id
+    }
+
     return await Post.create({
       title: data.title,
-      body: data.body
+      body: data.body,
+      author
     })
   }
 
@@ -25,12 +30,16 @@ class post extends Base {
   * @params: data
   * returns: updated post
   */
-  async updatePost({ id, title,  body, category }) {
+  async updatePost({ id, title,  body, category }, { _id }) {
+    const author = {
+      id: _id
+    }
+
     try {
       const updatedPost = await Post.updateOne(
         { _id: id },
-        { $set: { title, body } },
-        { $push: { category } },
+        { $set: { title, body, author } },
+        // { $push: { category } },
         { new: true }
       );
 
@@ -61,7 +70,10 @@ class post extends Base {
   * returns: an array of all posts
   */
   async getAllPosts() {
-    return await Post.find({})
+    const posts = await Post.find({}).populate('user').exec()
+
+    // console.log(posts);
+    return posts
   }
 
   /*
@@ -71,7 +83,7 @@ class post extends Base {
   */
   async getPost(id) {
     try {
-      return await Post.findById(id)
+      return await Post.findById(id).populate('user')
     } catch (e) {
       throw new Error('Ivalid post ID')
     }
