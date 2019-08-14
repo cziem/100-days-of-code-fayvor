@@ -8,11 +8,12 @@ const postDefs = gql`
     createdAt: String
     updatedAt: String
     category: [String]
+    author: User
   }
 
   extend type Query {
     getAllPosts: [Post]
-    getPost(id: ID): Post
+    getPost(id: ID!): Post
   }
 
   extend type Mutation {
