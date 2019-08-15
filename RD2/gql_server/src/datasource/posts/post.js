@@ -29,11 +29,15 @@ class post extends Base {
   * @params: data
   * returns: string
   */
-  async updatePost({ id, title, body, category }) {
+  async updatePost({ id, title, body, category, tags }) {
+    tags = tags ? (tags.length > 1 ? tags.split(',') : tags) : ''
     try {
       const updatedPost = await Post.updateOne(
         { _id: id },
-        { $set: { title, body, category }, $addToSet: { category } },
+        {
+          $set: { title, body, category },
+          $addToSet: { tags }
+        },
         { new: true }
       );
 
@@ -49,14 +53,15 @@ class post extends Base {
   * returns: string
   */
   async removeTags({ id, tags }) {
+    tags = tags ? (tags.length > 1 ? tags.split(',') : tags) : ''
     try {
       const updatedPost = await Post.updateOne(
         { _id: id },
-        { $pull: { tags } },
-        { new: true }
+        { $pull: { tags: tags } }
       );
 
-      if (updatedPost.ok === 1) return 'update successful'
+      console.log(updatedPost)
+      // if (updatedPost.ok === 1) return 'update successful'
     } catch (e) {
       throw new Error(e)
     }
