@@ -44,7 +44,13 @@ class user extends Base {
       const isValid = await bcrypt.compare(data.password, foundUser.password)
 
       if (isValid) {
-        const token = await jwt.sign({ ...foundUser }, process.env.SECRET_KEY)
+        const payload = {
+          id: foundUser._id,
+          username: foundUser.username,
+          email: foundUser.email,
+          name: foundUser.name
+        }
+        const token = await jwt.sign(payload, process.env.SECRET_KEY, { expiresIn: "2d" })
         return {
           code: 200,
           token

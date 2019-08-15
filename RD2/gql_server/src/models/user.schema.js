@@ -27,11 +27,17 @@ const userSchema = new Schema({
     type: Boolean,
     default: true
   },
-  roles: String
+  roles: String,
+  posts: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'Post'
+    }
+  ]
 }, {
   timestamps: true
 })
 
-const User = mongoose.model('user', userSchema)
+const User = mongoose.model('User', userSchema)
 
 module.exports = User

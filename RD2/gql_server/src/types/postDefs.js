@@ -7,7 +7,8 @@ const postDefs = gql`
     body: String
     createdAt: String
     updatedAt: String
-    category: [String]
+    category: String
+    tags: [String]
     author: User
   }
 
@@ -19,6 +20,7 @@ const postDefs = gql`
   extend type Mutation {
     addPost(data: postInput): Post
     updatePost(data: updatePostInput): String
+    removeTags(data: removeTags): String
     deletePost(id: ID!): String
   }
 
@@ -26,6 +28,7 @@ const postDefs = gql`
     title: String!
     body: String
     category: String
+    tags: String
   }
 
   input updatePostInput {
@@ -33,6 +36,12 @@ const postDefs = gql`
     title: String
     body: String
     category: String
+    tags: String
+  }
+
+  input removeTags {
+    id: ID!
+    tags: String
   }
 `;
 

@@ -6,7 +6,6 @@ const postSchema = new Schema(
     title: {
       type: String,
       required: true,
-      // unique: true,
       trim: true
     },
     body: {
@@ -14,19 +13,26 @@ const postSchema = new Schema(
       trim: true
     },
     author: {
-      id: {
-        type: Schema.Types.ObjectId,
-        ref: 'User'
-      }
+      type: Schema.Types.ObjectId,
+      ref: 'User'
     },
     image: String,
-    category: [String]
+    category: {
+      type: String,
+      default: "Uncategorized"
+    },
+    tags: [
+      {
+        type: String,
+        trim: true
+      }
+    ]
   },
   {
     timestamps: true
   }
 );
 
-const Post = mongoose.model("post", postSchema);
+const Post = mongoose.model("Post", postSchema);
 
 module.exports = Post;
