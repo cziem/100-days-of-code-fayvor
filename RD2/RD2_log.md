@@ -48,7 +48,7 @@
 
 **Thoughts**: Read a bit off apollo implementations
 
-**Link to work**: https://dev.to/jacobherrington/5-programming-languages-to-stretch-your-brain-mmg
+**Link to work**: [jacob herrington's post](https://dev.to/jacobherrington/5-programming-languages-to-stretch-your-brain-mmg)
 
 ### Day7 August 13, Tuesday
 
@@ -56,7 +56,7 @@
 
 **Thoughts**: How do we really manage roles?
 
-**Link to work**: https://github.com/jedireza/drywall/wiki/Users,-Roles-&-Groups
+**Link to work**: [jedireza's GitHub wiki](https://github.com/jedireza/drywall/wiki/Users,-Roles-&-Groups)
 
 ### Day8 August 14, Wednesday
 
