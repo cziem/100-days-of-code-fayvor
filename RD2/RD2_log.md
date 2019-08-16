@@ -48,7 +48,7 @@
 
 **Thoughts**: Read a bit off apollo implementations
 
-**Link to work**: https://dev.to/jacobherrington/5-programming-languages-to-stretch-your-brain-mmg
+**Link to work**: [jacob herrington's post](https://dev.to/jacobherrington/5-programming-languages-to-stretch-your-brain-mmg)
 
 ### Day7 August 13, Tuesday
 
@@ -56,12 +56,28 @@
 
 **Thoughts**: How do we really manage roles?
 
-**Link to work**: https://github.com/jedireza/drywall/wiki/Users,-Roles-&-Groups
+**Link to work**: [jedireza's GitHub wiki](https://github.com/jedireza/drywall/wiki/Users,-Roles-&-Groups)
 
 ### Day8 August 14, Wednesday
 
-**Today's Work**:
+**Today's Work**: Edited some datasource logics
 
-**Thoughts**:
+**Thoughts**: Got to work on some standards
 
-**Link to work**: 
+**Link to work**: locally done
+
+### Day9 August 15, Thursday
+
+**Today's Work**: Read through class in Javascript.info
+
+**Thoughts**: Read through class in Javascript.info
+
+**Link to work**: [javascript.info](https://www.javascript.info)
+
+### Day10 August 16, Friday
+
+**Today's Work**: Reading about mircroservices and monoliths
+
+**Thoughts**: I think I have to add microservices to my learning curve
+
+**Link to work**: Eureka blogs
