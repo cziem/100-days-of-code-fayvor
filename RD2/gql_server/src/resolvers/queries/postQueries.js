@@ -1,12 +1,12 @@
 const postResolverQueries = {
   getAllPosts: async (parent, fields, { AuthUser, dataSources: { post } }) => {
     if (!AuthUser) throw new Error('You are not Authenticated...')
-    return await new post().getAllPosts();
+    return await new post().getAllPosts(AuthUser);
   },
 
   getPost: async (_, { id }, { AuthUser, dataSources: { post } }) => {
     if (!AuthUser) throw new Error('You are not Authenticated...')
-    return await new post().getPost(id);
+    return await new post().getPost(id, AuthUser);
   }
 };
 

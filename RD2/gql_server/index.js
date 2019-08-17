@@ -9,6 +9,7 @@ const dataSources = require('./src/datasources')
 const { getUser } = require('./src/utils/auth')
 
 const URI = process.env.MONGODB_URI;
+const PORT = process.env.PORT;
 
 mongoose
   .connect(URI, {
@@ -44,4 +45,4 @@ const server = new ApolloServer({
   )
 });
 
-server.listen().then(({ url }) => console.log(`Server is running at ${url}`));
+server.listen(PORT).then(({ url }) => console.log(`Server is running at ${url}`));
