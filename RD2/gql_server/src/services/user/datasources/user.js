@@ -1,8 +1,8 @@
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 
-const Base = require('../../base')
-const User = require('../../models/user.schema')
+const Base = require('../../../base')
+const User = require('../../../models/user.schema')
 
 class user extends Base {
   // constructor () {

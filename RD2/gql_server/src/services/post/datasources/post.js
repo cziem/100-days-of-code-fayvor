@@ -1,5 +1,5 @@
-const Base = require('../../base')
-const Post = require('../../models/post.schema')
+const Base = require('../../../base')
+const Post = require('../../../models/post.schema')
 
 class post extends Base {
   // constructor () {
