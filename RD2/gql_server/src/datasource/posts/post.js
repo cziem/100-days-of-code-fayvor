@@ -92,9 +92,11 @@ class post extends Base {
   async getAllPosts(user) {
     const posts = await Post.find({}).
       where({ author: user.id }).
-      populate('user')
+      populate({
+        path: 'author',
+        model: 'User'
+      })
 
-    console.log(posts);
     return posts
   }
 
@@ -106,8 +108,11 @@ class post extends Base {
   async getPost(id, user) {
     try {
       // return await Post.findById(id).populate('user')
-      const post = await Post.findById(id).where({ author: user.id }).populate('user')
-      console.log(post);
+      const post = await Post.findById(id).where({ author: user.id }).populate({
+        path: 'author',
+        model: 'User'
+      })
+
       return post
     } catch (e) {
       throw new Error('Ivalid post ID')
