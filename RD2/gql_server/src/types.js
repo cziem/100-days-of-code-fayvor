@@ -2,8 +2,8 @@ const { gql } = require('apollo-server')
 // const GraphQLJSON = require('graphql-type-json')
 
 // Get all defined types
-const postDefs = require('./types/postDefs')
-const userDefs = require('./types/userDefs')
+const postDefs = require('./services/post/types/postDefs')
+const userDefs = require('./services/user/types/userDefs')
 
 const linkSchema = gql`
   # scalar JSON
