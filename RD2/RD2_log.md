@@ -88,7 +88,7 @@
 
 **Thoughts**: It must be something I am missing
 
-**Link to work**: mongodb docs, SO
+**Link to work**: mongodb docs, [SO](https://stackoverflow.com/questions/47370229/mongoose-document-populate-is-not-working)
 
 **The Fix**: When calling a mongoose populate method, be sure that the `path` and the `model` are same names before you can use:
 
