@@ -88,4 +88,27 @@
 
 **Thoughts**: It must be something I am missing
 
-**Link to work**: mongodb docs
+**Link to work**: mongodb docs, SO
+
+**The Fix**: When calling a mongoose populate method, be sure that the `path` and the `model` are same names before you can use:
+
+```js
+// calling populate with no options
+
+await collection.find({}).populate('Author');
+
+/*
+ * Be sure that the path and model are named Author, else try what is below
+ */
+
+// calling populate with options
+
+await collection.find({}).populate({
+	path: 'author',
+	model: 'User'
+});
+
+/*
+ * Where you have the schema property name of your collection as "author", and the model you want to referrence as "User"
+ */
+```
