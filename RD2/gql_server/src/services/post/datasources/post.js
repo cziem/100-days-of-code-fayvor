@@ -14,7 +14,9 @@ class post extends Base {
   * returns: new post
   */
   async addPost(data, user) {
-    const tags = data.tags.split(',')
+    let { tags } = data
+    tags = tags ? (tags.length > 1 ? tags.split(',') : tags) : ''
+
     return await Post.create({
       title: data.title,
       body: data.body,
@@ -87,10 +89,14 @@ class post extends Base {
   * getAllPosts
   * returns: an array of all posts
   */
-  async getAllPosts() {
-    const posts = await Post.find({}).populate('user')
+  async getAllPosts(user) {
+    const posts = await Post.find({}).
+      where({ author: user.id }).
+      populate({
+        path: 'author',
+        model: 'User'
+      })
 
-    console.log(posts);
     return posts
   }
 
@@ -99,11 +105,14 @@ class post extends Base {
   * @params: ID
   * returns: an array of all posts
   */
-  async getPost(id) {
+  async getPost(id, user) {
     try {
       // return await Post.findById(id).populate('user')
-      const post = await Post.findById(id).populate('user')
-      console.log(post);
+      const post = await Post.findById(id).where({ author: user.id }).populate({
+        path: 'author',
+        model: 'User'
+      })
+
       return post
     } catch (e) {
       throw new Error('Ivalid post ID')
