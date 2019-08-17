@@ -81,3 +81,11 @@
 **Thoughts**: I think I have to add microservices to my learning curve
 
 **Link to work**: Eureka blogs
+
+### Day12 August 17, Saturday
+
+**Today's Work**: Trying to figure out why `populate` will not work durationa mongoose operation
+
+**Thoughts**: It must be something I am missing
+
+**Link to work**: mongodb docs
