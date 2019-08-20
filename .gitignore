@@ -5,4 +5,7 @@ RD1/jwt_node_auth/node_modules/
 .env
 RD2/writr/gql_server/node_modules
 RD2/writr/gql_server/src/config/config.json
+
+# Client side
 RD2/writr/client/node_modules
+RD2/writr/client/.next
