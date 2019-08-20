@@ -1,5 +1,6 @@
 const Base = require('../../../base')
 const Post = require('../../../models/post.schema')
+const User = require('../../../models/user.schema')
 
 class post extends Base {
   // constructor () {
@@ -17,13 +18,23 @@ class post extends Base {
     let { tags } = data
     tags = tags ? (tags.length > 1 ? tags.split(',') : tags) : ''
 
-    return await Post.create({
-      title: data.title,
-      body: data.body,
-      category: data.category,
-      tags,
-      author: user.id
-    })
+    try {
+      const author = await User.findOne({ _id: user.id })
+      const post = await Post.create({
+        title: data.title,
+        body: data.body,
+        category: data.category,
+        tags,
+        author: author._id
+      })
+
+      author.posts.push(post._id)
+      await author.save()
+
+      return post
+    } catch (e) {
+      throw new Error(e.message)
+    }
   }
 
   /*
@@ -74,8 +85,14 @@ class post extends Base {
   * @params: id
   * returns: String
   */
-  async deletePost(id) {
+  async deletePost(id, AuthUser) {
     try {
+      const author = await User.findOne({ _id: AuthUser.id })
+      const post = await Post.findOne({ _id: id })
+
+      author.posts.pop(post._id)
+      await author.save()
+
       const deleted = await Post.findByIdAndDelete(id)
       if (deleted) return 'post deleted'
     } catch (e) {
@@ -89,7 +106,21 @@ class post extends Base {
   * getAllPosts
   * returns: an array of all posts
   */
-  async getAllPosts(user) {
+  async getAllPosts() {
+    const posts = await Post.find({}).
+      populate({
+        path: 'author',
+        model: 'User'
+      })
+
+    return posts
+  }
+
+  /*
+  * getAllUserPosts
+  * returns: an array of all posts by a user
+  */
+  async getAllUserPosts(user) {
     const posts = await Post.find({}).
       where({ author: user.id }).
       populate({
