@@ -103,7 +103,7 @@ class user extends Base {
   * returns: an array of all users
   */
   async getAllUsers() {
-    return await User.find({})
+    return await User.find({}).populate('posts')
   }
 
   /*
@@ -113,7 +113,7 @@ class user extends Base {
   */
   async getUser(id) {
     try {
-      return await User.findById(id)
+      return await User.findById(id).populate('posts')
     } catch (e) {
       throw new Error('Ivalid post ID')
     }
