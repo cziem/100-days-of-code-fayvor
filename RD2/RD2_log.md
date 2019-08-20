@@ -112,3 +112,19 @@ await collection.find({}).populate({
  * Where you have the schema property name of your collection as "author", and the model you want to referrence as "User"
  */
 ```
+
+### Day13 August 18, Sunday
+
+**Today's Work**: Fixed the relationship issue and improve other areas
+
+**Thoughts**: It was some docs healing...
+
+**Link to work**: Read the source code ni :nerd_face:
+
+### Day14 August 19, Monday
+
+**Today's Work**: Continued reading from javascript.info
+
+**Thoughts**: I have to get some control on this class thing
+
+**Link to work**: Read the source code ni :nerd_face:
