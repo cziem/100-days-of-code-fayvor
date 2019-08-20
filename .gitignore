@@ -3,5 +3,5 @@ RD1/portfolio/node_modules/
 RD1/cli-calc/node_modules/
 RD1/jwt_node_auth/node_modules/
 .env
-RD2/gql_server/node_modules
-RD2/gql_server/src/config/config.json
+RD2/writr/gql_server/node_modules
+RD2/writr/gql_server/src/config/config.json

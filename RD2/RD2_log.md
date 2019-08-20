@@ -131,7 +131,10 @@ await collection.find({}).populate({
 
 ### Day15 August 20, Tuesday
 
-**Today's Work**: Add relationship between the `user` and `post`
+**Today's Work**:
+
+- Add relationship between the `user` and `post`
+- Setup a basic next app for the frontend of our app
 
 **Thoughts**: Let's get some fun stuff going on with `next`
 
