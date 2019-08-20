@@ -127,4 +127,12 @@ await collection.find({}).populate({
 
 **Thoughts**: I have to get some control on this class thing
 
-**Link to work**: Read the source code ni :nerd_face:
+**Link to work**: Read the source code ni 🤕
+
+### Day15 August 20, Tuesday
+
+**Today's Work**: Add relationship between the `user` and `post`
+
+**Thoughts**: Let's get some fun stuff going on with `next`
+
+**Link to work**: Read the source code ni 🤕
