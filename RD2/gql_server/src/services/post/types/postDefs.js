@@ -14,6 +14,7 @@ const postDefs = gql`
 
   extend type Query {
     getAllPosts: [Post]
+    getAllUserPosts: [Post]
     getPost(id: ID!): Post
   }
 

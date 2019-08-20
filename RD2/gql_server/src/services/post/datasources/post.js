@@ -106,7 +106,21 @@ class post extends Base {
   * getAllPosts
   * returns: an array of all posts
   */
-  async getAllPosts(user) {
+  async getAllPosts() {
+    const posts = await Post.find({}).
+      populate({
+        path: 'author',
+        model: 'User'
+      })
+
+    return posts
+  }
+
+  /*
+  * getAllUserPosts
+  * returns: an array of all posts by a user
+  */
+  async getAllUserPosts(user) {
     const posts = await Post.find({}).
       where({ author: user.id }).
       populate({
