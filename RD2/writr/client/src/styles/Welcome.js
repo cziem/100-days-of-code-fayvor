@@ -62,6 +62,10 @@ const Button = styled.button`
     props.primary ? 'violet' : 'transparent'};
     border: ${props => props.fill ? '3px solid palevioletred' : '3px solid violet'}
   }
+
+  &:focus {
+    outline: none
+  }
 `
 
 export {
