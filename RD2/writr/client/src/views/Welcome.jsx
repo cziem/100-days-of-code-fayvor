@@ -18,7 +18,7 @@ const Welcome = () => (
 					<Button primary>login</Button>
 				</Link>
 				<Link to="sign-up">
-					<Button fill>sign up</Button>
+					<Button fill="true">sign up</Button>
 				</Link>
 			</Section>
 		</div>
