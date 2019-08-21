@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Main, Section, Button } from '../styles/Welcome';
 
 const Welcome = () => (
@@ -12,9 +13,13 @@ const Welcome = () => (
 					The world can't wait to read what's in your mind
 				</p>
 			</Section>
-			<Section className="welcome__cta">
-				<Button primary>login</Button>
-				<Button fill>sign up</Button>
+			<Section className="welcome__cta-btns">
+				<Link to="/login">
+					<Button primary>login</Button>
+				</Link>
+				<Link to="sign-up">
+					<Button fill>sign up</Button>
+				</Link>
 			</Section>
 		</div>
 	</Main>

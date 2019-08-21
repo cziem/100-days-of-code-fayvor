@@ -19,6 +19,7 @@ const Main = styled.div`
     align-items: inherit;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 2rem;
   }
 
   h2 {
@@ -32,7 +33,7 @@ const Main = styled.div`
       color: #efeeea;
     }
   }
-
+  
   p.welcome__cta-lead {
     font-size: 1.6rem;
     color: #0f0b08;
