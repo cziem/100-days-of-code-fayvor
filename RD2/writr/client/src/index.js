@@ -3,6 +3,9 @@ import { render } from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './styles/index.css'
 
+// Import Helpers
+import PrivateRoute from './components/auth/PrivateRoute'
+
 // import App from './components/App';
 import Login from './views/Login'
 import Signup from './views/Signup'
@@ -18,8 +21,8 @@ const AppRoute = (
         <Route exact path="/" component={Welcome} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/sign-up" component={Signup} />
-        <Route exact path="/dashboard" component={Dashboard} />
-        <Route exact path="/add-post" component={AddPost} />
+        <PrivateRoute isAuth={false} path="/dashboard" component={Dashboard} />
+        <PrivateRoute isAuth={false} path="/add-post" component={AddPost} />
         <Route component={NotFound} />
       </Switch>
     </Fragment>
