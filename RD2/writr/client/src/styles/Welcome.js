@@ -42,6 +42,10 @@ const Main = styled.div`
 
 const Section = styled.section`
   padding: 1rem;
+
+  a:focus {
+    outline: none;
+  }
 `;
 
 const Button = styled.button`
