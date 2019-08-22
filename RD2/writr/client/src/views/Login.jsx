@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useMutation } from '@apollo/react-hooks';
 import { Link } from 'react-router-dom';
 import {
 	Main,
@@ -10,6 +11,9 @@ import {
 } from '../styles/Login';
 import { validateLoginDetails } from '../helpers/validator';
 
+// Import queries
+import { LOGIN_USER } from '../helpers/queries';
+
 const intialState = {
 	email: '',
 	password: '',
@@ -18,6 +22,8 @@ const intialState = {
 
 const Login = () => {
 	const [state, setState] = useState(intialState);
+	const [userLogin, { data }] = useMutation(LOGIN_USER);
+	// const userLogin = useMutation(LOGIN_USER);
 
 	const handleChange = ({ target }) => {
 		const { name, value } = target;
@@ -35,7 +41,13 @@ const Login = () => {
 		const isValid = validateLoginDetails(payload);
 
 		if (isValid) {
-			console.log('valid');
+			userLogin({
+				variables: {
+					...payload
+				}
+			});
+
+			console.log(data);
 		} else {
 			console.log('false');
 		}
