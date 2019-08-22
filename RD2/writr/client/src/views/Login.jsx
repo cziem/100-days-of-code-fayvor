@@ -10,6 +10,7 @@ import {
 	FormGroup
 } from '../styles/Login';
 import { validateLoginDetails } from '../helpers/validator';
+import getUser from '../helpers/getUser';
 
 // Import queries
 import { LOGIN_USER } from '../helpers/queries';
@@ -20,10 +21,26 @@ const intialState = {
 	user: {}
 };
 
-const Login = () => {
+const Login = props => {
 	const [state, setState] = useState(intialState);
-	const [userLogin, { data }] = useMutation(LOGIN_USER);
-	// const userLogin = useMutation(LOGIN_USER);
+	const [userLogin, { loading, error }] = useMutation(LOGIN_USER, {
+		onCompleted({ loginUser }) {
+			localStorage.setItem('token', loginUser.token);
+
+			const user = getUser(loginUser.token);
+			setState(prevState => ({ ...prevState, user }));
+
+			const location = {
+				pathname: 'dashboard',
+				user
+			};
+
+			return props.history.push(location);
+		}
+	});
+
+	if (error) return `An Error occurred: ${error}`;
+	if (loading) return 'Loading...';
 
 	const handleChange = ({ target }) => {
 		const { name, value } = target;
@@ -47,7 +64,7 @@ const Login = () => {
 				}
 			});
 
-			console.log(data);
+			setState({ email: '', password: '' });
 		} else {
 			console.log('false');
 		}

@@ -17,18 +17,9 @@ const cache = new InMemoryCache()
 const client = new ApolloClient({
   uri: 'http://localhost:6301/graphql',
   cache,
-  request: operation => {
-    operation.setContext({
-      headers: {
-        authorization: token
-      }
-    })
+  headers: {
+    authorization: token
   }
-})
-
-cache.writeData({
-  isAuth: !!localStorage.getItem('token'),
-  posts: []
 })
 
 const AppService = () => (
