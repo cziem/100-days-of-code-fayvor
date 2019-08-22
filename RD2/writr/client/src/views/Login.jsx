@@ -11,6 +11,9 @@ import {
 } from '../styles/Login';
 import { validateLoginDetails } from '../helpers/validator';
 import getUser from '../helpers/getUser';
+import ButtonLoader from '../components/utils/ButtonLoader';
+import Loading from '../components/utils/Loading';
+import Error from '../components/utils/Error';
 
 // Import queries
 import { LOGIN_USER } from '../helpers/queries';
@@ -23,6 +26,7 @@ const intialState = {
 
 const Login = props => {
 	const [state, setState] = useState(intialState);
+	const [isLoading, setIsLoading] = useState(false);
 	const [userLogin, { loading, error }] = useMutation(LOGIN_USER, {
 		onCompleted({ loginUser }) {
 			localStorage.setItem('token', loginUser.token);
@@ -39,8 +43,15 @@ const Login = props => {
 		}
 	});
 
-	if (error) return `An Error occurred: ${error}`;
-	if (loading) return 'Loading...';
+	// if (error) console.log(error.message);
+	if (error)
+		return (
+			<Error
+				ErrorText={error.message.split(':').slice(1)}
+				history={props.history}
+			/>
+		);
+	if (loading) return <Loading />;
 
 	const handleChange = ({ target }) => {
 		const { name, value } = target;
@@ -58,6 +69,8 @@ const Login = props => {
 		const isValid = validateLoginDetails(payload);
 
 		if (isValid) {
+			setIsLoading(true);
+
 			userLogin({
 				variables: {
 					...payload
@@ -102,7 +115,7 @@ const Login = props => {
 					</FormGroup>
 
 					<div className="cta">
-						<Button primary>login</Button>
+						<Button primary>{isLoading ? <ButtonLoader /> : 'login'}</Button>
 						<Link to="/sign-up">
 							<Button fill="true">sign up</Button>
 						</Link>
