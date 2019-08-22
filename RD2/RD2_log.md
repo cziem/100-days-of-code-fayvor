@@ -139,3 +139,23 @@ await collection.find({}).populate({
 **Thoughts**: Let's get some fun stuff going on with `next`
 
 **Link to work**: Read the source code ni 🤕
+
+### Day16 August 21, Wednesday
+
+**Today's Work**: Tried setting up a `next` app to interact with the apollo server. But did not meet much success.
+
+**Thoughts**: I think I have to switch to react proper
+
+**Link to work**: nextjs docs
+
+### Day17 August 22, Thursday
+
+**Today's Work**:
+
+- Setup React for the frontend.
+- Build the welcome, login and signup screens.
+- Used styled-components
+
+**Thoughts**: Integrating apollo-client is next
+
+**Link to work**: styled-components docs
