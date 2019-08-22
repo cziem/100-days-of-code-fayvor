@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useMutation } from '@apollo/react-hooks';
 import { Link } from 'react-router-dom';
 import {
 	Main,
@@ -9,6 +10,13 @@ import {
 	FormGroup
 } from '../styles/Login';
 import { validateLoginDetails } from '../helpers/validator';
+import getUser from '../helpers/getUser';
+import ButtonLoader from '../components/utils/ButtonLoader';
+import Loading from '../components/utils/Loading';
+import Error from '../components/utils/Error';
+
+// Import queries
+import { LOGIN_USER } from '../helpers/queries';
 
 const intialState = {
 	email: '',
@@ -16,8 +24,34 @@ const intialState = {
 	user: {}
 };
 
-const Login = () => {
+const Login = props => {
 	const [state, setState] = useState(intialState);
+	const [isLoading, setIsLoading] = useState(false);
+	const [userLogin, { loading, error }] = useMutation(LOGIN_USER, {
+		onCompleted({ loginUser }) {
+			localStorage.setItem('token', loginUser.token);
+
+			const user = getUser(loginUser.token);
+			setState(prevState => ({ ...prevState, user }));
+
+			const location = {
+				pathname: 'dashboard',
+				user
+			};
+
+			return props.history.push(location);
+		}
+	});
+
+	// if (error) console.log(error.message);
+	if (error)
+		return (
+			<Error
+				ErrorText={error.message.split(':').slice(1)}
+				history={props.history}
+			/>
+		);
+	if (loading) return <Loading />;
 
 	const handleChange = ({ target }) => {
 		const { name, value } = target;
@@ -35,7 +69,15 @@ const Login = () => {
 		const isValid = validateLoginDetails(payload);
 
 		if (isValid) {
-			console.log('valid');
+			setIsLoading(true);
+
+			userLogin({
+				variables: {
+					...payload
+				}
+			});
+
+			setState({ email: '', password: '' });
 		} else {
 			console.log('false');
 		}
@@ -73,7 +115,7 @@ const Login = () => {
 					</FormGroup>
 
 					<div className="cta">
-						<Button primary>login</Button>
+						<Button primary>{isLoading ? <ButtonLoader /> : 'login'}</Button>
 						<Link to="/sign-up">
 							<Button fill="true">sign up</Button>
 						</Link>
