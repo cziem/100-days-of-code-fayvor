@@ -1,32 +1,22 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import ApolloClient from 'apollo-boost'
+import { ApolloProvider } from '@apollo/react-hooks'
+
+// import components from route
+import AppRoute from "./helpers/routes";
+
 import './styles/index.css'
 
-// Import Helpers
-import PrivateRoute from './components/auth/PrivateRoute'
+// Setup the apollo client
+const client = new ApolloClient({
+  uri: 'http://localhost:6301/graphql'
+})
 
-// import App from './components/App';
-import Login from './views/Login'
-import Signup from './views/Signup'
-import Welcome from './views/Welcome'
-import Dashboard from './views/Dashboard'
-import AddPost from './views/AddPost'
-import NotFound from './views/404'
-
-const AppRoute = (
-  <Router>
-    <Fragment>
-      <Switch>
-        <Route exact path="/" component={Welcome} />
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/sign-up" component={Signup} />
-        <PrivateRoute isAuth={false} path="/dashboard" component={Dashboard} />
-        <PrivateRoute isAuth={false} path="/add-post" component={AddPost} />
-        <Route component={NotFound} />
-      </Switch>
-    </Fragment>
-  </Router>
+const AppService = () => (
+  <ApolloProvider client={client}>
+    <AppRoute />
+  </ApolloProvider>
 )
 
-render(AppRoute, document.getElementById('root'));
+render(<AppService />, document.getElementById('root'));
