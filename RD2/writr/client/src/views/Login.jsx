@@ -8,6 +8,7 @@ import {
 	Form,
 	FormGroup
 } from '../styles/Login';
+import { validateLoginDetails } from '../helpers/validator';
 
 const intialState = {
 	email: '',
@@ -23,13 +24,29 @@ const Login = () => {
 		setState(prevState => ({ ...prevState, [name]: value }));
 	};
 
+	const handleSubmit = e => {
+		e.preventDefault();
+
+		const payload = {
+			email: state.email,
+			password: state.password
+		};
+
+		const isValid = validateLoginDetails(payload);
+
+		if (isValid) {
+			console.log('valid');
+		} else {
+			console.log('false');
+		}
+	};
+
 	return (
 		<Main>
-			{console.log(state)}
 			<div className="wrap__main">
 				<h2>login to writr</h2>
 
-				<Form>
+				<Form onSubmit={handleSubmit}>
 					<FormGroup>
 						<Label htmlFor="email">email:</Label>
 						<InputText
