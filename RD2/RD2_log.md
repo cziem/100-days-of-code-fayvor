@@ -169,3 +169,19 @@ await collection.find({}).populate({
 **Thoughts**: This apollo-client cahce thing is still fuzzy
 
 **Link to work**: apollo docs
+
+### Day19 August 24, Saturday
+
+**Today's Work**:
+
+- Working on the dashboard
+- Setup the Header
+- Add the drawer
+- Enable toggle functionality for the drawer
+- Display profile picture... still hardcoded though
+
+![image display](./dump/images/nora_keys_writer.png)
+
+**Thoughts**: It's been fun working with `styled components` and `React`.
+
+**Link to work**: Read the source code 🤓
