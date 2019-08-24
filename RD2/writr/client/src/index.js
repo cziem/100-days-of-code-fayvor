@@ -4,28 +4,28 @@ import ApolloClient, { InMemoryCache } from 'apollo-boost'
 import { ApolloProvider } from '@apollo/react-hooks'
 
 // import components from route
-import AppRoute from "./helpers/routes";
+import App from "./components/App";
 
 import './styles/index.css'
 
 // Get token from localStorage
-const token = localStorage.getItem('token') || ''
+const token = localStorage.getItem( 'token' ) || ''
 
 // Setup the apollo client
 const cache = new InMemoryCache()
 
-const client = new ApolloClient({
+const client = new ApolloClient( {
   uri: 'http://localhost:6301/graphql',
   cache,
   headers: {
     authorization: token
   }
-})
+} )
 
 const AppService = () => (
   <ApolloProvider client={client}>
-    <AppRoute />
+    <App />
   </ApolloProvider>
 )
 
-render(<AppService />, document.getElementById('root'));
+render( <AppService />, document.getElementById( 'root' ) );
