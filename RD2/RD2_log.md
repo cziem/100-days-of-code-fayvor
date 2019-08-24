@@ -159,3 +159,13 @@ await collection.find({}).populate({
 **Thoughts**: Integrating apollo-client is next
 
 **Link to work**: styled-components docs
+
+### Day18 August 23, Friday
+
+**Today's Work**:
+
+- Use localStorage to persit data
+
+**Thoughts**: This apollo-client cahce thing is still fuzzy
+
+**Link to work**: apollo docs
