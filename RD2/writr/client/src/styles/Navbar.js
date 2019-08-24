@@ -8,6 +8,8 @@ export const Main = styled.div`
   align-items: center;
   padding: 0 1.5rem;
   box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 100%;
 
   h4 {
     color: white;
@@ -24,6 +26,7 @@ export const Main = styled.div`
 export const NavWrap = styled.nav`
   display: flex;
   width: 14rem;
+  margin-right: 3rem;
   list-style: none;
   justify-content: space-around;
   align-items: center;
