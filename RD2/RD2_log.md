@@ -180,6 +180,8 @@ await collection.find({}).populate({
 - Enable toggle functionality for the drawer
 - Display profile picture... still hardcoded though
 
+![image display](./dump/images/nora_keys_writer.png)
+
 **Thoughts**: It's been fun working with `styled components` and `React`.
 
 **Link to work**: Read the source code 🤓
