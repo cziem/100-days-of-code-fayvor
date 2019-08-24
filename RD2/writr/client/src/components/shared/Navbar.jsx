@@ -32,11 +32,11 @@ const renderNavItems = () =>
 		);
 	});
 
-const Navbar = ({ title }) => {
+const Navbar = ({ title, toggleDrawer }) => {
 	return (
 		<Main>
 			<header>
-				<MenuIcon>
+				<MenuIcon onClick={toggleDrawer}>
 					<MdMenu />
 				</MenuIcon>
 				<h4>{title}</h4>
