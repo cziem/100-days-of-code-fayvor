@@ -1,11 +1,10 @@
 import React from 'react';
-import Navbar from '../components/shared/Navbar';
+import DashboardContent from '../components/DashboardContent';
 
 const Dashboard = () => (
-	<div>
-		<Navbar title="writr" />
-		<h1>Your Dashboard</h1>
-	</div>
+	<DashboardContent>
+		<h4>Here is your dashboard content</h4>
+	</DashboardContent>
 );
 
 export default Dashboard;
