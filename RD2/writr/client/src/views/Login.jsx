@@ -24,7 +24,7 @@ const intialState = {
 	user: {}
 };
 
-const Login = props => {
+const Login = ({ history }) => {
 	const [state, setState] = useState(intialState);
 	const [isLoading, setIsLoading] = useState(false);
 	const [userLogin, { loading, error }] = useMutation(LOGIN_USER, {
@@ -39,17 +39,13 @@ const Login = props => {
 				user
 			};
 
-			return props.history.push(location);
+			return history.push(location);
 		}
 	});
 
-	// if (error) console.log(error.message);
 	if (error)
 		return (
-			<Error
-				ErrorText={error.message.split(':').slice(1)}
-				history={props.history}
-			/>
+			<Error ErrorText={error.message.split(':').slice(1)} history={history} />
 		);
 	if (loading) return <Loading />;
 
