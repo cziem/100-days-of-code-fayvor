@@ -9,7 +9,7 @@ const DashboardContent = ({ children }) => (
 	<Main>
 		<Navbar title="writr" />
 		<Drawer width={DrawerWidth} />
-		<DashboardWrap offset={DrawerWidth}>{children}</DashboardWrap>
+		<DashboardWrap>{children}</DashboardWrap>
 	</Main>
 );
 
