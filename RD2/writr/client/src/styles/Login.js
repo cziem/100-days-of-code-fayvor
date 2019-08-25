@@ -25,15 +25,16 @@ const Main = styled.div`
 
 const Button = styled.button`
   cursor: pointer;
-  background: ${props => (props.fill ? '#0c4877' : 'transparent')};
+  background: ${props => ( props.fill ? '#0c4877' : 'transparent' )};
   font-size: 1.1rem;
   border-radius: 5px;
-  color: ${props => (props.primary ? 'violet' : '#f5f5f5')};
+  color: ${props => ( props.primary ? 'violet' : '#f5f5f5' )};
   border: ${props =>
     props.primary ? '3px solid violet' : '3px solid #0c4877'};
   margin: 0 1em;
   padding: 0.35em 1.5em;
   transition: 0.5s all ease-out;
+  width: ${props => ( props.block ? '80%' : '' )}
 
   &:hover {
     color: white;

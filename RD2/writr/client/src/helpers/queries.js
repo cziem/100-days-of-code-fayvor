@@ -39,3 +39,29 @@ export const ADD_NEW_USER = gql`
     }
   }
 `
+
+export const GET_USER_POSTS = gql`
+  query {
+    getAllUserPosts {
+      id
+      title
+      author {
+        name
+        roles
+      }    
+    }
+  }
+`
+
+export const GET_ALL_POSTS = gql`
+  query {
+    getAllPosts {
+      id
+      title
+      author {
+        name
+        roles
+      }    
+    }
+  }
+`

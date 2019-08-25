@@ -7,6 +7,7 @@ export const Main = styled.main`
 export const DashboardWrap = styled.div`
   display: flex;
   flex-grow: 1;
-  padding-top: 5.5rem;
-  padding-left: 2rem;
+  padding: 5.5rem 2rem;
+  justify-content: center;
+  width: calc(${props => `100vw - ${props.width}px`});
 `

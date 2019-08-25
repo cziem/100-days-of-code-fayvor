@@ -185,3 +185,15 @@ await collection.find({}).populate({
 **Thoughts**: It's been fun working with `styled components` and `React`.
 
 **Link to work**: Read the source code 🤓
+
+### Day20 August 25, Sunday
+
+**Today's Work**:
+
+- Working on the dashboard
+- Make some queries to the server for user posts
+- display custom message when there is no post
+
+**Thoughts**: still thinking...
+
+**Link to work**: Read the source code 🤓
