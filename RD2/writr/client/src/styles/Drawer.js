@@ -36,3 +36,37 @@ export const ProPic = styled.div`
   background-size: cover;
   background-position: center center;
 `
+
+export const Section = styled.section`
+  padding: 1rem 0;
+
+  a:link, a:visited {
+    text-decoration: none;
+
+    p {
+      color: #e91e63;
+      width: 100%;
+      padding: 0.3rem;
+      display: flex;
+      align-items: center;
+      transition: .2s ease-in-out;
+
+      &:hover {
+        color: #e91e63;
+        /* background: #ddd; */
+        border-radius: 0.2rem;
+        box-shadow: 0 0 1px 1px rgba(72, 71, 71, 0.6)
+      }
+    }
+  }
+
+  svg {
+    margin-right: 1.34rem;
+    font-size: 1.32rem;
+  }
+`
+
+export const Divider = styled.div`
+  margin: 1.5rem 0;
+  border-bottom: 1px solid #171717;
+`
