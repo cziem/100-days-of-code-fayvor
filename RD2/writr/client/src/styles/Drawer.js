@@ -9,7 +9,7 @@ export const Main = styled.div`
   width: ${props => `${props.width}px`}
   margin-top: 4rem;
   padding: 0.2rem 1.8rem;
-  /* padding: 2rem; */
+  position: fixed;
   box-sizing: border-box;
 
   .drawer__ppic-wrp {
