@@ -1,39 +1,45 @@
 import React from 'react';
-import { useQuery } from '@apollo/react-hooks';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import DashboardContent from '../components/DashboardContent';
-import { GET_USER_POSTS, GET_ALL_POSTS } from '../helpers/queries';
-import Loading from '../components/utils/Loading';
-import Error from '../components/utils/Error';
+import DashboardRoot from '../components/dashboard/DashboardRoot';
+import AddPost from '../components/dashboard/posts/AddPost';
+// import SinglePost from '../components/dashboard/posts/SinglePost';
+// import EditPost from '../components/dashboard/posts/EditPost';
+import AllPosts from '../components/dashboard/posts/AllPosts';
+import AllUserPosts from '../components/dashboard/posts/AllUserPosts';
+import Draft from '../components/dashboard/posts/Draft';
+import AllUsers from '../components/dashboard/users/AllUser';
+import Followers from '../components/dashboard/users/Followers';
+import Following from '../components/dashboard/users/Following';
+import Settings from '../components/dashboard/misc/Settings';
+import Metrics from '../components/dashboard/misc/Metrics';
 
 const Dashboard = () => {
-	const { loading, error, data } = useQuery(GET_USER_POSTS);
-
-	if (loading) return <Loading />;
-	if (error) return <Error ErrorText={error.message.split(':').slice(1)} />;
-
-	const { getAllUserPosts: userPosts } = data;
-
-	const renderUserPosts = () => {
-		return userPosts.length > 0
-			? userPosts.map(post => <h3>{post.title}</h3>)
-			: NoPosts;
+	const DashboardRoutes = () => {
+		return (
+			<Switch>
+				<Route exact path="/" component={DashboardRoot} />
+				<Route exact path="/dashboard/add-post" component={AddPost} />
+				{/* <Route exact path="/dashboard/:post" component={SinglePost} /> */}
+				{/* <Route exact path="/dashboard/edit-post/:post" component={EditPost} /> */}
+				<Route exact path="/dashboard/my-posts" component={AllUserPosts} />
+				<Route exact path="/dashboard/all-posts" component={AllPosts} />
+				<Route exact path="/dashboard/drafts" component={Draft} />
+				<Route exact path="/dashboard/all-writrs" component={AllUsers} />
+				<Route exact path="/dashboard/followers" component={Followers} />
+				<Route exact path="/dashboard/following" component={Following} />
+				<Route exact path="/dashboard/settings" component={Settings} />
+				<Route exact path="/dashboard/metrics" component={Metrics} />
+			</Switch>
+		);
 	};
-
-	const NoPosts = (
-		<div
-			style={{
-				display: 'flex',
-				justifyContent: 'center',
-				alignItems: 'center',
-				width: '100%'
-			}}
-		>
-			<p>You have no posts yet... start writing now</p>
-		</div>
+	return (
+		<Router>
+			<DashboardContent>
+				<DashboardRoutes />
+			</DashboardContent>
+		</Router>
 	);
-
-	console.log('data', userPosts);
-	return <DashboardContent>{renderUserPosts()}</DashboardContent>;
 };
 
 export default Dashboard;
