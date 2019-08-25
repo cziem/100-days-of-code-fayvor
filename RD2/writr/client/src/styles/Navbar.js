@@ -11,6 +11,10 @@ export const Main = styled.div`
   position: fixed;
   width: 100%;
 
+  a, a:visited {
+    text-decoration: none;
+  }
+
   h4 {
     color: white;
     font-size: 1.4rem;
@@ -20,6 +24,10 @@ export const Main = styled.div`
     display: flex;
     width: 8rem;
     align-items: center;
+
+    a, a:visited {
+      text-decoration: none;
+    }
   }
 `
 
