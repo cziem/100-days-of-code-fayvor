@@ -10,5 +10,5 @@ export const DashboardWrap = styled.div`
   flex-grow: 1;
   padding: 5rem 2rem;
   justify-content: center;
-  margin-left: ${props => ( props.mode ? `${props.width}px` : '0px' )};
+  margin-left: ${props => ( props.mode === 'true' ? `${props.width}px` : '0px' )};
 `
