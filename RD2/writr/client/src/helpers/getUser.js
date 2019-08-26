@@ -1,3 +1,4 @@
 import jwt_decode from 'jwt-decode'
 
-export default (token) => jwt_decode(token)
+export default ( token ) =>
+  token ? jwt_decode( token ) : 'Invalid token';
