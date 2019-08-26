@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Main = styled.div`
   display: flex;
-  /* padding: 2rem; */
+  padding-top: 2.5rem;
 
   form {
     box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.22);
@@ -64,4 +64,10 @@ export const SelectInput = styled.select`
 export const SelectItems = styled.option`
   padding: .2rem 0;
   background: inherit;
+`
+
+export const FormGroup = styled.div`
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
 `
