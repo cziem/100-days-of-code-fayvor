@@ -34,23 +34,7 @@ const initialValues = {
 };
 
 const Login = ({ history }) => {
-	const [userLogin, { loading, error }] = useMutation(
-		LOGIN_USER /* {
-		onCompleted({ loginUser }) {
-			localStorage.setItem('token', loginUser.token);
-
-			const user = getUser(loginUser.token);
-			// setState(prevState => ({ ...prevState, user }));
-
-			const location = {
-				pathname: 'dashboard',
-				user
-			};
-
-			return history.push(location);
-		}
-	} */
-	);
+	const [userLogin, { loading, error }] = useMutation(LOGIN_USER);
 
 	if (error)
 		return (
@@ -74,9 +58,11 @@ const Login = ({ history }) => {
 						const user = getUser(loginUser.token);
 
 						const location = {
-							pathname: 'dashboard',
+							pathname: '/dashboard',
 							user
 						};
+
+						console.log('location', location);
 
 						history.push(location);
 					})

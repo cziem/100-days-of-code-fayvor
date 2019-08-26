@@ -10,9 +10,6 @@ import Welcome from '../views/Welcome'
 import Dashboard from '../views/Dashboard'
 import NotFound from '../views/404'
 
-const token = localStorage.getItem( 'token' )
-const isAuth = token ? token : false
-
 const App = () => (
   <Router>
     <Fragment>
@@ -20,7 +17,7 @@ const App = () => (
         <Route exact path="/" component={Welcome} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/sign-up" component={Signup} />
-        <PrivateRoute isAuth={isAuth} path="/dashboard" component={Dashboard} />
+        <PrivateRoute path="/dashboard" component={Dashboard} />
         <Route component={NotFound} />
       </Switch>
     </Fragment>
