@@ -14,7 +14,9 @@ const DashboardContent = ({ children }) => {
 		<Main>
 			<Navbar title="writr" toggleDrawer={handleToggle} />
 			{drawerMode && <Drawer width={DrawerWidth} />}
-			<DashboardWrap width={DrawerWidth}>{children}</DashboardWrap>
+			<DashboardWrap mode={drawerMode} width={DrawerWidth}>
+				{children}
+			</DashboardWrap>
 		</Main>
 	);
 };
