@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useMutation } from '@apollo/react-hooks';
 import { Link } from 'react-router-dom';
 import { Formik } from 'formik';
@@ -11,7 +11,6 @@ import {
 	Form,
 	FormGroup
 } from '../styles/Login';
-import { validateLoginDetails } from '../helpers/validator';
 import getUser from '../helpers/getUser';
 import ButtonLoader from '../components/utils/ButtonLoader';
 import Loading from '../components/utils/Loading';
@@ -34,21 +33,14 @@ const initialValues = {
 	password: ''
 };
 
-const intialState = {
-	email: '',
-	password: '',
-	user: {}
-};
-
 const Login = ({ history }) => {
-	const [state, setState] = useState(intialState);
-	const [isLoading, setIsLoading] = useState(false);
-	const [userLogin, { loading, error }] = useMutation(LOGIN_USER, {
+	const [userLogin, { loading, error }] = useMutation(
+		LOGIN_USER /* {
 		onCompleted({ loginUser }) {
 			localStorage.setItem('token', loginUser.token);
 
 			const user = getUser(loginUser.token);
-			setState(prevState => ({ ...prevState, user }));
+			// setState(prevState => ({ ...prevState, user }));
 
 			const location = {
 				pathname: 'dashboard',
@@ -57,7 +49,8 @@ const Login = ({ history }) => {
 
 			return history.push(location);
 		}
-	});
+	} */
+	);
 
 	if (error)
 		return (
@@ -65,45 +58,32 @@ const Login = ({ history }) => {
 		);
 	if (loading) return <Loading />;
 
-	// const handleChange = ({ target }) => {
-	// 	const { name, value } = target;
-	// 	setState(prevState => ({ ...prevState, [name]: value }));
-	// };
-
-	// const handleSubmit = e => {
-	// 	e.preventDefault();
-
-	// 	const payload = {
-	// 		email: state.email,
-	// 		password: state.password
-	// 	};
-
-	// 	const isValid = validateLoginDetails(payload);
-
-	// 	if (isValid) {
-	// 		setIsLoading(true);
-
-	// 	userLogin({
-	// 		variables: {
-	// 			...payload
-	// 		}
-	// 	});
-
-	// 		setState({ email: '', password: '' });
-	// 	} else {
-	// 		console.log('false');
-	// 	}
-	// };
-
 	return (
 		<Formik
 			initialValues={initialValues}
 			validationSchema={SchemaValidation}
-			onSubmit={(data, { setErrors, resetForm }) => {
+			onSubmit={(data, { resetForm }) => {
 				userLogin({
 					variables: { ...data }
-				});
-				setIsLoading(!isLoading);
+				})
+					.then(async ({ data }) => {
+						const { loginUser } = data;
+
+						localStorage.setItem('token', loginUser.token);
+
+						const user = getUser(loginUser.token);
+
+						const location = {
+							pathname: 'dashboard',
+							user
+						};
+
+						history.push(location);
+					})
+					.catch(err => {
+						console.log('Err: ', err);
+						resetForm();
+					});
 			}}
 			render={({
 				values: { email, password },
@@ -112,11 +92,7 @@ const Login = ({ history }) => {
 				handleBlur,
 				handleChange,
 				handleSubmit,
-				isSubmitting,
-				resetForm,
-				history,
-				submitForm,
-				isValid
+				isSubmitting
 			}) => (
 				<Main>
 					<div className="wrap__main">
@@ -160,7 +136,7 @@ const Login = ({ history }) => {
 
 							<div className="cta">
 								<Button primary type="submit">
-									{isLoading ? <ButtonLoader /> : 'login'}
+									{isSubmitting ? <ButtonLoader /> : 'login'}
 								</Button>
 								<Link to="/sign-up">
 									<Button fill="true">sign up</Button>
