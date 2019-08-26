@@ -62,8 +62,6 @@ const Login = ({ history }) => {
 							user
 						};
 
-						console.log('location', location);
-
 						history.push(location);
 					})
 					.catch(err => {
