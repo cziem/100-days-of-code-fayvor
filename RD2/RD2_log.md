@@ -197,3 +197,11 @@ await collection.find({}).populate({
 **Thoughts**: still thinking...
 
 **Link to work**: Read the source code 🤓
+
+### Day21 August 26, Monday
+
+**Today's Work**: Fix dashboard content display when in drawer mode
+
+**Thoughts**: We fixed it, yeah... thanks to @zicman for the helpful tips
+
+**Link to work**: Read the source code 🤓

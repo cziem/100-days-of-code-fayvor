@@ -7,9 +7,10 @@ import {
 	FormWrap,
 	TextArea,
 	SelectInput,
-	SelectItems
+	SelectItems,
+	FormGroup
 } from '../../../styles/AddPost';
-import { FormGroup, Label, InputText, Button } from '../../../styles/Login';
+import { Label, InputText, Button } from '../../../styles/Login';
 import ButtonLoader from '../../utils/ButtonLoader';
 
 const SchemaValidation = Yup.object().shape({

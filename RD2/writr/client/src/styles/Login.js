@@ -21,6 +21,15 @@ const Main = styled.div`
       margin-bottom: 1rem;
     }
   }
+
+  input.error {
+    border-color: #E91E63;
+  }
+
+  .input-feedback {
+    color: #E91E63;
+    margin-top: .25rem;
+  }
 `
 
 const Button = styled.button`
