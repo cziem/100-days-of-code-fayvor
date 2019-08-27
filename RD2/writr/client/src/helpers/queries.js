@@ -40,6 +40,30 @@ export const ADD_NEW_USER = gql`
   }
 `
 
+export const ADD_NEW_POST = gql`
+  mutation (
+    $title: String!
+    $body: String
+    $category: String
+    $tags: String
+  ) {
+    addPost (data: {
+      title: $title
+      body: $body
+      category: $category
+      tags: $tags
+    }) {
+      id
+      title
+      body 
+      category
+      tags 
+      createdAt
+      updatedAt
+    }
+  }
+`
+
 export const GET_USER_POSTS = gql`
   query {
     getAllUserPosts {
