@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useMutation } from '@apollo/react-hooks';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import {
@@ -12,6 +13,9 @@ import {
 } from '../../../styles/AddPost';
 import { Label, InputText, Button } from '../../../styles/Login';
 import ButtonLoader from '../../utils/ButtonLoader';
+import { ADD_NEW_POST } from '../../../helpers/queries';
+import Loading from '../../utils/Loading';
+import Error from '../../utils/Error';
 
 const SchemaValidation = Yup.object().shape({
 	title: Yup.string().required('Post title is required'),
@@ -27,16 +31,33 @@ const initialValues = {
 	tags: ''
 };
 
-const AddPost = () => {
-	const [isLoading, setIsLoading] = useState(false);
+const AddPost = ({ history }) => {
+	const [addPost, { loading, error }] = useMutation(ADD_NEW_POST);
+
+	if (error)
+		return (
+			<Error ErrorText={error.message.split(':').slice(1)} history={history} />
+		);
+	if (loading) return <Loading />;
+
 	return (
 		<Formik
 			initialValues={initialValues}
 			validationSchema={SchemaValidation}
 			onSubmit={(data, { setErrors, resetForm }) => {
-				console.log('data', data);
-				console.log(setErrors);
-				setIsLoading(!isLoading);
+				addPost({
+					variables: { ...data }
+				})
+					.then(async ({ data }) => {
+						const { addPost } = data;
+						console.log(addPost);
+
+						history.push('/dashboard');
+					})
+					.catch(err => {
+						console.log('Err: ', err);
+						resetForm();
+					});
 			}}
 			render={({
 				values: { title, body, category, tags },
