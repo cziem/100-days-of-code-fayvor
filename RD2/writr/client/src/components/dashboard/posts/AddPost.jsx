@@ -64,17 +64,9 @@ const AddPost = ({ history }) => {
 				errors,
 				touched,
 				handleBlur,
-				setFieldValue,
 				handleSubmit,
 				handleChange,
-				isSubmitting,
-				submitForm,
-				isValid,
-				setFieldTouched,
-				isRequesting,
-				handleClickOpen,
-				history,
-				resetForm
+				isSubmitting
 			}) => (
 				<Main>
 					<form onSubmit={handleSubmit}>
