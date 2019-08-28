@@ -213,3 +213,11 @@ await collection.find({}).populate({
 **Thoughts**: We fixed it, yeah... thanks to @law for the helpful tips
 
 **Link to work**: Read the source code 🤓
+
+### Day23 August 28, Wednessday
+
+**Today's Work**: Fix loading the index dashboard component when the dashboard route mounts
+
+**Thoughts**: We fixed it, yeah... thanks to @law for the helpful tips
+
+**Link to work**: Read the source code 🤓
