@@ -14,7 +14,7 @@ const DashboardRoot = () => {
 
 	const renderUserPosts = () => {
 		return userPosts.length > 0
-			? userPosts.map(post => <h3>{post.title}</h3>)
+			? userPosts.map((post, idx) => <h3 key={idx}>{post.title}</h3>)
 			: NoPosts;
 	};
 
