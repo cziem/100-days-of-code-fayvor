@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import { NavLink } from 'react-router-dom';
 import { Main, ProPic, Section, Divider } from '../../styles/Drawer';
 import getUser from '../../helpers/getUser';
 import {
@@ -14,100 +13,78 @@ import {
 	MdExitToApp
 } from 'react-icons/md';
 import { FiUsers } from 'react-icons/fi';
+import { DrawerItem } from './Navigations';
 
-const token = localStorage.getItem('token');
+const token = localStorage.getItem('writr_token');
 const user = getUser(token);
 
-const DrawerItemsPosts = [
-	{
+const DrawerItems = {
+	addPost: {
 		icon: <MdAddCircleOutline />,
 		name: 'Add Post',
-		path: '/dashboard/add-post'
+		path: '/dashboard/add-post',
+		exact: true
 	},
-	{
+	myPosts: {
 		icon: <MdLineWeight />,
 		name: 'My Posts',
-		path: '/dashboard/my-posts'
+		path: '/dashboard/my-posts',
+		exact: true
 	},
-	{
+	allPosts: {
 		icon: <MdList />,
 		name: 'All Posts',
-		path: '/dashboard/all-posts'
+		path: '/dashboard/all-posts',
+		exact: true
 	},
-	{
+	drafts: {
 		icon: <MdLightbulbOutline />,
 		name: 'Drafts',
-		path: '/dashboard/drafts'
-	}
-];
-
-const DrawerItemsUsers = [
-	{
+		path: '/dashboard/drafts',
+		exact: true
+	},
+	allWritrs: {
 		icon: <FiUsers />,
 		name: 'All Writrs',
-		path: '/dashboard/all-writrs'
+		path: '/dashboard/all-writrs',
+		exact: true
 	},
-	{
+	followers: {
 		icon: <MdDeviceHub />,
 		name: 'Followers',
-		path: '/dashboard/followers'
+		path: '/dashboard/followers',
+		exact: true
 	},
-	{
+	following: {
 		icon: <MdPermIdentity />,
 		name: 'Following',
-		path: '/dashboard/following'
-	}
-];
-
-const DrawerItemsMisc = [
-	{
+		path: '/dashboard/following',
+		exact: true
+	},
+	settings: {
 		icon: <MdSettings />,
 		name: 'Settings',
-		path: '/dashboard/settings'
+		path: '/dashboard/settings',
+		exact: true
 	},
-	{
+	metrics: {
 		icon: <MdMultilineChart />,
 		name: 'Metrics',
-		path: '/dashboard/metrics'
+		path: '/dashboard/metrics',
+		exact: true
 	},
-	{
+	logout: {
 		icon: <MdExitToApp />,
 		name: 'Logout',
-		path: '/dashboard/logout'
+		path: '#'
 	}
-];
-
-const renderDrawerItemsPosts = () =>
-	DrawerItemsPosts.map((post, idx) => (
-		<NavLink key={idx} to={post.path} exact={post.exact}>
-			<p>
-				{post.icon}
-				<span>{post.name}</span>
-			</p>
-		</NavLink>
-	));
-
-const renderDrawerItemsUsers = () =>
-	DrawerItemsUsers.map((post, idx) => (
-		<NavLink key={idx} to={post.path} exact={post.exact}>
-			<p>
-				{post.icon}
-				<span>{post.name}</span>
-			</p>
-		</NavLink>
-	));
-
-const renderDrawerItemsMisc = () =>
-	DrawerItemsMisc.map((post, idx) => (
-		<NavLink key={idx} to={post.path} exact={post.exact}>
-			<p>
-				{post.icon}
-				<span>{post.name}</span>
-			</p>
-		</NavLink>
-	));
+};
 
 export default ({ width }) => {
+	const handleClick = () => {
+		localStorage.removeItem('writr_token');
+		window.location.href = '/';
+	};
 	return (
 		<Fragment>
 			<Main width={width}>
@@ -116,11 +93,60 @@ export default ({ width }) => {
 					<p>{user.username}</p>
 				</div>
 				<Section>
-					{renderDrawerItemsPosts()}
+					<DrawerItem
+						path={DrawerItems.addPost.path}
+						icon={DrawerItems.addPost.icon}
+						name={DrawerItems.addPost.name}
+						exact={DrawerItems.addPost.exact}
+					/>
+					<DrawerItem
+						path={DrawerItems.myPosts.path}
+						icon={DrawerItems.myPosts.icon}
+						name={DrawerItems.myPosts.name}
+					/>
+					<DrawerItem
+						path={DrawerItems.allPosts.path}
+						icon={DrawerItems.allPosts.icon}
+						name={DrawerItems.allPosts.name}
+					/>
+					<DrawerItem
+						path={DrawerItems.drafts.path}
+						icon={DrawerItems.drafts.icon}
+						name={DrawerItems.drafts.name}
+					/>
 					<Divider />
-					{renderDrawerItemsUsers()}
+					<DrawerItem
+						path={DrawerItems.allWritrs.path}
+						icon={DrawerItems.allWritrs.icon}
+						name={DrawerItems.allWritrs.name}
+					/>
+					<DrawerItem
+						path={DrawerItems.followers.path}
+						icon={DrawerItems.followers.icon}
+						name={DrawerItems.followers.name}
+					/>
+					<DrawerItem
+						path={DrawerItems.following.path}
+						icon={DrawerItems.following.icon}
+						name={DrawerItems.following.name}
+					/>
 					<Divider />
-					{renderDrawerItemsMisc()}
+					<DrawerItem
+						path={DrawerItems.settings.path}
+						icon={DrawerItems.settings.icon}
+						name={DrawerItems.settings.name}
+					/>
+					<DrawerItem
+						path={DrawerItems.metrics.path}
+						icon={DrawerItems.metrics.icon}
+						name={DrawerItems.metrics.name}
+					/>
+					<DrawerItem
+						path={DrawerItems.logout.path}
+						icon={DrawerItems.logout.icon}
+						name={DrawerItems.logout.name}
+						handleClick={handleClick}
+					/>
 				</Section>
 			</Main>
 		</Fragment>

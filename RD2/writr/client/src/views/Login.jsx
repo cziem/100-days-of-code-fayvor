@@ -53,7 +53,7 @@ const Login = ({ history }) => {
 					.then(async ({ data }) => {
 						const { loginUser } = data;
 
-						localStorage.setItem('token', loginUser.token);
+						localStorage.setItem('writr_token', loginUser.token);
 
 						const user = getUser(loginUser.token);
 

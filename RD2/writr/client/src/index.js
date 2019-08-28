@@ -9,7 +9,7 @@ import App from "./components/App";
 import './styles/index.css'
 
 // Get token from localStorage
-const token = localStorage.getItem( 'token' ) || ''
+const token = localStorage.getItem( 'writr_token' ) || ''
 
 // Setup the apollo client
 const cache = new InMemoryCache()

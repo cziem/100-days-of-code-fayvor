@@ -1,44 +1,40 @@
-import React from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
 	MdAddCircleOutline,
 	MdExitToApp,
 	MdPerson,
 	MdMenu
 } from 'react-icons/md';
-import { Main, NavWrap, NavItemList, MenuIcon } from '../../styles/Navbar';
+import { NavbarItem } from './Navigations';
+import { Main, NavWrap, MenuIcon } from '../../styles/Navbar';
 
-const NavItems = [
-	{
+const NavItems = {
+	addPost: {
 		icon: <MdAddCircleOutline />,
 		name: 'Add Post',
 		path: '/dashboard/add-post'
 	},
-	{
+	profile: {
 		icon: <MdPerson />,
 		name: 'Profile',
 		path: '/dashboard/me'
 	},
-	{
+	logout: {
 		icon: <MdExitToApp />,
 		name: 'Logout',
 		path: '#'
 	}
-];
-
-const renderNavItems = () =>
-	NavItems.map((navItem, idx) => {
-		return (
-			<NavLink key={idx} to={navItem.path}>
-				<NavItemList>
-					<span>{navItem.icon}</span>
-					<p>{navItem.name}</p>
-				</NavItemList>
-			</NavLink>
-		);
-	});
+};
 
 const Navbar = ({ title, toggleDrawer }) => {
+	const [navState] = useState(NavItems);
+
+	const handleClick = () => {
+		localStorage.removeItem('writr_token');
+		window.location.href = '/';
+	};
+
 	return (
 		<Main>
 			<header>
@@ -49,7 +45,24 @@ const Navbar = ({ title, toggleDrawer }) => {
 					<h4>{title}</h4>
 				</Link>
 			</header>
-			<NavWrap>{renderNavItems()}</NavWrap>
+			<NavWrap>
+				<NavbarItem
+					path={navState.addPost.path}
+					icon={navState.addPost.icon}
+					name={navState.addPost.name}
+				/>
+				<NavbarItem
+					path={navState.profile.path}
+					icon={navState.profile.icon}
+					name={navState.profile.name}
+				/>
+				<NavbarItem
+					path={navState.logout.path}
+					icon={navState.logout.icon}
+					name={navState.logout.name}
+					handleClick={handleClick}
+				/>
+			</NavWrap>
 		</Main>
 	);
 };
