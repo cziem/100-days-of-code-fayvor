@@ -18,7 +18,7 @@ const Dashboard = () => {
 	const DashboardRoutes = () => {
 		return (
 			<Switch>
-				<Route exact path="/" component={DashboardRoot} />
+				<Route exact path="/dashboard" component={DashboardRoot} />
 				<Route exact path="/dashboard/add-post" component={AddPost} />
 				{/* <Route exact path="/dashboard/:post" component={SinglePost} /> */}
 				{/* <Route exact path="/dashboard/edit-post/:post" component={EditPost} /> */}
