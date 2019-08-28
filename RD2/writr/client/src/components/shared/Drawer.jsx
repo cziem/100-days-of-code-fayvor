@@ -15,7 +15,7 @@ import {
 } from 'react-icons/md';
 import { FiUsers } from 'react-icons/fi';
 
-const token = localStorage.getItem('token');
+const token = localStorage.getItem('writr_token');
 const user = getUser(token);
 
 const DrawerItemsPosts = [
