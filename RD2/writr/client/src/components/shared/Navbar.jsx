@@ -6,7 +6,7 @@ import {
 	MdPerson,
 	MdMenu
 } from 'react-icons/md';
-import NavbarItem from './NavbarItem';
+import { NavbarItem } from './Navigations';
 import { Main, NavWrap, MenuIcon } from '../../styles/Navbar';
 
 const NavItems = {
