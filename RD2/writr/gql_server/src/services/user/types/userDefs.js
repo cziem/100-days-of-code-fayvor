@@ -1,4 +1,4 @@
-const { gql } = require("apollo-server");
+const { gql } = require( "apollo-server" );
 
 const userDefs = gql`
   interface UserBase {
@@ -74,7 +74,7 @@ const userDefs = gql`
     email: String!
     password: String!
   }
-
+  
   input updateUser {
     name: String
     username: String
