@@ -29,14 +29,7 @@ export const ADD_NEW_USER = gql`
       password: $password
       email: $email
       roles: $roles
-    }) {
-      id
-      username
-      email
-      name
-      roles
-      isActive
-    }
+    })
   }
 `
 
