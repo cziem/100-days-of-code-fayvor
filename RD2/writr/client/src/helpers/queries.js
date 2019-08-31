@@ -82,3 +82,9 @@ export const GET_ALL_POSTS = gql`
     }
   }
 `
+
+export const VERIFY_EMAIL = gql`
+  mutation ($emailToken: String!) {
+    verifyEmail (emailToken: $emailToken)
+  }
+`
