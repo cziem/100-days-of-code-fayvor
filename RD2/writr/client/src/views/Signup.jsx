@@ -42,7 +42,7 @@ const initialValues = {
 };
 
 const Signup = ({ history }) => {
-	const [verify, setVerification] = useState(true);
+	const [verify, setVerification] = useState(false);
 	const [addNewUser, { loading, error }] = useMutation(ADD_NEW_USER);
 
 	if (error)
