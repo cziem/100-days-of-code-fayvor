@@ -189,7 +189,31 @@ class user extends Base {
     }
   }
 
+  /*
+  * sendEmailVerification
+  * @params: ID
+  * returns: a string
+  */
+  async sendEmailVerification( id ) {
+    try {
+      const foundUser = await User.findById( id )
 
+      if ( !foundUser ) throw new Error( 'User not found' )
+
+      foundUser.emailVerificationToken = await this.getEmailVerifierToken( id )
+
+      await foundUser.save()
+
+      const message = await this.getEVTTemplate( 'Email Verification', foundUser.emailVerificationToken, 'resend' )
+      const subject = 'Account Verification'
+
+      this.sendMail( foundUser.email, message, subject )
+
+      return "Your verification token has been sent successfully, Check your email to continue"
+    } catch ( e ) {
+      throw new Error( 'Ivalid post ID' )
+    }
+  }
 }
 
 module.exports = user
