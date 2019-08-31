@@ -36,6 +36,8 @@ const userDefs = gql`
   extend type Query {
     getAllUsers: [User]
     getUser(id: ID): User
+    resendEmailVerification(id: ID!): String!
+    sendEmailVerification(id: ID!): String!
   }
 
   extend type Mutation {

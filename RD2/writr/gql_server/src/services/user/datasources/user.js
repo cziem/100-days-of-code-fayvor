@@ -27,13 +27,13 @@ class user extends Base {
     const user = await User.create( data )
 
     if ( user ) {
-      user.emailVerificationToken = await this.getEmailVerifierToken( data.username )
+      user.emailVerificationToken = await this.getEmailVerifierToken( user.username )
       await user.save()
 
       const message = await this.getEVTTemplate( 'Registration was successful', user.emailVerificationToken )
       const subject = 'Account Verification'
 
-      this.sendMail( data.email, message, subject )
+      this.sendMail( user.email, message, subject )
 
       console.log( user )
 
@@ -77,7 +77,7 @@ class user extends Base {
   }
 
   /*
-  * emailVerification
+  * emailVerificationrue
   * @query: token
   * returns: string
   */
@@ -162,6 +162,34 @@ class user extends Base {
       throw new Error( 'Ivalid post ID' )
     }
   }
+
+  /*
+  * resendEmailVerification
+  * @params: ID
+  * returns: a string
+  */
+  async resendEmailVerification( id ) {
+    try {
+      const foundUser = await User.findById( id )
+
+      if ( !foundUser ) throw new Error( 'User not found' )
+
+      foundUser.emailVerificationToken = await this.getEmailVerifierToken( id )
+
+      await foundUser.save()
+
+      const message = await this.getEVTTemplate( 'Email Verification', foundUser.emailVerificationToken, 'resend' )
+      const subject = 'Account Verification'
+
+      this.sendMail( foundUser.email, message, subject )
+
+      return "Your verification token has been sent successfully, Check your email to continue"
+    } catch ( e ) {
+      throw new Error( 'Ivalid post ID' )
+    }
+  }
+
+
 }
 
 module.exports = user
