@@ -12,6 +12,7 @@
   "dependencies": {
     "apollo-server": "^2.8.1",
     "bcryptjs": "2.4.3",
+    "extends-classes": "1.0.5",
     "graphql": "^14.4.2",
     "graphql-type-json": "^0.3.0",
     "jsonwebtoken": "8.5.1",
