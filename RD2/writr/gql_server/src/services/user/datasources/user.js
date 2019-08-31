@@ -24,8 +24,7 @@ class user extends Base {
 
     data.password = await this.hashPassword( data.password )
 
-    // const user = await User.create( data )
-    return 'Registration Successful'
+    const user = await User.create( data )
 
     if ( user ) {
       user.emailVerificationToken = await this.getEmailVerifierToken( user.username )
@@ -36,10 +35,7 @@ class user extends Base {
 
       this.sendMail( user.email, message, subject )
 
-      console.log( user )
-
       return 'Registration Successful'
-
     }
   }
 
