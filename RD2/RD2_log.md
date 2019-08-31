@@ -243,3 +243,14 @@ await collection.find({}).populate({
 **Thoughts**: We fixed it, yeah... thanks to @law for the helpful tips
 
 **Link to work**: Read the source code 🤓
+
+### Day26 August 31, Saturday
+
+**Today's Work**:
+
+- Cleaned up the server logics a bit
+- implement Account verification using `nodemailer` and `mailtrap.io`
+
+**Thoughts**: Learnt quite a lot implementing this today
+
+**Link to work**: Read the source code 🤓
