@@ -1,62 +1,48 @@
-const { gql } = require("apollo-server");
+const { gql } = require( "apollo-server" );
 
 const userDefs = gql`
-  interface UserBase {
-    name: String
-    roles: String
-    posts: [Post]
-    username: String!
-    email: String!
-    isActive: Boolean
-  }
-
   interface MutationResponse {
     code: String
     success: Boolean
     message: String
   }
 
-  type User implements UserBase {
+  type User {
     name: String
-    roles: String
+    roles: Roles
     id: ID
     posts: [Post]
     username: String!
     email: String!
     isActive: Boolean
+    isVerified: Boolean
   }
 
-  type UserResponse implements UserBase {
-    name: String
-    id: ID
-    roles: String
-    posts: [Post]
-    username: String!
-    email: String!
-    isActive: Boolean
-    token: String
-  }
-
-  type LoggedInUser {
+  type LoggedInUser implements MutationResponse {
     code: String
     token: String
+    success: Boolean
+    message: String
   }
 
   enum Roles {
     AMDIN,
     EDITOR,
-    MARKETER,
+    WRITER,
     MEMBER,
-    VISIOR
+    VISITOR
   }
 
   extend type Query {
     getAllUsers: [User]
     getUser(id: ID): User
+    resendEmailVerification(id: ID!): String!
+    sendEmailVerification(id: ID!): String!
   }
 
   extend type Mutation {
-    addUser(data: createUser): User
+    addUser(data: createUser): String
+    verifyEmail(emailToken: String!): String!
     loginUser(data: loginUser): LoggedInUser
     updateUser(data: updateUser): String
     deleteUser(id: ID!): String
@@ -74,7 +60,7 @@ const userDefs = gql`
     email: String!
     password: String!
   }
-
+  
   input updateUser {
     name: String
     username: String

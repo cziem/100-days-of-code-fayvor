@@ -9,6 +9,7 @@ import Signup from '../views/Signup'
 import Welcome from '../views/Welcome'
 import Dashboard from '../views/Dashboard'
 import NotFound from '../views/404'
+import EmailVerification from '../views/EmailVerification'
 
 const App = () => (
   <Router>
@@ -17,6 +18,7 @@ const App = () => (
         <Route exact path="/" component={Welcome} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/sign-up" component={Signup} />
+        <Route exact path="/verify-email" component={EmailVerification} />
         <PrivateRoute path="/dashboard" component={Dashboard} />
         <Route component={NotFound} />
       </Switch>

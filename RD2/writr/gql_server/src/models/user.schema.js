@@ -1,7 +1,7 @@
-const mongoose = require("mongoose");
+const mongoose = require( "mongoose" );
 const Schema = mongoose.Schema;
 
-const userSchema = new Schema({
+const userSchema = new Schema( {
   username: {
     type: String,
     minLength: 3,
@@ -27,7 +27,17 @@ const userSchema = new Schema({
     type: Boolean,
     default: true
   },
-  roles: String,
+  isVerified: {
+    type: Boolean,
+    default: false
+  },
+  emailVerificationToken: {
+    type: String
+  },
+  roles: {
+    type: String,
+    enum: ['AMDIN', 'EDITOR', 'WRITER', 'MEMBER', 'VISITOR']
+  },
   posts: [
     {
       type: Schema.Types.ObjectId,
@@ -35,9 +45,9 @@ const userSchema = new Schema({
     }
   ]
 }, {
-  timestamps: true
-})
+    timestamps: true
+  } )
 
-const User = mongoose.model('User', userSchema)
+const User = mongoose.model( 'User', userSchema )
 
 module.exports = User
