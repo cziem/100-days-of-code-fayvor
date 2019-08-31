@@ -2,8 +2,6 @@ const nodemailer = require( 'nodemailer' )
 const { USER_EMAIL, USER_PASS, NODE_ENV, TEST_USER_EMAIL, TEST_USER_PASS } = process.env
 const dev = NODE_ENV || 'development'
 
-console.log( dev );
-
 // Email Verification Service
 class EVS {
   async sendMail( email, message, subject ) {
