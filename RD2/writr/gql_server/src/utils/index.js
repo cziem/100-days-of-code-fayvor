@@ -34,7 +34,7 @@ class Utils {
       <p>You requested for reverification of your mail 
         <br /><br />
         Click the button below to verify your mail
-        <a href="${BASE_URL}:${PORT}/email-verification?token=${EVT}" style="background: violet; color: white; padding: 0.89rem 2rem; border-radius: 3px; display: block; text-align: center; text-decoration: none; margin-top: 2rem;">
+        <a href="${BASE_URL}/verify-email?token=${EVT}" style="background: violet; color: white; padding: 0.89rem 2rem; border-radius: 3px; display: block; text-align: center; text-decoration: none; margin-top: 2rem;">
         here
         </a>
 
@@ -52,7 +52,7 @@ class Utils {
       <p>We are so glad to have you onboard our platform. 
         <br /><br />
         You can continue to your dashboard by loggin in
-        <a href="${BASE_URL}:${PORT}/email-verification?token=${EVT}" style="background: violet; color: white; padding: 0.89rem 2rem; border-radius: 3px; display: block; text-align: center; text-decoration: none; margin-top: 2rem;">
+        <a href="${BASE_URL}/verify-email?token=${EVT}" style="background: violet; color: white; padding: 0.89rem 2rem; border-radius: 3px; display: block; text-align: center; text-decoration: none; margin-top: 2rem;">
         here
         </a>
 
