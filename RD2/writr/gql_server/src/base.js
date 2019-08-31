@@ -1,9 +1,16 @@
+const Many = require( 'extends-classes' )
 const EVS = require( './utils/emailVerificationService' )
+const Utils = require( './utils' )
 
-class Base extends EVS {
-  async createToken( user ) {
-    return await jwt.sign( user, SECRETKEY, { expiresIn: "24hr" } )
+class Base extends Many( EVS, Utils ) {
+
+  async logger( message, type ) {
+    await console.log( `
+    ${type}: 
+    ==========================================
+    `, message )
   }
+
 }
 
 module.exports = Base
