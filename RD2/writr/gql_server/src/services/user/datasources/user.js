@@ -24,23 +24,21 @@ class user extends Base {
 
     data.password = await this.hashPassword( data.password )
 
-    // const user = await User.create( data )
-    const message = 'Registration was successful'
-    const subject = 'Account Verification'
+    const user = await User.create( data )
 
-    // this.sendMail( data.email, message, subject )
-    this.logger( data, 'Success' );
+    if ( user ) {
+      user.emailVerificationToken = await this.getEmailVerifierToken( data.username )
+      await user.save()
 
-    return 'Registration Successful'
+      const message = await this.getEVTTemplate( 'Registration was successful', user.emailVerificationToken )
+      const subject = 'Account Verification'
 
-    // if ( user ) {
-    //   const message = 'Registration was successful'
-    //   const subject = 'Account Verification'
+      this.sendMail( data.email, message, subject )
 
-    //   this.sendMail( data.email, message, subject )
+      console.log( user )
 
-    //   return 'Registration Successful'
-    // }
+      return 'Registration Successful'
+    }
   }
 
   /*
@@ -76,6 +74,37 @@ class user extends Base {
     } catch ( e ) {
       throw new Error( e )
     }
+  }
+
+  /*
+  * emailVerification
+  * @query: token
+  * returns: string
+  */
+  async verifyEmail( data ) {
+    try {
+      const isValid = await this.verifyEmailToken( data )
+
+      if ( isValid ) {
+        const user = await User.findOne( { emailVerificationToken: data } )
+
+        if ( user ) {
+          user.emailVerificationToken = null
+          user.isVerified = true
+
+          await user.save()
+
+          return '🚀 Verification Successful'
+        }
+      }
+    } catch ( error ) {
+      if ( error.message.includes( 'expired' ) ) {
+        return 'Your email verification token has expired.'
+      } else {
+        return error.message
+      }
+    }
+
   }
 
   /*

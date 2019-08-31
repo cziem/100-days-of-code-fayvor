@@ -40,6 +40,7 @@ const userDefs = gql`
 
   extend type Mutation {
     addUser(data: createUser): String
+    verifyEmail(emailToken: String!): String!
     loginUser(data: loginUser): LoggedInUser
     updateUser(data: updateUser): String
     deleteUser(id: ID!): String
