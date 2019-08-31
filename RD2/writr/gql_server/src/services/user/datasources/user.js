@@ -88,6 +88,8 @@ class user extends Base {
       if ( isValid ) {
         const user = await User.findOne( { emailVerificationToken: data } )
 
+        if ( user.isVerified ) return 'User is already verified'
+
         if ( user ) {
           user.emailVerificationToken = null
           user.isVerified = true
@@ -199,6 +201,8 @@ class user extends Base {
       const foundUser = await User.findById( id )
 
       if ( !foundUser ) throw new Error( 'User not found' )
+
+      if ( foundUser.isVerified ) return 'Already verified'
 
       foundUser.emailVerificationToken = await this.getEmailVerifierToken( id )
 
