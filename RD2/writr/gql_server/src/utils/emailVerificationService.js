@@ -13,8 +13,8 @@ class EVS {
   async mailTester( email, message, subject ) {
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport( {
-      host: "smtp.ethereal.email",
-      port: 587,
+      host: "smtp.mailtrap.io",
+      port: 2525,
       secure: false, // true for 465, false for other ports
       auth: {
         user: TEST_USER_EMAIL,
@@ -33,7 +33,7 @@ class EVS {
       let info = await transporter.sendMail( options )
 
       console.log( 'Message sent: %s', info.messageId );
-      console.log( 'Preview URL: %s', nodemailer.getTestMessageUrl( info ) );
+      // console.log( 'Preview URL: %s', nodemailer.getTestMessageUrl( info ) );
     } catch ( err ) {
       console.log( err )
     }
@@ -41,8 +41,8 @@ class EVS {
 
   async mailer( email, message, subject ) {
     let transporter = nodemailer.createTransport( {
-      host: 'smtp.ethereal.email',
-      port: 587,
+      host: "smtp.mailtrap.io",
+      port: 2525,
       secure: false, // true for 465, false for other ports
       auth: {
         user: USER_EMAIL,
@@ -59,9 +59,8 @@ class EVS {
       }
       let info = await transporter.sendMail( options );
 
-      console.log( 'info object', info )
       console.log( 'Message sent: %s', info.messageId );
-      console.log( 'Preview URL: %s', nodemailer.getTestMessageUrl( info ) );
+      // console.log( 'Preview URL: %s', nodemailer.getTestMessageUrl( info ) );
     } catch ( error ) {
       console.log( error )
     }
