@@ -27,9 +27,9 @@ const userDefs = gql`
   enum Roles {
     AMDIN,
     EDITOR,
-    MARKETER,
+    WRITER,
     MEMBER,
-    VISIOR
+    VISITOR
   }
 
   extend type Query {
