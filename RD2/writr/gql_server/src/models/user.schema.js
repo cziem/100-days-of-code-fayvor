@@ -1,7 +1,7 @@
-const mongoose = require("mongoose");
+const mongoose = require( "mongoose" );
 const Schema = mongoose.Schema;
 
-const userSchema = new Schema({
+const userSchema = new Schema( {
   username: {
     type: String,
     minLength: 3,
@@ -27,6 +27,14 @@ const userSchema = new Schema({
     type: Boolean,
     default: true
   },
+  isVerified: {
+    type: Boolean,
+    default: false
+  },
+  emailVerificationToken: {
+    type: String,
+    required: true
+  },
   roles: String,
   posts: [
     {
@@ -35,9 +43,9 @@ const userSchema = new Schema({
     }
   ]
 }, {
-  timestamps: true
-})
+    timestamps: true
+  } )
 
-const User = mongoose.model('User', userSchema)
+const User = mongoose.model( 'User', userSchema )
 
 module.exports = User
