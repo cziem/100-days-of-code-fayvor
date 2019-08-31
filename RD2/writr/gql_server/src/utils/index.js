@@ -1,6 +1,6 @@
 const bcrypt = require( 'bcryptjs' )
 const jwt = require( 'jsonwebtoken' )
-const { SECRET_KEY } = process.env
+const { SECRET_KEY, BASE_URL, PORT } = process.env
 
 class Utils {
 
@@ -27,7 +27,7 @@ class Utils {
       <p>We are so glad to have you onboard our platform. 
         <br /><br />
         You can continue to your dashboard by loggin in
-        <a href="https://www.google.com/${EVT}" style="background: violet; color: white; padding: 0.89rem 2rem; border-radius: 3px; display: block; text-align: center; text-decoration: none; margin-top: 2rem;">
+        <a href="${BASE_URL}:${PORT}/email-verification?token=${EVT}" style="background: violet; color: white; padding: 0.89rem 2rem; border-radius: 3px; display: block; text-align: center; text-decoration: none; margin-top: 2rem;">
         here
         </a>
       </p>
