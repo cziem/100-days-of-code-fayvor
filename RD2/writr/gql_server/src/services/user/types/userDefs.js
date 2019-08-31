@@ -1,24 +1,15 @@
 const { gql } = require( "apollo-server" );
 
 const userDefs = gql`
-  interface UserBase {
-    name: String
-    roles: String
-    posts: [Post]
-    username: String!
-    email: String!
-    isActive: Boolean
-  }
-
   interface MutationResponse {
     code: String
     success: Boolean
     message: String
   }
 
-  type User implements UserBase {
+  type User {
     name: String
-    roles: String
+    roles: Roles
     id: ID
     posts: [Post]
     username: String!
@@ -26,20 +17,11 @@ const userDefs = gql`
     isActive: Boolean
   }
 
-  type UserResponse implements UserBase {
-    name: String
-    id: ID
-    roles: String
-    posts: [Post]
-    username: String!
-    email: String!
-    isActive: Boolean
-    token: String
-  }
-
-  type LoggedInUser {
+  type LoggedInUser implements MutationResponse {
     code: String
     token: String
+    success: Boolean
+    message: String
   }
 
   enum Roles {
