@@ -1,4 +1,3 @@
-const bcrypt = require( 'bcryptjs' )
 const jwt = require( 'jsonwebtoken' )
 
 const Base = require( '../../../base' )
@@ -23,18 +22,25 @@ class user extends Base {
       throw new Error( `A user with ${data.email} already exists, do you want to login?` )
     }
 
-    data.password = await bcrypt.hash( data.password, 10 )
+    data.password = await this.hashPassword( data.password )
 
-    const user = await User.create( data )
+    // const user = await User.create( data )
+    const message = 'Registration was successful'
+    const subject = 'Account Verification'
 
-    if ( user ) {
-      const message = 'Registration was successful'
-      const subject = 'Account Verification'
+    // this.sendMail( data.email, message, subject )
+    this.logger( data, 'Success' );
 
-      this.sendMail( user.email, message, subject )
+    return 'Registration Successful'
 
-      return user
-    }
+    // if ( user ) {
+    //   const message = 'Registration was successful'
+    //   const subject = 'Account Verification'
+
+    //   this.sendMail( data.email, message, subject )
+
+    //   return 'Registration Successful'
+    // }
   }
 
   /*
@@ -50,7 +56,7 @@ class user extends Base {
         throw new Error( 'No user found' )
       }
 
-      const isValid = await bcrypt.compare( data.password, foundUser.password )
+      const isValid = await this.comparePassword( data.password, foundUser.password )
 
       if ( isValid ) {
         const payload = {
@@ -59,7 +65,7 @@ class user extends Base {
           email: foundUser.email,
           name: foundUser.name
         }
-        const token = await jwt.sign( payload, process.env.SECRET_KEY, { expiresIn: "2d" } )
+        const token = await this.createToken( payload )
         return {
           code: 200,
           token
