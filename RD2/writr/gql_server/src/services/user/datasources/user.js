@@ -1,5 +1,3 @@
-const jwt = require( 'jsonwebtoken' )
-
 const Base = require( '../../../base' )
 const User = require( '../../../models/user.schema' )
 
@@ -11,7 +9,7 @@ class user extends Base {
   // Mutations
 
   /*
-  * addUser to DB
+  * addUser to DB   
   * @params: data
   * returns: new user
   */
