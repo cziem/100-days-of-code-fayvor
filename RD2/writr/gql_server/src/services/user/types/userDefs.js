@@ -15,6 +15,7 @@ const userDefs = gql`
     username: String!
     email: String!
     isActive: Boolean
+    isVerified: Boolean
   }
 
   type LoggedInUser implements MutationResponse {
