@@ -32,10 +32,12 @@ const userSchema = new Schema( {
     default: false
   },
   emailVerificationToken: {
-    type: String,
-    required: true
+    type: String
   },
-  roles: String,
+  roles: {
+    type: String,
+    enum: ['AMDIN', 'EDITOR', 'WRITER', 'MEMBER', 'VISITOR']
+  },
   posts: [
     {
       type: Schema.Types.ObjectId,
