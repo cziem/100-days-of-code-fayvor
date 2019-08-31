@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useMutation } from '@apollo/react-hooks';
 import { Link } from 'react-router-dom';
 import { Formik } from 'formik';
@@ -17,6 +17,7 @@ import ButtonLoader from '../components/utils/ButtonLoader';
 import Loading from '../components/utils/Loading';
 import Error from '../components/utils/Error';
 import { ADD_NEW_USER } from '../helpers/queries';
+import LoadLoginPage from '../components/shared/LoadLoginPage';
 
 const SchemaValidation = Yup.object().shape({
 	name: Yup.string().trim(),
@@ -41,6 +42,7 @@ const initialValues = {
 };
 
 const Signup = ({ history }) => {
+	const [verify, setVerification] = useState(false);
 	const [addNewUser, { loading, error }] = useMutation(ADD_NEW_USER);
 
 	if (error)
@@ -58,8 +60,10 @@ const Signup = ({ history }) => {
 					variables: { ...data }
 				})
 					.then(async ({ data }) => {
-						console.log('data =>', data);
-						setSubmitting(false);
+						if (data.addUser) {
+							setVerification(true);
+							setSubmitting(false);
+						}
 					})
 					.catch(err => {
 						console.log('Err: ', err);
@@ -78,6 +82,8 @@ const Signup = ({ history }) => {
 				<Main>
 					<div className="wrap__main">
 						<h2>get started, writr</h2>
+
+						{verify && <LoadLoginPage />}
 
 						<Form onSubmit={handleSubmit}>
 							<FormGroup>
@@ -161,9 +167,10 @@ const Signup = ({ history }) => {
 									required
 								>
 									<OptionItem value={0}>select role</OptionItem>
-									<OptionItem name="editor">editor</OptionItem>
-									<OptionItem name="writer">writer</OptionItem>
-									<OptionItem name="others">others</OptionItem>
+									<OptionItem name="editor">EDITOR</OptionItem>
+									<OptionItem name="writer">WRITER</OptionItem>
+									<OptionItem name="member">MEMBER</OptionItem>
+									<OptionItem name="visitor">VISITOR</OptionItem>
 								</SelectOption>
 								{errors.roles && touched.roles && (
 									<div className="input-feedback">{errors.roles}</div>
