@@ -1,6 +1,8 @@
 const nodemailer = require( 'nodemailer' )
-const { USER_EMAIL, USER_PASS, NODE_ENV } = process.env
-const dev = NODE_ENV === 'development'
+const { USER_EMAIL, USER_PASS, NODE_ENV, TEST_USER_EMAIL, TEST_USER_PASS } = process.env
+const dev = NODE_ENV || 'development'
+
+console.log( dev );
 
 // Email Verification Service
 class EVS {
@@ -9,32 +11,32 @@ class EVS {
   }
 
   async mailTester( email, message, subject ) {
+    // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport( {
-      host: 'smtp.ethereal.email',
+      host: "smtp.ethereal.email",
       port: 587,
       secure: false, // true for 465, false for other ports
       auth: {
-        user: USER_EMAIL,
-        pass: USER_PASS
+        user: TEST_USER_EMAIL,
+        pass: TEST_USER_PASS
       }
     } )
 
-    // send mail with defined transport object
-    let info = await transporter.sendMail( {
-      from: `"Trace Toyna 💩" ${USER_EMAIL}`,
-      to: email,
-      subject: subject,
-      html: message
-    } );
+    try {
+      const options = {
+        from: `Trace Toyna 💩 <${TEST_USER_EMAIL}>`,
+        to: email,
+        subject: subject,
+        html: message
+      }
 
-    console.log( 'info object', info )
+      let info = await transporter.sendMail( options )
 
-    console.log( 'Message sent: %s', info.messageId );
-    // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-
-    // Preview only available when sending through an Ethereal account
-    console.log( 'Preview URL: %s', nodemailer.getTestMessageUrl( info ) );
-    // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
+      console.log( 'Message sent: %s', info.messageId );
+      console.log( 'Preview URL: %s', nodemailer.getTestMessageUrl( info ) );
+    } catch ( err ) {
+      console.log( err )
+    }
   }
 
   async mailer( email, message, subject ) {
@@ -48,23 +50,23 @@ class EVS {
       }
     } )
 
-    // send mail with defined transport object
-    let info = await transporter.sendMail( {
-      from: `"Trace Blanc 🖤" ${USER_EMAIL}`,
-      to: email,
-      subject: subject,
-      html: message
-    } );
+    try {
+      const options = {
+        from: `"Trace Blanc 🖤" <${USER_EMAIL}>`,
+        to: email,
+        subject: subject,
+        html: message
+      }
+      let info = await transporter.sendMail( options );
 
-    console.log( 'info object', info )
-
-    console.log( 'Message sent: %s', info.messageId );
-    // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-
-    // Preview only available when sending through an Ethereal account
-    console.log( 'Preview URL: %s', nodemailer.getTestMessageUrl( info ) );
-    // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
+      console.log( 'info object', info )
+      console.log( 'Message sent: %s', info.messageId );
+      console.log( 'Preview URL: %s', nodemailer.getTestMessageUrl( info ) );
+    } catch ( error ) {
+      console.log( error )
+    }
   }
+
 }
 
 module.exports = EVS
