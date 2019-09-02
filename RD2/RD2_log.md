@@ -254,3 +254,13 @@ await collection.find({}).populate({
 **Thoughts**: Learnt quite a lot implementing this today
 
 **Link to work**: Read the source code 🤓
+
+### Day27 September 01, Sunday
+
+**Today's Work**:
+
+- Implemented account verification in project `OneID`
+
+**Thoughts**: Switched to using [sendgrid](https://www.sendgrid.com)
+
+**Link to work**: Read the source code 🤓
