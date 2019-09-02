@@ -1,6 +1,10 @@
-const nodemailer = require( 'nodemailer' )
-const { USER_EMAIL, USER_PASS, NODE_ENV, TEST_USER_EMAIL, TEST_USER_PASS } = process.env
+const { NODE_ENV, MAILGUN_API_KEY, MAILGUN_DOMAIN, SENDGRID_API_KEY, SENDGRID_USER } = process.env
 const dev = NODE_ENV || 'development'
+const mailgun = require( 'mailgun-js' )
+const mg = mailgun( { apiKey: MAILGUN_API_KEY, domain: MAILGUN_DOMAIN } )
+const sgMail = require( '@sendgrid/mail' );
+sgMail.setApiKey( SENDGRID_API_KEY );
+
 
 // Email Verification Service
 class EVS {
@@ -9,61 +13,52 @@ class EVS {
   }
 
   async mailTester( email, message, subject ) {
-    // create reusable transporter object using the default SMTP transport
-    let transporter = nodemailer.createTransport( {
-      host: "smtp.mailtrap.io",
-      port: 2525,
-      secure: false, // true for 465, false for other ports
-      auth: {
-        user: TEST_USER_EMAIL,
-        pass: TEST_USER_PASS
-      }
-    } )
+    const msg = {
+      from: `Trace Cool, Program Lead <${SENDGRID_USER}>`,
+      to: email,
+      subject: subject,
+      html: message
+    };
 
-    try {
-      const options = {
-        from: `Trace Toyna 💩 <${TEST_USER_EMAIL}>`,
-        to: email,
-        subject: subject,
-        html: message
-      }
+    const data = await sgMail.send( msg )
 
-      let info = await transporter.sendMail( options )
+    console.log( JSON.stringify( data.response ) )
 
-      console.log( 'Message sent: %s', info.messageId );
-      // console.log( 'Preview URL: %s', nodemailer.getTestMessageUrl( info ) );
-    } catch ( err ) {
-      console.log( err )
-    }
+    // const data = {
+    //   from: 'George Favour, Program Lead <me@samples.mailgun.org>',
+    //   to: email,
+    //   subject: subject,
+    //   html: message
+    // };
+
+    // console.log( 'data', data );
+
+    // // const body = await mg.messages().send( data );
+    // // console.log( 'body', body );
+
+    // mg.messages().send( data, function ( error, body ) {
+    //   if ( error ) {
+    //     console.log( error )
+    //   }
+    //   console.log( 'body', body );
+    // } );
   }
 
   async mailer( email, message, subject ) {
-    let transporter = nodemailer.createTransport( {
-      host: "smtp.mailtrap.io",
-      port: 2525,
-      secure: false, // true for 465, false for other ports
-      auth: {
-        user: USER_EMAIL,
-        pass: USER_PASS
-      }
-    } )
+    const data = {
+      from: 'George Favour, Program Lead <dev@writr.com>',
+      to: email,
+      subject: subject,
+      html: message
+    };
 
-    try {
-      const options = {
-        from: `"Trace Blanc 🖤" <${USER_EMAIL}>`,
-        to: email,
-        subject: subject,
-        html: message
+    mg.messages().send( data, function ( error, body ) {
+      if ( error ) {
+        console.log( error )
       }
-      let info = await transporter.sendMail( options );
-
-      console.log( 'Message sent: %s', info.messageId );
-      // console.log( 'Preview URL: %s', nodemailer.getTestMessageUrl( info ) );
-    } catch ( error ) {
-      console.log( error )
-    }
+      console.log( body );
+    } );
   }
-
 }
 
 module.exports = EVS

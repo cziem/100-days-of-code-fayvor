@@ -1,4 +1,5 @@
 require( './src/config/config' )
+const { MONGODB_URI: URI, PORT } = process.env
 const { ApolloServer } = require( "apollo-server" );
 const mongoose = require( "mongoose" );
 
@@ -7,9 +8,6 @@ const resolvers = require( "./src/resolvers" );
 const dataSources = require( './src/datasources' )
 
 const { getUser } = require( './src/utils/auth' )
-
-const URI = process.env.MONGODB_URI;
-const PORT = process.env.PORT;
 
 mongoose
   .connect( URI, {
