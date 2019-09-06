@@ -264,3 +264,43 @@ await collection.find({}).populate({
 **Thoughts**: Switched to using [sendgrid](https://www.sendgrid.com)
 
 **Link to work**: Read the source code 🤓
+
+### Day28 September 02, Monday
+
+**Today's Work**: continued work on the project
+
+**Thoughts**: mailgun marketting team has been very awesome people.
+
+**Link to work**: Read the source code 🤓
+
+### Day29 September 03, Tuesday
+
+**Today's Work**: add validations with yup in the server
+
+**Thoughts**: we are getting closer.
+
+**Link to work**: Read the source code 🤓
+
+### Day30 September 04, Wednesday
+
+**Today's Work**: use class based utils for functionality extensions
+
+**Thoughts**: we are getting closer.
+
+**Link to work**: Read the source code 🤓
+
+### Day31 September 05, Thurday
+
+**Today's Work**: update sub-documents in a mongodb or mongoose model
+
+**Thoughts**: we are getting closer.
+
+**Link to work**: Read the source code 🤓
+
+### Day32 September 06, Friday
+
+**Today's Work**: setup server for local deployment
+
+**Thoughts**: we are getting closer.
+
+**Link to work**: Read the source code 🤓
