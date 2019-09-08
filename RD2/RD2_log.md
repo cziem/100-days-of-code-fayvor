@@ -304,3 +304,11 @@ await collection.find({}).populate({
 **Thoughts**: we are getting closer.
 
 **Link to work**: Read the source code 🤓
+
+### Day33 September 07, Saturday
+
+**Today's Work**: update the schema
+
+**Thoughts**: we are getting closer.
+
+**Link to work**: Read the source code 🤓
