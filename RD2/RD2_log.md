@@ -312,3 +312,11 @@ await collection.find({}).populate({
 **Thoughts**: we are getting closer.
 
 **Link to work**: Read the source code 🤓
+
+### Day34 September 08, Sunday
+
+**Today's Work**: update the graphql services
+
+**Thoughts**: we are getting closer.
+
+**Link to work**: Read the source code 🤓
