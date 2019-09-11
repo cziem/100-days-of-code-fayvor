@@ -336,3 +336,11 @@ await collection.find({}).populate({
 **Thoughts**: we are getting closer.
 
 **Link to work**: Read the source code 🤓
+
+### Day37 September 11, Wednesday
+
+**Today's Work**: read through the documentations for implementing roles
+
+**Thoughts**: we are getting closer.
+
+**Link to work**: Read the source code 🤓
