@@ -368,3 +368,11 @@ await collection.find({}).populate({
 **Thoughts**: we are getting closer.
 
 **Link to work**: Read the source code 🤓
+
+### Day41 September 15, Sunday
+
+**Today's Work**: Will try to learn how to use apollo-client
+
+**Thoughts**: we are getting closer.
+
+**Link to work**: Read the source code 🤓
