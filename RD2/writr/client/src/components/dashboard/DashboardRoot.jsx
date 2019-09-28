@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useQuery } from '@apollo/react-hooks';
 import { GET_USER_POSTS /* GET_ALL_POSTS */ } from '../../helpers/queries';
 import Loading from '../utils/Loading';
 import Error from '../utils/Error';
 
 const DashboardRoot = () => {
-	const { loading, error, data } = useQuery(GET_USER_POSTS);
+	const { loading, error, data } = useQuery(GET_USER_POSTS, {
+		fetchPolicy: 'cache-and-network'
+	});
 
 	if (loading) return <Loading />;
 	if (error) return <Error ErrorText={error.message.split(':').slice(1)} />;

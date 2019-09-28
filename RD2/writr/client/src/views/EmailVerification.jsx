@@ -4,17 +4,18 @@ import { Main, Header, Section } from '../styles/LoadLogin';
 import { useMutation } from '@apollo/react-hooks';
 import { VERIFY_EMAIL } from '../helpers/queries';
 
-const EmailVerification = ({ location, history }) => {
+const EmailVerification = (props) => {
 	const [verifyEmail] = useMutation(VERIFY_EMAIL);
 
 	useEffect(() => {
-		const { search } = location;
-		const token = search.split('=')[1];
+		// const { search } = location;
+		console.log(props)
+		// const token = search.split('=')[1];
 
 		verifyEmail({
-			variables: { emailToken: token }
+			// variables: { emailToken: token }
 		}).then(() => {
-			history.push('/login');
+			// history.push('/login');
 		});
 	});
 
@@ -36,4 +37,4 @@ const EmailVerification = ({ location, history }) => {
 	);
 };
 
-export default withRouter(EmailVerification);
+export default EmailVerification;
