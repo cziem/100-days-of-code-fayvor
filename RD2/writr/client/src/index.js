@@ -9,18 +9,18 @@ import App from "./components/App";
 import './styles/index.css'
 
 // Get token from localStorage
-const token = localStorage.getItem( 'writr_token' ) || ''
+const token = localStorage.getItem('writr_token') || ''
 
 // Setup the apollo client
 const cache = new InMemoryCache()
 
-const client = new ApolloClient( {
-  uri: 'http://localhost:6301/graphql',
+const client = new ApolloClient({
+  uri: 'http://localhost:4040/graphql',
   cache,
   headers: {
     authorization: token
   }
-} )
+})
 
 const AppService = () => (
   <ApolloProvider client={client}>
@@ -28,4 +28,4 @@ const AppService = () => (
   </ApolloProvider>
 )
 
-render( <AppService />, document.getElementById( 'root' ) );
+render(<AppService />, document.getElementById('root'));

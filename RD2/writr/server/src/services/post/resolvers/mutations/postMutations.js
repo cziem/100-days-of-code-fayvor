@@ -1,7 +1,9 @@
 const postResolverMutations = {
   // Add new post
   addPost: async (_, { data }, { AuthUser, dataSources }) => {
+    console.log('user', AuthUser)
     if (!AuthUser) throw new Error('You are not Authenticated...')
+
     const { post } = dataSources
     return await new post().addPost(data, AuthUser)
   },
